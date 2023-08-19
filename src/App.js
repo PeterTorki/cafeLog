@@ -6,9 +6,9 @@ import SignUp from "./Components/SignUp";
 const App = () => {
   return (
     <div className="welcome">
-      <SignUp />
+      {/* <SignUp /> */}
       {/* <Menu /> */}
-      {/* <AddProduct /> */}
+      <AddProduct />
     </div>
   )
 }
