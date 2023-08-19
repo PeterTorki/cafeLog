@@ -2,7 +2,7 @@
 
 Start:
 ```
-git clone https://github.com/PeterTorki/cafeshop.git
+git clone https://github.com/PeterTorki/cafeLog.git
 cd cafelog
 npm i
 ```
