@@ -1,0 +1,88 @@
+{
+	"Users": [
+		{
+			"id": "user-1",
+			"name": "John Doe",
+			"imgSrc": "http://placehold.it/350x150",
+			"phoneNumber": "555-555-5555",
+			"email": "peter@admin.com",
+			"password": "password",
+			"address": "123 Main St.",
+			"role": "customer",
+			"previousOrders": [
+				{
+					"orderId": "ord-1",
+					"orderDate": "2023-08-01",
+					"Products": [
+						{
+							"productId": "prod-1",
+							"chosenQuantity": 5,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "L"
+						},
+						{
+							"productId": "prod-2",
+							"chosenQuantity": 2,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "L"
+						},
+						{
+							"productId": "prod-3",
+							"chosenQuantity": 3,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "L"
+						}
+					]
+				},
+				{
+					"orderId": "ord-2",
+					"orderDate": "2020-07-10",
+					"Products": [
+						{
+							"productId": "prod-1",
+							"chosenQuantity": 5,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "S"
+						},
+						{
+							"productId": "prod-2",
+							"chosenQuantity": 2,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "L"
+						},
+						{
+							"productId": "prod-3",
+							"chosenQuantity": 3,
+							"chosenExtras": ["extra-1", "extra-3"],
+							"chosenSize": "M"
+						}
+					]
+				}
+			],
+			"cart": [
+				{
+					"productId": "prod-1",
+					"chosenQuantity": 5,
+					"chosenExtras": ["extra-1", "extra-3"],
+					"chosenSize": "L"
+				},
+				{
+					"productId": "prod-2",
+					"chosenQuantity": 2,
+					"chosenExtras": ["extra-1", "extra-3"],
+					"chosenSize": "M"	
+				},
+				{
+					"productId": "prod-3",
+					"chosenQuantity": 3,
+					"chosenExtras": ["extra-1", "extra-3"],
+					"chosenSize": "S"
+				}
+			],
+			"favorites": ["prod-1", "prod-2", "prod-3"]
+		},
+		{
+			
+		}
+	]
+}

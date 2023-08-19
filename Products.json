@@ -1,0 +1,180 @@
+{
+  "Products": [
+    {
+      "id": "prod-1",
+      "name": "Product 1",
+      "imgSrc": "Imgs/Products/menu/coffe1.jpg",
+      "type": "hot",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "80",
+      "quantity": 70,
+      "Extras": [
+        {
+          "id": "extra-1",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-2",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-3",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-2",
+      "name": "Product 2",
+      "imgSrc": "Imgs/Products/menu/coffe2.jpg",
+      "type": "cold",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "2000",
+      "quantity": 50,
+      "Extras": [
+        {
+          "id": "extra-1",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-2",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-3",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-3",
+      "name": "Product 3",
+      "imgSrc": "Imgs/Products/menu/coffe3.jpg",
+      "type": "hot",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "3000",
+      "quantity": 30,
+      "Extras": [
+        {
+          "id": "extra-1",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-2",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-3",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-4",
+      "name": "Product 4",
+      "imgSrc": "Imgs/Products/menu/coffe3.jpg",
+      "type": "cold",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "4000",
+      "quantity": 20,
+      "Extras": [
+        {
+          "id": "extra-1",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-2",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-3",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-5",
+      "name": "Product 5",
+      "imgSrc": "Imgs/Products/menu/coffe4.jpg",
+      "type": "hot",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "5000",
+      "quantity": 10,
+      "Extras": [
+        {
+          "id": "extra-1",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-2",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-3",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-6",
+      "name": "Product 6",
+      "imgSrc": "Imgs/Products/menu/coffe5.jpg",
+      "type": "hot",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+      "price": "200",
+      "quantity": 10,
+      "Extras": [
+        {
+          "id": "extra-6",
+          "name": "Chocolate",
+          "price": "100"
+        },
+        {
+          "id": "extra-7",
+          "name": "Carmelle",
+          "price": "200"
+        },
+        {
+          "id": "extra-8",
+          "name": "Vanilla",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "prod-I7ygp1MAl91qQ1DKNhAKn",
+      "name": "Tead",
+      "imgSrc": "",
+      "type": "hot",
+      "description": "",
+      "price": "80",
+      "quantity": "70",
+      "Extras": []
+    },
+    {
+      "id": "prod-zCcicRRWY3zCDjtrZXGv4",
+      "name": "Latte",
+      "imgSrc": "",
+      "type": "Hot",
+      "description": "",
+      "price": "80",
+      "quantity": "70",
+      "Extras": []
+    }
+  ]
+}
