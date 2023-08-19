@@ -10,9 +10,10 @@ npm i
 npm i json-server
 ```
 Running: 
-```
+
 ```
 npm run jsonserver1
+```
 ```
 npm run jsonserver2
 ```
