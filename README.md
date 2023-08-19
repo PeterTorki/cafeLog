@@ -3,7 +3,7 @@
 Start:
 ```
 git clone https://github.com/PeterTorki/cafeshop.git
-cd cafeshop
+cd cafelog
 npm i
 ```
 ```
