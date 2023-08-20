@@ -2,6 +2,8 @@ import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import TypesMenu from "./TypesMenu";
 import styles from "../Style/Menu.module.css";
+import logo from "./tropical-drink-2374.png"
+
 
 
 const Menu = () => {
@@ -41,24 +43,407 @@ const Menu = () => {
   return (
     <div>
       <TypesMenu typeSetState={handleCurrTypeState} />
+      <div className={styles.menuContainer}>
+
       <div>
         <div className={styles.card}>
 
           <div className={styles.info}>
-            <img src="" />
+            <img src={logo} className={styles.imageitem}/>
             <div className={styles.textInfo}>
               <h5>{p.name}</h5>
-              <p>{p.description}</p>
-              <h4>{p.price}$</h4>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
             </div>
 
           </div>
           <div className={styles.Extras}>
-            <button> {p.Extras[0].name}</button>
-            <button> {p.Extras[1].name}</button>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
           </div>
-          <button>Add To Cart</button>
+          <button className={styles.toCart}>Add To Cart</button>
         </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
+
+      <div>
+        <div className={styles.card}>
+
+          <div className={styles.info}>
+            <img src={logo} className={styles.imageitem}/>
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p className={ styles.textP}>{p.description}</p>
+              <h4 className={styles.price}>{p.price} $</h4>
+            </div>
+
+          </div>
+          <div className={styles.Extras}>
+            <button className={styles.exBtn}> {p.Extras[0].name}</button>
+            <button className={styles.exBtn}> {p.Extras[1].name}</button>
+          </div>
+          <button className={styles.toCart}>Add To Cart</button>
+        </div>
+      </div>
       </div>
     </div>
   );

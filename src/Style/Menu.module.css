@@ -1,3 +1,112 @@
-.card {
-  border:1px solid black;
+.menuContainer 
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 30px 20px 0;
+  justify-content: center;
+ 
+}
+.card
+{
+  margin: 10px 0 0 10px;
+  display:flex;
+  flex-direction: column;
+ 
+  max-width: 300px; 
+
+
+}
+
+.info {
+  display:flex;
+  margin-top: 20px;
+  flex-direction: row;
+  margin-right: 5px;
+}
+
+.imageitem {
+  border-radius: 10px;
+  height: 120px;
+  margin-left: 10px;
+  object-fit: cover;
+}
+
+.textInfo{
+  margin-left: 20px;
+  flex-direction:column;
+}
+.textP{
+  color:rgb(159, 156, 156);
+  font-weight: 400;
+  display: -webkit-box;
+  margin-bottom: 10px;
+  margin: 10px 0 ;
+
+}
+.price{
+ font-weight:900;
+}
+
+.Extras{
+  display: flex;
+  flex-direction: row;
+}
+
+.exBtn{
+  border-radius: 10px;
+  background-color: rgba(211, 211, 197, 0.3);
+  opacity: rgb(255, 255, 255,0.3);
+  border: none;
+  color:rgb(50, 49, 49) ;
+  margin-left:10px;
+}
+.exBtn:hover
+{
+  background-color: rgb(99, 143, 143);
+  color: white;
+  
+}
+.toCart
+{
+  border-radius: 10px;
+  background-color: rgb(99, 143, 143);
+  border: none;
+  color:white;
+  margin-top: 10px ;
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    margin: 0 10px 20px 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+    max-width: 100%; /* Adjust as needed */
+  }
+
+  .info {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .imageitem {
+    height: auto;
+    max-width:80px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .textInfo {
+    margin-left: 0;
+    max-width: 50%;
+  }
+
+  .toCart {
+    margin-top: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 }

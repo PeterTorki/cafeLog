@@ -1,5 +1,12 @@
 import React from "react";
 import styles from "../Style/TypesMenu.module.css";
+import menu from "./clinking-beer-mugs_1f37b.png"
+import coffe from "./hot-beverage_2615.png"
+
+import booba from "./bubble-tea_1f9cb.png"
+import cake from "./shortcake_1f370.png"
+import smoo from "./cup-with-straw_1f964.png"
+import bake from "./bagel_1f96f.png"
 const TypesMenu = ({ typeSetState }) => {
   return (
     <div className={styles.typesDiv}>
@@ -7,61 +14,61 @@ const TypesMenu = ({ typeSetState }) => {
         className={styles.typeBox}
         onClick={() => typeSetState("All Menu")}
       >
-        <h3>All Menu</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
+          src={menu}
           alt="AllMenu"
-          width={"50px"}
+          width={"30px"}
         />
+        <h3 className={styles.h3type}>All
+        menu</h3>
       </button>
       <button className={styles.typeBox} onClick={() => typeSetState("Coffee")}>
-        <h3>Coffee</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
+          src={coffe}
           alt="AllMenu"
-          width={"50px"}
+          width={"30px"}
         />
+      <h3 className={styles.h3type}>Coffee</h3>
       </button>
       <button
         className={styles.typeBox}
         onClick={() => typeSetState("Dessert")}
       >
-        <h3>Dessert</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
+          src={cake}
           alt="AllMenu"
-          width={"50px"}
+          width={"30px"}
         />
+        <h3 className={styles.h3type}>Dessert</h3>
       </button>
       <button
         className={styles.typeBox}
         onClick={() => typeSetState("Smothie")}
       >
-        <h3>Smothie</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
+          src={smoo}
           alt="AllMenu"
-          width={"50px"}
+          width={"30px"}
         />
+        <h3 className={styles.h3type}>Smothie</h3>
       </button>
       <button
         className={styles.typeBox}
         onClick={() => typeSetState("Hot Drink")}
       >
-        <h3>Hot Drink</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
-          alt="AllMenu"
-          width={"50px"}
+          src={bake}
+          width={"30px"}
         />
+       <h3 className={styles.h3type}>Bakery</h3>
       </button>
       <button className={styles.typeBox} onClick={() => typeSetState("Bobaan")}>
-        <h3>Bobaan</h3>
         <img
-          src="./Imgs/Products/menu/icons8-coffee-16.png"
+          src={booba}
           alt="AllMenu"
-          width={"50px"}
+          width={"30px"}
         />
+      <h3 className={styles.h3type}>Bobaan</h3>
       </button>
     </div>
   );
