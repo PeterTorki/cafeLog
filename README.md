@@ -3,7 +3,8 @@
 Start:
 
 ```
-npm i json-server
+cd cafeLog
+npm i
 ```
 Running: 
 
