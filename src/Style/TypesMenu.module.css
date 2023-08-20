@@ -1,0 +1,14 @@
+.typesDiv {
+	display: flex;
+	flex-direction: row;
+}
+.typeBox {
+	border-radius: 10px;
+	border: 1px solid #000000;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}

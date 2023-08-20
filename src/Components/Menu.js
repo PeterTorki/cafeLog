@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useCallback} from 'react'
 import axios from 'axios'
+import TypesMenu from './TypesMenu';
 
 const Menu = () => {
 	const [products, setProducts] = useState([]);
@@ -36,6 +37,7 @@ const Menu = () => {
   
   return (
     <div className="welcome">
+      <TypesMenu />
       {divDisplay}
     </div>
   );
