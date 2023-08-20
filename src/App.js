@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import Menu from "./Components/Menu";
 import AddProduct from "./Components/AddProduct";
-import SignUp from "./Components/SignUp";
+import SignInUp from "./Components/SignInUp";
 
 const App = () => {
   return (
     <div className="welcome">
-      {/* <SignUp /> */}
+      <SignInUp />
       {/* <Menu /> */}
-      <AddProduct />
+      {/* <AddProduct /> */}
     </div>
   )
 }

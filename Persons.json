@@ -1,88 +1,181 @@
 {
-	"Users": [
-		{
-			"id": "user-1",
-			"name": "John Doe",
-			"imgSrc": "http://placehold.it/350x150",
-			"phoneNumber": "555-555-5555",
-			"email": "peter@admin.com",
-			"password": "password",
-			"address": "123 Main St.",
-			"role": "customer",
-			"previousOrders": [
-				{
-					"orderId": "ord-1",
-					"orderDate": "2023-08-01",
-					"Products": [
-						{
-							"productId": "prod-1",
-							"chosenQuantity": 5,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "L"
-						},
-						{
-							"productId": "prod-2",
-							"chosenQuantity": 2,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "L"
-						},
-						{
-							"productId": "prod-3",
-							"chosenQuantity": 3,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "L"
-						}
-					]
-				},
-				{
-					"orderId": "ord-2",
-					"orderDate": "2020-07-10",
-					"Products": [
-						{
-							"productId": "prod-1",
-							"chosenQuantity": 5,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "S"
-						},
-						{
-							"productId": "prod-2",
-							"chosenQuantity": 2,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "L"
-						},
-						{
-							"productId": "prod-3",
-							"chosenQuantity": 3,
-							"chosenExtras": ["extra-1", "extra-3"],
-							"chosenSize": "M"
-						}
-					]
-				}
-			],
-			"cart": [
-				{
-					"productId": "prod-1",
-					"chosenQuantity": 5,
-					"chosenExtras": ["extra-1", "extra-3"],
-					"chosenSize": "L"
-				},
-				{
-					"productId": "prod-2",
-					"chosenQuantity": 2,
-					"chosenExtras": ["extra-1", "extra-3"],
-					"chosenSize": "M"	
-				},
-				{
-					"productId": "prod-3",
-					"chosenQuantity": 3,
-					"chosenExtras": ["extra-1", "extra-3"],
-					"chosenSize": "S"
-				}
-			],
-			"favorites": ["prod-1", "prod-2", "prod-3"]
-		},
-		{
-			
-		}
-	]
+  "Users": [
+    {
+      "id": "user-1",
+      "name": "John Doe",
+      "imgSrc": "http://placehold.it/350x150",
+      "phoneNumber": "555-555-5555",
+      "email": "peter@admin.com",
+      "password": "password",
+      "address": "123 Main St.",
+      "role": "customer",
+      "previousOrders": [
+        {
+          "orderId": "ord-1",
+          "orderDate": "2023-08-01",
+          "Products": [
+            {
+              "productId": "prod-1",
+              "chosenQuantity": 5,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "L"
+            },
+            {
+              "productId": "prod-2",
+              "chosenQuantity": 2,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "L"
+            },
+            {
+              "productId": "prod-3",
+              "chosenQuantity": 3,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "L"
+            }
+          ]
+        },
+        {
+          "orderId": "ord-2",
+          "orderDate": "2020-07-10",
+          "Products": [
+            {
+              "productId": "prod-1",
+              "chosenQuantity": 5,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "S"
+            },
+            {
+              "productId": "prod-2",
+              "chosenQuantity": 2,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "L"
+            },
+            {
+              "productId": "prod-3",
+              "chosenQuantity": 3,
+              "chosenExtras": [
+                "extra-1",
+                "extra-3"
+              ],
+              "chosenSize": "M"
+            }
+          ]
+        }
+      ],
+      "cart": [
+        {
+          "productId": "prod-1",
+          "chosenQuantity": 5,
+          "chosenExtras": [
+            "extra-1",
+            "extra-3"
+          ],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-2",
+          "chosenQuantity": 2,
+          "chosenExtras": [
+            "extra-1",
+            "extra-3"
+          ],
+          "chosenSize": "M"
+        },
+        {
+          "productId": "prod-3",
+          "chosenQuantity": 3,
+          "chosenExtras": [
+            "extra-1",
+            "extra-3"
+          ],
+          "chosenSize": "S"
+        }
+      ],
+      "favorites": [
+        "prod-1",
+        "prod-2",
+        "prod-3"
+      ]
+    },
+    {
+      "id": "user-s-QW5URQf0gJlKEJxNGEh",
+      "name": "",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "",
+      "password": "",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-jotzgVcyHGKVXQwbAAVB4",
+      "name": "",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "",
+      "password": "",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-rEeh0oM_RBjz5OvZ9JVo0",
+      "name": "Peter",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "01211036617",
+      "email": "pjturki@gmail.com",
+      "password": "PJ615748@@",
+      "address": "Elgish St",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-B4IIDeY3KfbLcsKOUXm_u",
+      "name": "Peter Joseph",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "01211003361",
+      "email": "torkiJR@gmail.com",
+      "password": "123456",
+      "address": "Elgish St",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-TSzO0NMj7LJUpc7uA8WBQ",
+      "name": "Peter Torki",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "01128873999",
+      "email": "mail@admin.com",
+      "password": "12233",
+      "address": "Egpt",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    }
+  ]
 }
