@@ -1,46 +1,58 @@
-import React, {useEffect, useState, useCallback} from 'react'
-import axios from 'axios'
-import TypesMenu from './TypesMenu';
+import React, { useEffect, useState, useCallback } from "react";
+import axios from "axios";
+import TypesMenu from "./TypesMenu";
+import styles from "../Style/Menu.module.css";
 
 const Menu = () => {
-	const [products, setProducts] = useState([]);
-  
+  const [products, setProducts] = useState([]);
+  const [currType, setCurrType] = useState("All Menu");
+
   const getProducts = useCallback(() => {
-		axios.get('http://localhost:3477/Products').then((response) => {
-      setProducts(response.data);
-    })
-	}, [products])
+    axios
+      .get("http://localhost:3477/Products")
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((e) => console.log(e));
+  }, [products]);
 
+  const handleCurrTypeState = (type) => {
+    setCurrType(type);
+  };
 
-	useEffect(() => {
-		getProducts();
-	}, []);
+  useEffect(() => {
+    getProducts();
+  }, []);
 
-  const divDisplay = products.map((p) => {
-    return (
-      <div key={p.id}>
-        <table>
-          <tbody>
-            <tr>
-              <td>{p.id}</td>
-              <td>{p.name}</td>
-              <td>{p.price}</td>
-              <td>
-                <img width={100} src={p.imgSrc} alt="peter"/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    )
-  })
-  
+  const currentElemetns = products.filter((p) => {
+    if (currType === "All Menu") return p;
+    if (currType === p.type) return p;
+  });
+  const divDisplay = currentElemetns.map((p) => {
+    return <div key={p.id}></div>;
+  });
+
+  // console.log(currentElemetns);
+  const p = products[0];
+  console.log(p);
+  console.log(products);
   return (
-    <div className="welcome">
-      <TypesMenu />
-      {divDisplay}
+    <div>
+      <TypesMenu typeSetState={handleCurrTypeState} />
+      <div>
+        <div className={styles.card}>
+          <div className={styles.info}>
+            <img src="" />
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p>{p.description}</p>
+              <h4>{p.price}$</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default Menu
+export default Menu;
