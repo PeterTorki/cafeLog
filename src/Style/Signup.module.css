@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #543e1c;
+  --secondary-color: #4e3629;
+  --background-color: #eceae5;
+  --text-color: #100f0f;
+}
+
+.formgroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.formcontrol {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.btnstyle {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnstyle:hover {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.cardcontainer {
+  position: relative;
+  display: flex;
+  max-width: 1200px; /* Set a maximum width for the card */
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for the card */
+}
+
+.formcontainer {
+  flex: 1;
+  padding: 2rem;
+}
+
+.imgcontainer {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.coffeimg {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  border: 1px solid var(--secondary-color);
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .form-container {
+    margin-bottom: 1rem;
+  }
+
+  .imgcontainer {
+    display: none;
+  }
+}
