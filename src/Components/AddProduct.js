@@ -115,9 +115,9 @@ const AddProduct = () => {
 							<input type="text" className="form-control" id="product-img" name='imgSrc' value={product.imgSrc === DEFAULT_IMAGE? '': product.imgSrc} placeholder="Enter Product img" onChange={handleChange}/>
 						</div>
 
-						<div className={`form-group ${styles.extras}`} >
+						<div className={`form-group`} >
 							<label htmlFor="prod-extras" style={{marginRight: '10px'}}>Extras</label>
-							<div>
+							<div className={styles.extras}>
 							{
 								extraInputs.map((input, index) => {
 									return (
@@ -129,7 +129,7 @@ const AddProduct = () => {
 							<AiOutlinePlusCircle className={styles.addExtra} size={40} onClick={addBtn}/>
 						</div>
 					</div>
-					<img width={200} src={product.imgSrc === ''? DEFAULT_IMAGE: product.imgSrc}/>
+					<img src={product.imgSrc === ''? DEFAULT_IMAGE: product.imgSrc}/>
 
 				</div>
 			<button type="submit" className="btn btn-dark">Submit</button>
