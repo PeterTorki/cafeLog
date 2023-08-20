@@ -1,13 +1,10 @@
 # ITI Project
 
 Start:
+
 ```
-git clone https://github.com/PeterTorki/cafeLog.git
-cd cafelog
+cd cafeLog
 npm i
-```
-```
-npm i json-server
 ```
 Running: 
 
