@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import TypesMenu from "./TypesMenu";
+import styles from "../Style/Menu.module.css";
 
 const Menu = () => {
   const [products, setProducts] = useState([]);
@@ -31,11 +32,25 @@ const Menu = () => {
     return <div key={p.id}></div>;
   });
 
-  console.log(currentElemetns);
+  // console.log(currentElemetns);
+  const p = products[0];
+  console.log(p);
+  console.log(products);
   return (
     <div>
       <TypesMenu typeSetState={handleCurrTypeState} />
-      <div>{divDisplay}</div>
+      <div>
+        <div className={styles.card}>
+          <div className={styles.info}>
+            <img src="" />
+            <div className={styles.textInfo}>
+              <h5>{p.name}</h5>
+              <p>{p.description}</p>
+              <h4>{p.price}$</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
