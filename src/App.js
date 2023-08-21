@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className={styles.appContainer}>
       <SideBar/>
-      {/* <SignInUp /> */}
       <Menu />
+      {/* <SignInUp /> */}
       {/* <AddProduct /> */}
     </div>
   )
