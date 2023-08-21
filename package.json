@@ -13,7 +13,11 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
+<<<<<<< HEAD
     "install": "^0.13.0",
+=======
+    "json-server": "^0.17.3",
+>>>>>>> 93ed12b9976e1499e369bcdf4ef3673ade6556bd
     "move-file": "^3.1.0",
     "nanoid": "^4.0.2",
     "ngx-spinner": "^16.0.2",
@@ -22,8 +26,12 @@
     "react-dom": "^18.2.0",
     "react-horizontal-slider": "^1.1.1",
     "react-icons": "^4.10.1",
+<<<<<<< HEAD
     "react-loading": "^2.0.3",
     "react-loading-screen": "^0.0.17",
+=======
+    "react-router": "^6.15.0",
+>>>>>>> 93ed12b9976e1499e369bcdf4ef3673ade6556bd
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

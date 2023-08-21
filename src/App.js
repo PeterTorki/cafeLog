@@ -2,19 +2,18 @@ import { useContext, useEffect, useState } from "react";
 import Menu from "./Components/Menu";
 import AddProduct from "./Components/AddProduct";
 import SignInUp from "./Components/SignInUp";
-import { userContext } from './Context/userContext'
+import SideBar from "./Components/SideBar";
+import { FaBeer } from 'react-icons/fa';
 
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState("Peter");
 
   return (
     <div className="welcome">
-      <userContext.Provider value={{loggedInUser, setLoggedInUser}}>
-        <SignInUp />
-        
-        {/* <Menu /> */}
-        {/* <AddProduct /> */}
-      </userContext.Provider>
+      <SideBar/>
+      {/* <SignInUp /> */}
+      {/* <Menu /> */}
+      {/* <AddProduct /> */}
     </div>
   )
 }
