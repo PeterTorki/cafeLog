@@ -4,15 +4,15 @@ import AddProduct from "./Components/AddProduct";
 import SignInUp from "./Components/SignInUp";
 import SideBar from "./Components/SideBar";
 import { FaBeer } from 'react-icons/fa';
-
+import styles from '../src/Style/App.module.css'
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState("Peter");
 
   return (
-    <div className="welcome">
+    <div className={styles.appContainer}>
       <SideBar/>
       {/* <SignInUp /> */}
-      {/* <Menu /> */}
+      <Menu />
       {/* <AddProduct /> */}
     </div>
   )
