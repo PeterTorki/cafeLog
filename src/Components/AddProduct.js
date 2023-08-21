@@ -20,8 +20,8 @@ const AddProduct = () => {
 		Extras: []
 	})
 	const handleChange = (e) => {
-		const {name, value} = e.target;
-		
+		let {name, value} = e.target;
+		if(name === 'imgSrc') value = `./Imgs/Products/menu/${value}`
 		setProduct({ ...product, [name]: value })
 	}
 
@@ -97,7 +97,13 @@ const AddProduct = () => {
 
 						<div className={`form-group ${styles.inputs}`} >
 							<label htmlFor="prod-quantity">Product Type</label>
-							<input type="text" className="form-control" id="prod-type" name='type' value={product.type} placeholder="Enter Product Type" onChange={handleChange}/>
+							<select name='type' className="form-control" id="prod-type" value={product.type} onChange={handleChange}>
+								<option value="Coffee">Coffee</option>
+								<option value="Dessert">Dessert</option>
+								<option value="Drinks">Drinks</option>
+								<option value="Bakery">Bakery</option>
+								<option value="Bobaan">Bobaan</option>
+							</select>
 						</div>
 
 						<div className={`form-group ${styles.inputs}`} >
@@ -112,7 +118,7 @@ const AddProduct = () => {
 
 						<div className={`form-group ${styles.inputs}`} >
 							<label htmlFor="prod-img">Product Image Link</label>
-							<input type="text" className="form-control" id="product-img" name='imgSrc' value={product.imgSrc === DEFAULT_IMAGE? '': product.imgSrc} placeholder="Enter Product img" onChange={handleChange}/>
+							<input type="text" className="form-control" id="product-img" name='imgSrc' value={product.imgSrc === DEFAULT_IMAGE? '': `{./Imgs/Products/menu/${product.imgSrc}}`} placeholder="Enter Product img" onChange={handleChange}/>
 						</div>
 
 						<div className={`form-group`} >
@@ -121,7 +127,7 @@ const AddProduct = () => {
 							{
 								extraInputs.map((input, index) => {
 									return (
-										<input key={index} name={input.name} type="text" className="form-control" id="prod-extras" value={input.value} placeholder="Name - Price" onChange={handleExtraChange}/>
+										<input key={index.id} name={input.name} type="text" className="form-control" id="prod-extras" value={input.value} placeholder="Name - Price" onChange={handleExtraChange}/>
 										)
 									})
 								}

@@ -1,7 +1,9 @@
-import React, {useEffect, useState, useCallback} from 'react'
-import axios from 'axios'
-import TypesMenu from './TypesMenu';
-
+import React, { useEffect, useState, useCallback } from "react";
+import axios from "axios";
+import TypesMenu from "./TypesMenu";
+import Card from "./Card";
+import Header from "../Header";
+import styles from "../Style/Menu.module.css";
 const Menu = () => {
 	const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
@@ -26,26 +28,22 @@ const Menu = () => {
     if (currType === "All Menu") return p;
     if (currType === p.type) return p;
   });
+
+  if(currentElements.length === 0) return null;
+  
   const divDisplay = currentElements.map((p) => {
-    return <div key={p.id}></div>;
+    return (
+      <Card product={p}/>
+    )
   });
 
-  const p = products[9];
-  console.log(p);
+  if(products.length === 0) return null;
   return (
-    <div>
+    <div className={styles.mainMenu}>
+      <Header />
       <TypesMenu typeSetState={handleCurrTypeState} />
-      <div>
-        <div>
-          <div>
-            <img src="" />
-            <div>
-              <h5>{p?.name}</h5>
-              <p>{p?.description}</p>
-              <h4>{p?.price}$</h4>
-            </div>
-          </div>
-        </div>
+      <div className={styles.menuContainer}>
+        {divDisplay}
       </div>
     </div>
   );
