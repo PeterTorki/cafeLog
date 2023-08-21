@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Noto+Kufi+Arabic:wght@800&family=Poppins:wght@300;500;700&family=Roboto:wght@100;300;400;500&display=swap');
 .mainMenu {
- background-color: #F8F8F8;
+  background-color: #F8F8F8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 .menuContainer 
 {
@@ -32,11 +39,11 @@
   height: 120px;
   padding: 5px 1px;
   margin-left: 10px;
-  object-fit: cover;
+  object-fit: fill;
   box-sizing: border-box;
   background-color: #F3F4F6;
   max-width: 150px;
-  min-width: 100px;
+  min-height: 150px;
 }
 
 .textInfo{
@@ -75,7 +82,10 @@
 {
   background-color: rgb(99, 143, 143);
   color: white;
-  
+}
+.exBtnSelected {
+  background-color: black;
+  color: white;
 }
 .toCart
 {

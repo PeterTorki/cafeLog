@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useContext, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import axios from "axios";
-import styles from "../Style/SignInUp.module.css";
+import { userContext } from "../Context/userContext";
+import styles from "../Style/SignInUp.module.css"
 
 const SignInUp = () => {
   const [userSignUp, setUserSignUp] = useState({
@@ -19,9 +19,11 @@ const SignInUp = () => {
     cart: [],
     favorites: [],
   });
+
   
-  const [userSignIn, setUserSignIn] = useState({});
   
+  const [loggedInUser, setLoggedInUser] = useContext(userContext);
+  console.log(loggedInUser)
   const handleSignUpChange = (e) => {
     const { name, value } = e.target;
     setUserSignUp({ ...userSignUp, [name]: value });
@@ -30,7 +32,7 @@ const SignInUp = () => {
   const handleSignInChange = (e) => {
     const { name, value } = e.target;
     console.log(name, value);
-    setUserSignIn({ ...userSignIn, [name]: value });
+    setLoggedInUser({ ...loggedInUser, [name]: value });
   };
 
 
@@ -42,9 +44,9 @@ const SignInUp = () => {
     e.preventDefault();
     const users = await axios.get("http://localhost:3466/Users")
                         .then((res) => res.data);
-    const foundUser = users.filter((user) => user.email === userSignIn.inEmail && user.password === userSignIn.inPassword);
-    console.log(userSignIn.inEmail)
-    console.log(userSignIn.inPassword)
+    const foundUser = users.filter((user) => user.email === loggedInUser?.inEmail && user.password === loggedInUser?.inPassword);
+    console.log(loggedInUser?.inEmail)
+    console.log(loggedInUser?.inPassword)
     if(!foundUser.length) alert("User not found");
   }
 
@@ -116,7 +118,7 @@ const SignInUp = () => {
               />
             </div>
 
-            <button type="submit" className={styles.btnstyle}>
+            <button type="submit" className={`${styles.signBtn} ${styles.signIn}`}>
               Sign Up
             </button>
           </form>   
@@ -130,7 +132,7 @@ const SignInUp = () => {
                 type="text"
                 id="user-in-email"
                 name="inEmail"
-                value={userSignIn.email}
+                value={loggedInUser?.email}
                 placeholder="peter.j.torki@gmail.com"
                 onChange={handleSignInChange}
               />
@@ -141,12 +143,12 @@ const SignInUp = () => {
                 type="password"
                 id="user-in-password"
                 name="inPassword"
-                value={userSignIn.password}
+                value={loggedInUser?.password}
                 placeholder="Password"
                 onChange={handleSignInChange}
               />
             </div>
-            <button type="submit">
+            <button type="submit" className={`${styles.signBtn} ${styles.signIn}`}>
               Sign In
             </button>
           </form>
@@ -156,12 +158,12 @@ const SignInUp = () => {
                 <div className={`${styles.overlayPanel} ${styles.overlayLeft}`}>
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button className="ghost" onClick={() => setActivePanel('')}>Sign In</button>
+                    <button className={`${styles.signBtn} ${styles.ghost}`} onClick={() => setActivePanel('')}>Sign In</button>
                 </div>
                 <div className={`${styles.overlayPanel} ${styles.overlayRight}`}>
                   <h1>Hello, Friend!</h1>
                   <p>your personal details and start journey with us</p>
-                  <button className={styles.ghost} onClick={() => setActivePanel(styles.rightPanelActive)}>Sign Up</button>
+                  <button className={`${styles.signBtn} ${styles.ghost}`} onClick={() => setActivePanel(styles.rightPanelActive)}>Sign Up</button>
                 </div>
             </div>
         </div>
