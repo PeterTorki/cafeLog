@@ -10,7 +10,6 @@ import bake from "./bagel_1f96f.png"
 const TypesMenu = ({ typeSetState }) => {
   return (
     <div>
-
       <div className={styles.typesDiv}>
         <button
           className={styles.typeBox}

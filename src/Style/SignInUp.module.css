@@ -14,12 +14,12 @@
 	margin-top: 20px;
 }
 
-h1 {
+.body h1 {
     font-weight: bold;
     margin: 0;
 }
 
-p {
+.body p {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -27,11 +27,11 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+.body span {
     font-size: 12px;
 }
 
-a {
+.body a {
     color: #333;
     font-size: 14px;
     text-decoration: none;
@@ -83,11 +83,11 @@ a {
     margin-top: 10px;
 }
 
-button:active {
+.body button:active {
     transform: scale(.95);
 }
 
-button:focus {
+.body button:focus {
     outline: none;
 }
 

@@ -1,23 +1,24 @@
 
 .typesDiv {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
-  /* center it */
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 30px 20px 30 10px;
 }
 
 .typeBox {
   border-radius: 20px;
   border: 1px solid #e2e0e0;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   background-color:rgba(255, 255, 255, 0.735);
-  
+  flex: 1;
+  margin: 0 30px;
 }
 
 .h3type{
@@ -28,6 +29,7 @@
 
 .typeBox:hover{
   background-color: rgb(234, 237, 239);
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {

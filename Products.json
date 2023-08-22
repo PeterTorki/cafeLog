@@ -202,7 +202,7 @@
         "type": "Coffee",
         "description": "A blend of espresso and hot water, resulting in a milder, yet flavorful cup.",
         "price": "25",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -212,7 +212,7 @@
         "type": "Coffee",
         "description": "A blend of espresso and hot water, resulting in a milder, yet flavorful cup.",
         "price": "40",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -222,7 +222,7 @@
         "type": "Coffee",
         "description": "Creamy steamed milk mixed with espresso, topped with a touch of milk foam.",
         "price": "30",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -232,7 +232,7 @@
         "type": "Coffee",
         "description": "A delightful blend of espresso, steamed milk, and rich chocolate, crowned with whipped cream.",
         "price": "50",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-CWir7lHOrjQLrPCoeI3pV",
@@ -249,7 +249,7 @@
         "type": "Coffee",
         "description": "Espresso \"stained\" with vanilla syrup and topped with frothy milk and a drizzle of caramel.",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-XVQfB-Xfc7nAp0M2TVbbJ",
@@ -275,7 +275,7 @@
         "type": "Coffee",
         "description": "A velvety combination of espresso and microfoamed milk, delivering a strong coffee flavor with a smooth texture.",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-4XJiCRsMy3t1srElVA0iM",
@@ -296,7 +296,7 @@
         "type": "Coffee",
         "description": "Caramel syrup meets coffee, milk and ice for a rendezvous in the blender .",
         "price": "80",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-oMbRY7T7-eRTGtstVi_Xw",
@@ -317,7 +317,7 @@
         "type": "Coffee",
         "description": "Chilled brewed coffee served over ice, customizable with cream and sweeteners.",
         "price": "40",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-dcpbb1lW5D-6k1wjARH2k",
@@ -333,7 +333,7 @@
         "type": "Coffee",
         "description": "Chilled espresso blended with cold milk and poured over ice.",
         "price": "40",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-p8fbFFNtSovsVIA6ueV7H",
@@ -349,7 +349,7 @@
         "type": "Coffee",
         "description": "Smooth and refreshing, cold-brewed coffee steeped for hours and served over ice.",
         "price": "50",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -359,7 +359,7 @@
         "type": "Coffee",
         "description": "Espresso, milk, and chocolate, chilled and poured over ice, topped with whipped cream.",
         "price": "65",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-nMHpT9G1JN4kiD2N4m_3N",
@@ -375,7 +375,7 @@
         "type": "Coffee",
         "description": "Espresso stained with vanilla syrup and milk, served over ice and drizzled with caramel..",
         "price": "70",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-zlBHyOgdn0yoqMebL2_eM",
@@ -469,7 +469,7 @@
         "type": "Bobaan",
         "description": "The earthy and slightly bitter matcha powder is mixed with milk, and sweetened to achieve a balanced taste and served with chewy tapioca pearls.",
         "price": "75",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -479,7 +479,7 @@
         "type": "Bobaan",
         "description": "the real juice of hand-picked summer strawberries in each boba ball",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -489,7 +489,7 @@
         "type": "Bobaan",
         "description": "Savor the harmonious blend of velvety milk and natural sweetness in our Honey Milk Tea, a comforting indulgence with a touch of golden allure. ",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-hFPBDpsLS8VJaDYtZyagC",
@@ -505,7 +505,7 @@
         "type": "Bobaan",
         "description": "Experience the rich and irresistible allure of our Chocolate Milk Tea, a luscious fusion of premium cocoa and creamy milk for a delightful treat.",
         "price": "65",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-TzS8h2D0KgB3CI0UtEzp_",
@@ -526,7 +526,7 @@
         "type": "Bobaan",
         "description": "Awaken your senses with our Coffee Milk Tea, a captivating harmony of robust coffee and smooth milk that offers a perfect blend of indulgence and energy.",
         "price": "65",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-jJtkU8BzKXJbZxCbyNhm4",
@@ -547,7 +547,7 @@
         "type": "Bobaan",
         "description": "Indulge in the captivating blend of juicy blueberries and creamy milk in our Blueberry Milk Tea, a delightful fusion of fruity freshness and comforting richness..",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-imJVeA8xrVJ6sxjsfcvCr",
@@ -568,7 +568,7 @@
         "type": "Bobaan",
         "description": " Embark on a journey of exotic refreshment with our Lychee Bubble Tea, where the delicate sweetness of lychee harmonizes with the chewy tapioca pearls for a unique and satisfying treat..",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-Af3HmHihT1yA9HooKXOgm",
@@ -621,7 +621,7 @@
         "type": "Dessert",
         "description": "the perfect combination of sweet and rich, with a smooth texture that melts in your mouth",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-RaY7LHStRocRrZGBVKcib",
@@ -647,7 +647,7 @@
         "type": "Dessert",
         "description": "A spicy cake partially sweetened with honey.",
         "price": "65",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -657,7 +657,7 @@
         "type": "Dessert",
         "description": "Indulge in our rich and moist chocolate cake, a true delight for chocolate lovers",
         "price": "55",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-6_kOZLCcgKqeQPDkrdqWI",
@@ -683,7 +683,7 @@
         "type": "Dessert",
         "description": "Experience chocolate perfection with our velvety Divine Chocolate Tart",
         "price": "70",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-EWbLU9jdJYN3qjK1v-jKi",
@@ -709,7 +709,7 @@
         "type": "Dessert",
         "description": "A timeless favorite – layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder and served with a shot of espresso.",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": []
     },
     {
@@ -719,7 +719,7 @@
         "type": "Dessert",
         "description": "A warm and gooey chocolate cake with a molten chocolate center, served with vanilla ice cream and a sprinkle of powdered suga",
         "price": "65",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-fPityhulp7r6G5g0W7BM5",
@@ -740,7 +740,7 @@
         "type": "Dessert",
         "description": "Delicate lemon-infused pastry filled with tangy raspberry curd, garnished with fresh raspberries and a dusting of powdered sugar.",
         "price": "60",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-mTvhNJJ_q3LExKhYlGZF-",
@@ -916,7 +916,7 @@
         "type": "Pastry",
         "description": "a buttery, crescent-shaped French pastry with your favorite extras ",
         "price": "35",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-fScWFHOwRSP7dySzxE-p0",
@@ -942,7 +942,7 @@
         "type": "Pastry",
         "description": "A slightly crisp outer shell that holds up to some heat with an inner core that's soft and chewy",
         "price": "25",
-        "quantity": "",
+        "quantity": 25,
         "Extras": [
             {
                 "id": "extra-4qPhy5lMufyzG53oUSfgd",

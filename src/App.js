@@ -4,15 +4,17 @@ import SignInUp from "./Components/SignInUp";
 import SideBar from "./Components/SideBar";
 import { UserContext } from './Context/UserContext'
 import styles from '../src/Style/App.module.css'
+import Basket from "./Components/Basket";
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   return (
-    <div className={styles.appContainer}>
+    <div>
       <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
-        
+        <Basket />
         {/* <SideBar/>*/}
-        {
+        {/* {
+
           loggedInUser ? 
           <div>
           <SideBar />
@@ -20,7 +22,8 @@ const App = () => {
           </div>
           : 
           <SignInUp value={{loggedInUser, setLoggedInUser}}/>
-        }
+        } */}
+
         {/* <Menu /> */}
 
         

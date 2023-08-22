@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px  0;
+    background-color: #FFF9F5;
+}
+
+.container2{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FFF9F5;
+}

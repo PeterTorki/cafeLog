@@ -18,15 +18,15 @@
 }
 .card
 {
-  margin: 10px 0 0 10px;
+  margin: 10px;
   display:flex;
   flex-direction: column;
   padding: 20px;
   max-width: 350px; 
   background-color: #FFFFFF;
   border-radius: 10px;
-  height: fit-content;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px;
+  
 }
 
 .info {
