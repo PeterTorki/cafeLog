@@ -43,7 +43,15 @@ export default function Basket() {
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
         if(productsApi[i].id === cart[j].productId){
-          temp.push(productsApi[i]);
+          const customizedProduct = {
+            id: productsApi[i].id,
+            name: productsApi[i].name,
+            price: productsApi[i].price,
+            chosenQuantity: cart[j].chosenQuantity,
+            chosenExtras: cart[j].chosenExtras,
+            imgSrc: productsApi[i].imgSrc,
+          }
+          temp.push(customizedProduct);
         }
       }
     }

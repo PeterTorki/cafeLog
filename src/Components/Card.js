@@ -5,18 +5,20 @@ import axios from 'axios';
 const Card = ({ product, handleExtras, loggedInUserId }) => {
 	
 	
-	const AddProductToCart = async() => {
-		const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
-		const cart = await user.data.cart;
-		const customizedProduct = {
-			"productId": product.id,
-			"chosenExtras": product.Extras.filter(e => e.isActive === true).map(e => e.id),
-			"chosenQuantity": 1,
-			"chosenSize": "S"
-		}
-		const newCart = [...cart, customizedProduct];
-		const newUser = {...user.data, cart: newCart};
-		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
+		const AddProductToCart = async() => {
+			const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
+			const cart = await user.data.cart;
+			
+			const customizedProduct = {
+					"productId": product.id,
+					"chosenQuantity": 1,
+					"chosenExtras": product.Extras.filter(e => e.isActive?e: null),
+					"chosenSize": "L"
+			};
+			const newCart = [...cart, customizedProduct];
+			const newUser = {...user.data, cart: newCart};
+			axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
+			console.log(customizedProduct);
 	}
 	return (
 		<div className={styles.card} key={product.id}>
