@@ -19,7 +19,6 @@ export default function Basket() {
 
   const getProductsCart = useCallback(() => {
     axios.get(`http://localhost:3466/Users/${loggedInUserId}`).then((response) => {
-      console.log(response.data.cart)
       setCart(response.data.cart);
     })
 	}, [])
@@ -34,12 +33,10 @@ export default function Basket() {
 
   useEffect(() => {
     getProducts();
-    console.log(productsApi)
     let temp = [];
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
         if(productsApi[i].id === cart[j].productId){
-          
           temp.push(productsApi[i]);
         }
       }
@@ -50,16 +47,18 @@ export default function Basket() {
   useEffect(() => {
     getProductsCart();
   }, []);
-
   return (
-    <div>
+    <div className={Style.outer}>
         {
           products.length?
-            <div className={Style.container}>
+          <div className={Style.container}>
               <CardBasket products={products}/>
               <Total products={products}/>
             </div>
           :<div className={Style.container2}> 
+            {
+              setTimeout(()=>{},1000)
+            }
               <img src="empty.svg" alt="empty Basket" />
               <h3>Hey, your basket is empty!</h3>
               <p>Go on, stock up and order your faves.</p>

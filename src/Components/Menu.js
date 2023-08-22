@@ -10,7 +10,6 @@ const Menu = () => {
 	const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
   const loggedInUserId = useContext(UserContext).loggedInUser;
-  console.log(loggedInUserId);
   const getProducts = useCallback(() => {
 		axios.get('http://localhost:3477/Products').then((response) => {
       setProducts(response.data);

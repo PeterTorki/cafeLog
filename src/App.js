@@ -5,6 +5,7 @@ import SideBar from "./Components/SideBar";
 import { UserContext } from './Context/UserContext'
 import styles from '../src/Style/App.module.css'
 import Basket from "./Components/Basket";
+import './App.css'
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
@@ -17,6 +18,7 @@ const App = () => {
           loggedInUser ?
           <div>
             <SideBar />
+            <Menu /> 
             <Basket  value={{loggedInUser, setLoggedInUser}}/>
           </div>
           :

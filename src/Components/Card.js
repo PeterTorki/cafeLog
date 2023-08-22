@@ -4,10 +4,8 @@ import { UserContext } from '../Context/UserContext';
 import axios from 'axios';
 const Card = ({ product, handleExtras, loggedInUserId }) => {
 	
-	console.log(loggedInUserId);
 	
 	const AddProductToCart = async() => {
-		console.log('hi');
 		const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
 		const cart = await user.data.cart;
 		
