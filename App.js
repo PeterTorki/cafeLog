@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Menu from "./Components/Menu";
-import SignInUp from "./Components/SignInUp";
-import SideBar from "./Components/SideBar";
-import { UserContext } from './Context/UserContext'
+import Menu from "./src/Components/Menu";
+import SignInUp from "./src/Components/SignInUp";
+import SideBar from "./src/Components/SideBar";
+import { UserContext } from './src/Context/UserContext'
 import styles from '../src/Style/App.module.css'
-import Basket from "./Components/Basket";
-import AddProduct from "./Components/AddProduct"
+import Basket from "./src/Components/Basket";
+import AddProduct from "./src/Components/AddProduct"
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
   
