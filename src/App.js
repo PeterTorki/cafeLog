@@ -12,16 +12,17 @@ const App = () => {
   return (
     <div>
       <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
-         {
+        
+        {
           loggedInUser ?
           <div>
             <SideBar />
-
-            <Menu />
+            <Basket  value={{loggedInUser, setLoggedInUser}}/>
           </div>
           :
           <SignInUp value={{loggedInUser, setLoggedInUser}}/>
         }
+          
         {/* <SideBar/>*/}
         {/* {
 

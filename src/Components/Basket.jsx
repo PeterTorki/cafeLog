@@ -8,12 +8,13 @@ import Total from "./Total";
 import { UserContext } from '../Context/UserContext';
 export default function Basket() {
 
+
+  
   const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
   const [productsApi, setProductsApi] = useState([]);
   const [cart, setCart] = useState([])
   const loggedInUserId = useContext(UserContext).loggedInUser;
-  
 
   const getProductsCart = useCallback(() => {
     axios.get(`http://localhost:3466/Users/${loggedInUserId}`).then((response) => {
