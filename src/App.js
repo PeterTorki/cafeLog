@@ -18,7 +18,7 @@ const App = () => {
           loggedInUser ?
           <div>
             <SideBar />
-            <Menu /> 
+            {/* <Menu />  */}
             <Basket  value={{loggedInUser, setLoggedInUser}}/>
           </div>
           :

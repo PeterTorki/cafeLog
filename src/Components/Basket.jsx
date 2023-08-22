@@ -39,7 +39,6 @@ export default function Basket() {
   }, [productsApi]);
 
   const getProductsInCart = () => {
-    
     let temp = [];
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
@@ -51,12 +50,6 @@ export default function Basket() {
     setProducts(temp);
   };
 
-
-  
-
-  
-
-
   return (
     <div className={Style.outer}>
         {
@@ -66,9 +59,10 @@ export default function Basket() {
               <Total products={products}/>
             </div>
           :
-          <div>
-          <ReactLoading type='spin' color='#E8BA25' height={'100%'} width={'100%'} />
-            <h1>Loading...</h1>
+          <div className={Style.container2}>
+            <img src="empty.svg" alt="empty basket"/>
+            <h3>Hey, your basket is empty!</h3>
+            <p>Go on, stock up and order your faves.</p>
           </div>
         }
     </div>
