@@ -31,11 +31,7 @@
 .container .checkout {
   margin-top: 10px;
 }
-.container .Elements {
-  padding: 20px;
-  border-bottom: 1px dashed black;
-}
-.checkout button {
+.container .checkout button {
   border-radius: 20px;
   border: 1px solid #ff4b2b;
   background: #ff445c;
@@ -48,19 +44,19 @@
   transition: transform 80ms ease-in;
   margin-top: 10px;
 }
-
-.checkout button:active {
-  transform: scale(.95);
+.container .checkout button:active {
+  transform: scale(0.95);
 }
-
-.checkout button:focus {
+.container .checkout button:focus {
   outline: none;
 }
+.container .Elements {
+  padding: 20px;
+  border-bottom: 1px dashed black;
+}
 
-@media (min-width: 1137px) {
+@media (min-width: 790px) {
   .container {
     width: 30%;
   }
-}
-
-/*# sourceMappingURL=Total.module.css.map */
+}/*# sourceMappingURL=Total.module.css.map */

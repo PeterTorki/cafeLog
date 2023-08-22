@@ -57,7 +57,7 @@ export default function Basket() {
           products.length?
             <div className={Style.container}>
               <CardBasket products={products}/>
-              <Total/>
+              <Total products={products}/>
             </div>
           :<div className={Style.container2}> 
               <img src="empty.svg" alt="empty Basket" />

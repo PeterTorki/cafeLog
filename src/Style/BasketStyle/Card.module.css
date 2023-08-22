@@ -1,5 +1,5 @@
 .container {
-  min-width: 65%;
+  min-width: 55%;
 }
 .container .Cards {
   background-color: white;
@@ -10,7 +10,7 @@
   align-items: center;
   padding: 20px;
   min-height: 110px;
-  margin-top: 20px;
+  margin: 20px;
 }
 .container .Cards .LeftSide {
   display: flex;

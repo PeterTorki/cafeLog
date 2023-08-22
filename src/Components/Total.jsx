@@ -1,21 +1,8 @@
 import React, {useEffect, useState, useCallback} from 'react'
-import axios from "axios";
 import Style from "../Style/BasketStyle/Total.module.css";
 
-export default function Total() {
-  const [products, setProducts] = useState([]);
-  
-    const getProducts = useCallback(() => {
-		axios.get('http://localhost:3477/Products').then((response) => {
-      setProducts(response.data);
-    })
-	}, [products])
-
-
-	useEffect(() => {
-		getProducts();
-	}, []);
-
+export default function Total(props) {
+  let products=props.products;
   const subTotal = (p,initPrice)=>{
     var cntr = parseInt(initPrice);
       if(p){

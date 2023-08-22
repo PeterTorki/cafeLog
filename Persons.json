@@ -140,7 +140,7 @@
           "chosenExtras": [
             "extra-m1t7RE9O22tJVlGAII32v"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         },
         {
           "productId": "prod-1Qte7RlV-YENSvZohveTO",
@@ -148,7 +148,7 @@
           "chosenExtras": [
             "extra-SqrCQ8oEoroORLlv21I6j"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         },
         {
           "productId": "prod-rmNqtgO48iuLwtKHXVAIF",
@@ -156,7 +156,7 @@
           "chosenExtras": [
             "extra-aN4AwwaD0e8IxtERgYYcn"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         }
       ],
       "favorites": []
@@ -208,6 +208,19 @@
       "email": "mail@admin.com",
       "password": "12233",
       "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-q9mFQGKrBTLTj0WOxxkWn",
+      "name": "Moemen",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "123",
+      "email": "aa@gmail.com",
+      "password": "123",
+      "address": "123",
       "role": "",
       "previousOrders": [],
       "cart": [],
