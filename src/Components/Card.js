@@ -1,8 +1,22 @@
 import React from 'react'
 import styles from "../Style/Menu.module.css";
-
-const Card = ({ product, handleExtras }) => {
+import { UserContext } from '../Context/UserContext';
+import axios from 'axios';
+const Card = ({ product, handleExtras, loggedInUserId }) => {
 	
+	console.log(loggedInUserId);
+	const AddProductToCart = async() => {
+		console.log('hi');
+		const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
+		const cart = await user.data.cart;
+		
+		const newCart = [...cart, product];
+		const newUser = {...user.data, cart: newCart};
+		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
+			
+		
+	}
+
 	return (
 		<div className={styles.card} key={product.id}>
 			<div className={styles.info}>
@@ -21,7 +35,7 @@ const Card = ({ product, handleExtras }) => {
 					})
 				}
 			</div>
-			<button className={styles.toCart}>Add To Cart</button>
+			<button className={styles.toCart} onClick={() => AddProductToCart()}>Add To Cart</button>
 		</div>
 	)
 }

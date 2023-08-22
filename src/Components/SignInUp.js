@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import axios from "axios";
-import { userContext } from "../Context/userContext";
+import { UserContext, userContext } from "../Context/UserContext";
 import styles from "../Style/SignInUp.module.css"
 
 const SignInUp = () => {
@@ -22,8 +22,9 @@ const SignInUp = () => {
 
   
   
-  const [loggedInUser, setLoggedInUser] = useContext(userContext);
-  console.log(loggedInUser)
+  const [userLogIn, setUserLogIn] = useState({});
+  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  
   const handleSignUpChange = (e) => {
     const { name, value } = e.target;
     setUserSignUp({ ...userSignUp, [name]: value });
@@ -32,7 +33,7 @@ const SignInUp = () => {
   const handleSignInChange = (e) => {
     const { name, value } = e.target;
     console.log(name, value);
-    setLoggedInUser({ ...loggedInUser, [name]: value });
+    setUserLogIn({ ...userLogIn, [name]: value });
   };
 
 
@@ -44,16 +45,19 @@ const SignInUp = () => {
     e.preventDefault();
     const users = await axios.get("http://localhost:3466/Users")
                         .then((res) => res.data);
-    const foundUser = users.filter((user) => user.email === loggedInUser?.inEmail && user.password === loggedInUser?.inPassword);
-    console.log(loggedInUser?.inEmail)
-    console.log(loggedInUser?.inPassword)
+    const foundUser = users.filter((user) => user.email === userLogIn?.inEmail && user.password === userLogIn?.inPassword);
+    console.log(userLogIn?.inEmail)
+    console.log(userLogIn?.inPassword)
+
     if(!foundUser.length) alert("User not found");
+    else  setLoggedInUser(foundUser[0].id);
   }
 
   const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
 
   return (
     <div className={styles.body}>
+      <h1>{loggedInUser}</h1>
       <div className={`${styles.container} ${activePanel}`}>
         <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
           <form action="" onSubmit={SignInUp}>
@@ -132,7 +136,7 @@ const SignInUp = () => {
                 type="text"
                 id="user-in-email"
                 name="inEmail"
-                value={loggedInUser?.email}
+                value={userLogIn?.email}
                 placeholder="peter.j.torki@gmail.com"
                 onChange={handleSignInChange}
               />
@@ -143,7 +147,7 @@ const SignInUp = () => {
                 type="password"
                 id="user-in-password"
                 name="inPassword"
-                value={loggedInUser?.password}
+                value={userLogIn?.password}
                 placeholder="Password"
                 onChange={handleSignInChange}
               />

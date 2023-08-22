@@ -1,14 +1,17 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useContext } from "react";
 import axios from "axios";
 import TypesMenu from "./TypesMenu";
 import ReactLoading from 'react-loading';
+import { UserContext } from "../Context/UserContext";
 import Card from "./Card";
 import Header from "../Header";
 import styles from "../Style/Menu.module.css";
+
 const Menu = () => {
 	const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
-
+  const loggedInUserId = useContext(UserContext).loggedInUser;
+  
   const getProducts = useCallback(() => {
 		axios.get('http://localhost:3477/Products').then((response) => {
       setProducts(response.data);
@@ -33,10 +36,8 @@ const Menu = () => {
 
   const chooseExtras = (productId, ExtraId) => {
 
-    console.log("productId: ", productId)
     let currentProduct = products.find(p => p.id === productId);
 
-    // create change in the product object extras array
     const currentExtras = currentProduct.Extras.map(e => {
       if (e.id === ExtraId) {
         e.isActive = !e.isActive;
@@ -45,7 +46,6 @@ const Menu = () => {
     });
 
     currentProduct = {...currentProduct, Extras: currentExtras};
-    console.log(currentProduct);
 
     const newProducts = products.map(p => {
       if (p.id === productId) {
@@ -53,15 +53,17 @@ const Menu = () => {
       }
       return p;
     });
+
     setProducts(newProducts);
   }
   
   const divDisplay = currentElements.map((p) => {
     return (
-      <Card product={p} key={p.id} handleExtras={chooseExtras}/>
+      <Card product={p} key={p.id} handleExtras={chooseExtras} loggedInUserId={loggedInUserId}/>
     )
   });
-
+  
+  
   return (
     <div className={styles.mainMenu}>
     {

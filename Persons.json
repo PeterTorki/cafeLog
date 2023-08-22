@@ -165,17 +165,38 @@
       "favorites": []
     },
     {
-      "id": "user-TSzO0NMj7LJUpc7uA8WBQ",
-      "name": "Peter Torki",
-      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
-      "phoneNumber": "01128873999",
-      "email": "mail@admin.com",
-      "password": "12233",
-      "address": "Egpt",
-      "role": "",
-      "previousOrders": [],
-      "cart": [],
-      "favorites": []
+      "cart": [
+        {
+          "id": "prod-1",
+          "name": "Product 1",
+          "imgSrc": "Imgs/Products/menu/coffe1.jpg",
+          "type": "Coffee",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+          "price": "80",
+          "quantity": 1,
+          "Extras": [
+            {
+              "id": "extra-1",
+              "name": "Chocolate",
+              "price": "100",
+              "isActive": false
+            },
+            {
+              "id": "extra-2",
+              "name": "Carmelle",
+              "price": "200",
+              "isActive": false
+            },
+            {
+              "id": "extra-3",
+              "name": "Vanilla",
+              "price": "300",
+              "isActive": false
+            }
+          ]
+        }
+      ],
+      "id": "user-TSzO0NMj7LJUpc7uA8WBQ"
     },
     {
       "id": "user-mdJbb_O9lTNXK6pYl5CNw",
@@ -214,6 +235,78 @@
       "role": "",
       "previousOrders": [],
       "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-4Bh3SkZnOv9zAVLXbGum5",
+      "name": "Scarface",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "mail@admin.com",
+      "password": "12233",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [
+        {
+          "id": "prod-1",
+          "name": "Product 1",
+          "imgSrc": "Imgs/Products/menu/coffe1.jpg",
+          "type": "Coffee",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+          "price": "80",
+          "quantity": 70,
+          "Extras": [
+            {
+              "id": "extra-1",
+              "name": "Chocolate",
+              "price": "100",
+              "isActive": false
+            },
+            {
+              "id": "extra-2",
+              "name": "Carmelle",
+              "price": "200",
+              "isActive": false
+            },
+            {
+              "id": "extra-3",
+              "name": "Vanilla",
+              "price": "300",
+              "isActive": false
+            }
+          ]
+        },
+        {
+          "id": "prod-2",
+          "name": "Product 2",
+          "imgSrc": "Imgs/Products/menu/coffe2.jpg",
+          "type": "Dessert",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
+          "price": "2000",
+          "quantity": 50,
+          "Extras": [
+            {
+              "id": "extra-1",
+              "name": "Chocolate",
+              "price": "100",
+              "isActive": true
+            },
+            {
+              "id": "extra-2",
+              "name": "Carmelle",
+              "price": "200",
+              "isActive": true
+            },
+            {
+              "id": "extra-3",
+              "name": "Vanilla",
+              "price": "300",
+              "isActive": true
+            }
+          ]
+        }
+      ],
       "favorites": []
     }
   ]
