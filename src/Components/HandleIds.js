@@ -4,11 +4,13 @@ import { nanoid } from 'nanoid'
 const handleIds = ({productsArr}) => {
 	console.log('hi')
 	const newProductsArr = productsArr.map((product) => {
+		// handle product id
+		
 		const newExtras = product.Extras.map((extra) => {
 			return {...extra, id: `extra-${nanoid()}`}
 		})
 
-		return {...product, id: nanoid(), Extras: newExtras}
+		return {...product, id: `prod-nanoid()`, Extras: newExtras}
 	})
 	console.log(newProductsArr)
 	return (

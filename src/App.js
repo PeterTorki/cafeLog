@@ -8,10 +8,11 @@ import Basket from "./Components/Basket";
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
+  
   return (
     <div>
       <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
-        <Basket />
+        <Basket  value={{loggedInUser, setLoggedInUser}}/>
         {/* <SideBar/>*/}
         {/* {
 

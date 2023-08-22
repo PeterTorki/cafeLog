@@ -2,19 +2,9 @@ import React, {useEffect, useState, useCallback} from 'react'
 import axios from "axios";
 import Style from "../Style/BasketStyle/Card.module.css";
 
-export default function Card() {
-    const [products, setProducts] = useState([]);
-  
-    const getProducts = useCallback(() => {
-		axios.get('http://localhost:3477/Products').then((response) => {
-      setProducts(response.data);
-    })
-	}, [products])
+export default function Card({products}) {
+    
 
-
-	useEffect(() => {
-		getProducts();
-	}, []);
 
     const FullPrice = (p,initPrice)=>{
         let cntr = parseInt(initPrice);
@@ -23,7 +13,6 @@ export default function Card() {
         }
         return cntr;
     };
-
     const upDateCounter = (e)=>{
         console.log(e);
     };

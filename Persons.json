@@ -133,42 +133,33 @@
       "address": "Elgish St",
       "role": "",
       "previousOrders": [],
-      "cart": [],
-      "favorites": []
-    },
-    {
       "cart": [
         {
-          "id": "prod-1",
-          "name": "Product 1",
-          "imgSrc": "Imgs/Products/menu/coffe1.jpg",
-          "type": "Coffee",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "80",
-          "quantity": 1,
-          "Extras": [
-            {
-              "id": "extra-1",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": false
-            },
-            {
-              "id": "extra-2",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": false
-            },
-            {
-              "id": "extra-3",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
+          "productId": "prod-3JNDgM2p459U4LjdBG4c3",
+          "chosenQuantity": 5,
+          "chosenExtras": [
+            "extra-m1t7RE9O22tJVlGAII32v"
+          ],
+          "chosenSize": "L"          
+        },
+        {
+          "productId": "prod-1Qte7RlV-YENSvZohveTO",
+          "chosenQuantity": 5,
+          "chosenExtras": [
+            "extra-SqrCQ8oEoroORLlv21I6j"
+          ],
+          "chosenSize": "L"          
+        },
+        {
+          "productId": "prod-rmNqtgO48iuLwtKHXVAIF",
+          "chosenQuantity": 5,
+          "chosenExtras": [
+            "extra-aN4AwwaD0e8IxtERgYYcn"
+          ],
+          "chosenSize": "L"          
         }
       ],
-      "id": "user-TSzO0NMj7LJUpc7uA8WBQ"
+      "favorites": []
     },
     {
       "id": "user-mdJbb_O9lTNXK6pYl5CNw",
