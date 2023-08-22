@@ -9,9 +9,16 @@ const Card = ({ product, handleExtras, loggedInUserId }) => {
 		const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
 		const cart = await user.data.cart;
 		
-		const newCart = [...cart, product];
+		const customizedProduct = {
+			"productId": product.id,
+			"chosenQuantity": 1,
+			"chosenExtras": product.Extras.filter( e => e.isActive?e.id:null).map( e => e.id),
+			"chosenSize": "L"
+		};
+		const newCart = [...cart, customizedProduct];
 		const newUser = {...user.data, cart: newCart};
 		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
+		console.log(customizedProduct);
 	}
 
 	return (

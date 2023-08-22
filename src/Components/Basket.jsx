@@ -6,9 +6,10 @@ import CardBasket from "./CardBasket";
 import { useContext } from 'react';
 import Total from "./Total";
 import { UserContext } from '../Context/UserContext';
+
+
+
 export default function Basket() {
-
-
   
   const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
@@ -57,7 +58,7 @@ export default function Basket() {
             </div>
           :<div className={Style.container2}> 
             {
-              setTimeout(()=>{},1000)
+              setTimeout(()=>{},5000)
             }
               <img src="empty.svg" alt="empty Basket" />
               <h3>Hey, your basket is empty!</h3>

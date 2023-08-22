@@ -4,8 +4,6 @@ import Style from "../Style/BasketStyle/Card.module.css";
 
 export default function Card({products}) {
     
-
-
     const FullPrice = (p,initPrice)=>{
         let cntr = parseInt(initPrice);
         if(p){
@@ -28,7 +26,7 @@ export default function Card({products}) {
                                 </div>
                                 <div className={Style.Content}>
                                     <div className={Style.Name}>{p.name}</div>
-                                    {/* <div className={Style.Extras}>
+                                    <div className={Style.Extras}>
                                         Extra : 
                                         {
                                             p.Extras.map((i)=>{
@@ -37,7 +35,7 @@ export default function Card({products}) {
                                                 )
                                             })
                                         }
-                                    </div> */}
+                                    </div>
                                     <div className={Style.Price}>EGP {FullPrice(p.Extras,p.price)}</div>
                                 </div>
                             </div>
