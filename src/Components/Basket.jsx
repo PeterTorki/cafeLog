@@ -8,13 +8,13 @@ import Total from "./Total";
 import { UserContext } from '../Context/UserContext';
 export default function Basket() {
 
-  const loggedInUserId = `user-B4IIDeY3KfbLcsKOUXm_u`
-
   const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
   const [productsApi, setProductsApi] = useState([]);
   const [cart, setCart] = useState([])
+  const loggedInUserId = useContext(UserContext).loggedInUser;
   
+
   const getProductsCart = useCallback(() => {
     axios.get(`http://localhost:3466/Users/${loggedInUserId}`).then((response) => {
       console.log(response.data.cart)
@@ -22,36 +22,31 @@ export default function Basket() {
     })
 	}, [])
 
-
+  console.log('HI')
   const getProducts = useCallback(() => {
     axios.get('http://localhost:3477/Products').then((response) => {
       setProductsApi(response.data);
     })
 	}, [cart])
 
-
   useEffect(() => {
-    console.log('hi')
-    console.log('car', cart)
     getProducts();
     console.log(productsApi)
     let temp = [];
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
         if(productsApi[i].id === cart[j].productId){
-          
           temp.push(productsApi[i]);
         }
       }
     }
     setProducts(temp);
-  }, [cart]);
+  }, [cart, loggedInUserId]);
 
   useEffect(() => {
     getProductsCart();
   }, []);
 
-  if(products.length === 0) return null;
   return (
     <div>
         {

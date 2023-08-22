@@ -4,8 +4,6 @@ import Style from "../Style/BasketStyle/Card.module.css";
 
 export default function Card({products}) {
     
-
-
     const FullPrice = (p,initPrice)=>{
         let cntr = parseInt(initPrice);
         if(p){

@@ -140,7 +140,7 @@
           "chosenExtras": [
             "extra-m1t7RE9O22tJVlGAII32v"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         },
         {
           "productId": "prod-1Qte7RlV-YENSvZohveTO",
@@ -148,7 +148,7 @@
           "chosenExtras": [
             "extra-SqrCQ8oEoroORLlv21I6j"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         },
         {
           "productId": "prod-rmNqtgO48iuLwtKHXVAIF",
@@ -156,7 +156,7 @@
           "chosenExtras": [
             "extra-aN4AwwaD0e8IxtERgYYcn"
           ],
-          "chosenSize": "L"          
+          "chosenSize": "L"
         }
       ],
       "favorites": []
@@ -210,8 +210,18 @@
       "address": "",
       "role": "",
       "previousOrders": [],
-      "cart": [],
+      "cart": [
+        {
+          "productId": "prod-rmNqtgO48iuLwtKHXVAIF",
+          "chosenQuantity": 5,
+          "chosenExtras": [
+            "extra-aN4AwwaD0e8IxtERgYYcn"
+          ],
+          "chosenSize": "L"
+        }
+      ],
       "favorites": []
     }
   ]
 }
+

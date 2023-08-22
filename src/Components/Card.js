@@ -10,8 +10,13 @@ const Card = ({ product, handleExtras, loggedInUserId }) => {
 		console.log('hi');
 		const user = await axios.get(`http://localhost:3466/Users/${loggedInUserId}`);
 		const cart = await user.data.cart;
-		
-		const newCart = [...cart, product];
+		const customizedProduct = {
+			"productId": product.id,
+			"chosenExtras": product.Extras.filter(e => e.isActive === true).map(e => e.id),
+			"chosenQuantity": 1,
+			"chosenSize": "S"
+		}
+		const newCart = [...cart, customizedProduct];
 		const newUser = {...user.data, cart: newCart};
 		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
 	}
@@ -27,13 +32,20 @@ const Card = ({ product, handleExtras, loggedInUserId }) => {
 				</div>
 			</div>
 			<h6>Extras</h6>
-			<div className={styles.Extras}>
-				{
-					product.Extras.map((e) => {
-						return <button key={e.id} className={`${styles.exBtn} ${e.isActive? styles.exBtnSelected: ''}`} onClick={() => handleExtras(product.id, e.id)}>{e.name}</button>
-					})
+			{
+				product.Extras.length ?
+				<div>
+					<div className={styles.Extras}>
+					{
+						product.Extras.map((e) => {
+							return <button key={e.id} className={`${styles.exBtn} ${e.isActive? styles.exBtnSelected: ''}`} onClick={() => handleExtras(product.id, e.id)}>{e.name}</button>
+						})
+					}
+					</div>
+				</div>
+				:
+				<h5 style={{textAlign:'center'}}>No Extras</h5>
 				}
-			</div>
 			<button className={styles.toCart} onClick={() => AddProductToCart()}>Add To Cart</button>
 		</div>
 	)

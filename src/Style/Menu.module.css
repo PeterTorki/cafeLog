@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins';
-  font-size: 1.3rem;
+  font-size: 15px;
   margin-left: 70px;
 }
 .menuContainer 
@@ -20,13 +20,14 @@
 {
   margin: 10px;
   display:flex;
+  flex: 1;
   flex-direction: column;
   padding: 20px;
   max-width: 350px; 
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px;
-  
+  height: fit-content;
 }
 
 .info {
@@ -69,6 +70,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .exBtn{
@@ -96,7 +98,8 @@
   background-color: rgb(99, 143, 143);
   border: none;
   color:white;
-  margin-top: 20px ;
+  margin-top: auto ;
+  margin-bottom: 10px;
   padding: 7px 20px;
 }
 
