@@ -8,13 +8,15 @@ import Total from "./Total";
 import { UserContext } from '../Context/UserContext';
 export default function Basket() {
 
-  const loggedInUserId = `user-B4IIDeY3KfbLcsKOUXm_u`
 
+  
   const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
   const [productsApi, setProductsApi] = useState([]);
   const [cart, setCart] = useState([])
-  
+  const loggedInUserId = useContext(UserContext).loggedInUser;
+
+
   const getProductsCart = useCallback(() => {
     axios.get(`http://localhost:3466/Users/${loggedInUserId}`).then((response) => {
       console.log(response.data.cart)
@@ -31,8 +33,6 @@ export default function Basket() {
 
 
   useEffect(() => {
-    console.log('hi')
-    console.log('car', cart)
     getProducts();
     console.log(productsApi)
     let temp = [];
@@ -45,13 +45,12 @@ export default function Basket() {
       }
     }
     setProducts(temp);
-  }, [cart]);
+  }, [cart, loggedInUserId]);
 
   useEffect(() => {
     getProductsCart();
   }, []);
 
-  if(products.length === 0) return null;
   return (
     <div>
         {
