@@ -6,7 +6,6 @@ import { UserContext } from "../Context/UserContext";
 import Card from "./Card";
 import Header from "../Header";
 import styles from "../Style/Menu.module.css";
-
 const Menu = () => {
 	const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
@@ -63,10 +62,13 @@ const Menu = () => {
     )
   });
   
+
   
   return (
     <div className={styles.mainMenu}>
+    
     {
+      
       products.length === 0 ?
       <div>
         <ReactLoading type='spin' color='#E8BA25' height={'100%'} width={'100%'} />

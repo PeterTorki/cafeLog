@@ -1,18 +1,16 @@
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import Menu from "./Components/Menu";
-import AddProduct from "./Components/AddProduct";
 import SignInUp from "./Components/SignInUp";
 import SideBar from "./Components/SideBar";
 import { UserContext } from './Context/UserContext'
-import { FaBeer } from 'react-icons/fa';
-
 import styles from '../src/Style/App.module.css'
 const App = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   return (
-    <div>
+    <div className={styles.appContainer}>
       <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
+        
         {/* <SideBar/>*/}
         {
           loggedInUser ? 

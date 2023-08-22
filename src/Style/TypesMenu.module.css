@@ -1,6 +1,10 @@
+
 .typesDiv {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .typeBox {
@@ -24,4 +28,14 @@ width :100%
 
 .typeBox:hover{
   background-color: rgb(234, 237, 239);
+}
+
+@media (max-width: 760px) {
+  .typesDiv {
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    margin: auto;
+   
+  }
 }

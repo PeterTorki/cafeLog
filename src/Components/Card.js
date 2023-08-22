@@ -13,8 +13,6 @@ const Card = ({ product, handleExtras, loggedInUserId }) => {
 		const newCart = [...cart, product];
 		const newUser = {...user.data, cart: newCart};
 		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
-			
-		
 	}
 
 	return (

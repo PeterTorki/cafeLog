@@ -77,35 +77,7 @@
           ]
         }
       ],
-      "cart": [
-        {
-          "productId": "prod-1",
-          "chosenQuantity": 5,
-          "chosenExtras": [
-            "extra-1",
-            "extra-3"
-          ],
-          "chosenSize": "L"
-        },
-        {
-          "productId": "prod-2",
-          "chosenQuantity": 2,
-          "chosenExtras": [
-            "extra-1",
-            "extra-3"
-          ],
-          "chosenSize": "M"
-        },
-        {
-          "productId": "prod-3",
-          "chosenQuantity": 3,
-          "chosenExtras": [
-            "extra-1",
-            "extra-3"
-          ],
-          "chosenSize": "S"
-        }
-      ],
+      "cart": [],
       "favorites": [
         "prod-1",
         "prod-2",
@@ -247,66 +219,7 @@
       "address": "",
       "role": "",
       "previousOrders": [],
-      "cart": [
-        {
-          "id": "prod-1",
-          "name": "Product 1",
-          "imgSrc": "Imgs/Products/menu/coffe1.jpg",
-          "type": "Coffee",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "80",
-          "quantity": 70,
-          "Extras": [
-            {
-              "id": "extra-1",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": false
-            },
-            {
-              "id": "extra-2",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": false
-            },
-            {
-              "id": "extra-3",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
-        },
-        {
-          "id": "prod-2",
-          "name": "Product 2",
-          "imgSrc": "Imgs/Products/menu/coffe2.jpg",
-          "type": "Dessert",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "2000",
-          "quantity": 50,
-          "Extras": [
-            {
-              "id": "extra-1",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": true
-            },
-            {
-              "id": "extra-2",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            },
-            {
-              "id": "extra-3",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": true
-            }
-          ]
-        }
-      ],
+      "cart": [],
       "favorites": []
     }
   ]
