@@ -1,6 +1,7 @@
 import React, {useEffect, useState, useCallback} from 'react'
 import axios from "axios";
 import Style from "../Style/BasketStyle/Basket.module.css"
+import ReactLoading from 'react-loading';
 
 import CardBasket from "./CardBasket";
 import { useContext } from 'react';
@@ -8,29 +9,37 @@ import Total from "./Total";
 import { UserContext } from '../Context/UserContext';
 export default function Basket() {
 
-
-  
   const [products, setProducts] = useState([]);
   const [currType, setCurrType] = useState("All Menu");
   const [productsApi, setProductsApi] = useState([]);
   const [cart, setCart] = useState([])
   const loggedInUserId = useContext(UserContext).loggedInUser;
 
+  
+  useEffect(() => {
+    getProductsCart();
+  }, []);
+  
   const getProductsCart = useCallback(() => {
     axios.get(`http://localhost:3466/Users/${loggedInUserId}`).then((response) => {
       setCart(response.data.cart);
-    })
-	}, [])
-
-  console.log('HI')
-  const getProducts = useCallback(() => {
-    axios.get('http://localhost:3477/Products').then((response) => {
-      setProductsApi(response.data);
+      getProducts();
     })
 	}, [cart])
 
+  const getProducts = () => {
+    console.log('HI')
+    axios.get('http://localhost:3477/Products').then((response) => {
+      setProductsApi(response.data);
+    })
+	}
+
   useEffect(() => {
-    getProducts();
+    getProductsInCart();
+  }, [productsApi]);
+
+  const getProductsInCart = () => {
+    
     let temp = [];
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
@@ -40,11 +49,14 @@ export default function Basket() {
       }
     }
     setProducts(temp);
-  }, [cart, loggedInUserId]);
+  };
 
-  useEffect(() => {
-    getProductsCart();
-  }, []);
+
+  
+
+  
+
+
   return (
     <div className={Style.outer}>
         {
@@ -53,13 +65,10 @@ export default function Basket() {
               <CardBasket products={products}/>
               <Total products={products}/>
             </div>
-          :<div className={Style.container2}> 
-            {
-              setTimeout(()=>{},1000)
-            }
-              <img src="empty.svg" alt="empty Basket" />
-              <h3>Hey, your basket is empty!</h3>
-              <p>Go on, stock up and order your faves.</p>
+          :
+          <div>
+          <ReactLoading type='spin' color='#E8BA25' height={'100%'} width={'100%'} />
+            <h1>Loading...</h1>
           </div>
         }
     </div>

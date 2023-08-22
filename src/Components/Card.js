@@ -18,7 +18,6 @@ const Card = ({ product, handleExtras, loggedInUserId }) => {
 		const newUser = {...user.data, cart: newCart};
 		axios.put(`http://localhost:3466/Users/${loggedInUserId}`, newUser);
 	}
-
 	return (
 		<div className={styles.card} key={product.id}>
 			<div className={styles.info}>
