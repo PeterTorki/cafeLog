@@ -2,7 +2,6 @@ import React from 'react'
 import { nanoid } from 'nanoid'
 
 const handleIds = ({productsArr}) => {
-	console.log('hi')
 	const newProductsArr = productsArr.map((product) => {
 		// handle product id
 		
@@ -12,7 +11,6 @@ const handleIds = ({productsArr}) => {
 
 		return {...product, id: `prod-nanoid()`, Extras: newExtras}
 	})
-	console.log(newProductsArr)
 	return (
 		<div>handleIds</div>
 	)

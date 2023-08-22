@@ -12,7 +12,6 @@ export default function Card({products}) {
         return cntr;
     };
     const upDateCounter = (e)=>{
-        console.log(e);
     };
 
     return (

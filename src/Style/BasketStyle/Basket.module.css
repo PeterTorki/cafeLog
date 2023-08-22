@@ -3,8 +3,11 @@
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px 0;
+}
+
+.outer {
   background-color: #FFF9F5;
+  padding: 50px;
 }
 
 .container2 {

@@ -32,7 +32,6 @@ const SignInUp = () => {
 
   const handleSignInChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setUserLogIn({ ...userLogIn, [name]: value });
   };
 
@@ -46,8 +45,6 @@ const SignInUp = () => {
     const users = await axios.get("http://localhost:3466/Users")
                         .then((res) => res.data);
     const foundUser = users.filter((user) => user.email === userLogIn?.inEmail && user.password === userLogIn?.inPassword);
-    console.log(userLogIn?.inEmail)
-    console.log(userLogIn?.inPassword)
 
     if(!foundUser.length) alert("User not found");
     else  setLoggedInUser(foundUser[0].id);
