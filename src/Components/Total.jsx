@@ -19,7 +19,7 @@ export default function Total(props) {
             {
               products.forEach((p)=>{
                 return(
-                  <span>{subTotal(p.Extras,p.price)}</span>
+                  <span>{subTotal(p.chosenExtras,p.price)}</span>
                 );
               })
               
@@ -28,7 +28,7 @@ export default function Total(props) {
               <p>Subtotal</p>
               <p>EGP {
                   products.forEach((p)=>{
-                    res+=parseInt(subTotal(p.Extras,p.price)*p.quantity)
+                    res+=parseInt(subTotal(p.chosenExtras,p.price)*p.chosenQuantity)
                   })
                 }{res}
               </p>
