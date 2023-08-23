@@ -20,5 +20,11 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #638F8F; /* Color of the scroll bar thumb */
+    background-color: #352c2f; /* Color of the scroll bar thumb */
+  }
+
+  *{
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
   }

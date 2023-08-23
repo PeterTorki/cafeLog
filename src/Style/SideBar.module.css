@@ -1,11 +1,17 @@
 *{
     margin: 0;
 }
-
 .logo{
-    color: black;
+    width: 30px;
+    position: absolute;
+    top: -30px;
+    left: -40px;
 }
-
+.imglogo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+}
 .sidebar {
     background-color: rgba(10, 10, 10, 0.8);
     color: white;
@@ -50,7 +56,6 @@ li{
     justify-content: flex-start;
     align-items: center;
 }
-
 li:last-child {
     margin-top: auto;
     margin-bottom: 30px;
@@ -59,9 +64,10 @@ h2{
     font-size: 22px;
     margin: 5px 0 0 10px;
 }
-.iconS{
+.iconS .imglogo{
     height: 30px;
     width: 30px;
+    
 }
 .icon:hover {
     color: #E2BC97;

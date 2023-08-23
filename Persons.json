@@ -334,6 +334,19 @@
         }
       ],
       "favorites": []
+    },
+    {
+      "id": "user-rDSXv7P_Ko3nqoLbT0lLa",
+      "name": "a@gmail.com",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "asd",
+      "password": "1",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
     }
   ]
 }
