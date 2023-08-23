@@ -8,7 +8,7 @@ import { AiOutlineCoffee } from 'react-icons/ai';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { BsFillGearFill } from 'react-icons/bs';
 
-import logo from './Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
+import logo from '../Components/imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
 
 import styles from '../Style/SideBar.module.css';
 

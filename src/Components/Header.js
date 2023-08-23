@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Style/Header.module.css';
-import logo from './Components/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
+import styles from '../Style/Header.module.css';
+import logo from './imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
 
 const Header = () => {
   return (

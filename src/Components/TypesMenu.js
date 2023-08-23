@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "../Style/TypesMenu.module.css";
-import menu from "./clinking-beer-mugs_1f37b.png"
-import coffe from "./hot-beverage_2615.png"
+import menu from "./imgsComponent/clinking-beer-mugs_1f37b.png"
+import coffe from "./imgsComponent/hot-beverage_2615.png"
+import booba from "./imgsComponent/bubble-tea_1f9cb.png"
+import cake from "./imgsComponent/shortcake_1f370.png"
+import smoo from "./imgsComponent/cup-with-straw_1f964.png"
+import bake from "./imgsComponent/bagel_1f96f.png"
 
-import booba from "./bubble-tea_1f9cb.png"
-import cake from "./shortcake_1f370.png"
-import smoo from "./cup-with-straw_1f964.png"
-import bake from "./bagel_1f96f.png"
 const TypesMenu = ({ typeSetState }) => {
   return (
     <div>
@@ -53,7 +53,7 @@ const TypesMenu = ({ typeSetState }) => {
           />
           <h3 className={styles.h3type}>Drinks</h3>
         </button>
-        <button 
+        <button
           className={styles.typeBox}
           onClick={() => typeSetState("Bakery")}
         >
