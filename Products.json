@@ -19,13 +19,13 @@
           "id": "extra-99OCNfyowGQ-c11R4MUgP",
           "name": "Carmelle",
           "price": "200",
-          "isActive": false
+          "isActive": true
         },
         {
           "id": "extra-9nNXBmqYX7YhIe1XwhEOc",
           "name": "Vanilla",
           "price": "300",
-          "isActive": false
+          "isActive": true
         }
       ]
     },
@@ -775,17 +775,20 @@
         {
           "id": "extra-fScWFHOwRSP7dySzxE-p0",
           "name": "Chocolate ",
-          "price": "15 "
+          "price": "15 ",
+          "isActive": false
         },
         {
           "id": "extra-OUmmgPCX4o6OAnfTHzs6G",
           "name": "Lotas ",
-          "price": "20"
+          "price": "20",
+          "isActive": false
         },
         {
           "id": "extra-_LWF86ALIR6IiC4ec8hcs",
           "name": "Pistachio ",
-          "price": "25"
+          "price": "25",
+          "isActive": false
         }
       ]
     },

@@ -1,13 +1,16 @@
 import React, { useContext} from 'react';
-import axios from 'axios';
 import Style from '../../Style/BasketStyle/Card.module.css'
 import { ShopContext } from '../../Context/ShopContext'
 
 export default function Card({ p }) {
+
 	const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
+
+  const productCart = cartItems.find(c => c.productId === p.id).chosenExtras.filter(e => e.isActive)
+
 	const foundItem = cartItems.find((item) => item.productId === p.id)
-	console.log(foundItem)
   return (
+
     <div className={Style.container}>
       <div key={p.id} className={Style.Cards}>
         <div className={Style.LeftSide}>
@@ -19,7 +22,7 @@ export default function Card({ p }) {
             <div className={Style.Name}>Quantity{p.chosenQuantity}</div>
             <div className={Style.chosenExtras}>
               Extra :
-              {p.chosenExtras.map((i) => {
+              {productCart.map((i) => {
                 return <span key={i.id}> {i.name} ,</span>;
               })}
             </div>
