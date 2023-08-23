@@ -6,6 +6,8 @@
     flex-direction: column;
     margin: 20px 0 0;
     width: 100%;
+    position: absolute;
+    right: 20px;
     .total{
         width: 100%;
         background-color: white;
@@ -57,11 +59,14 @@
     }
     
 }
-
+@media (max-width:790px) {
+    .container{
+        position: static;
+    }
+}
 @media (min-width:790px) {
     .container{
         width: 30%;
-        
     }
     .Amount{
         padding: 10px;

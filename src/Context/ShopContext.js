@@ -8,16 +8,26 @@ export const ShopContext = createContext(null);
 
 export const ShopContextProvider = (props) => {
 
+	const [cartItems, setCartItems] = useState([]);
 	const {products} = useContext(ProductsContext);
 	const { loggedInUser } = useContext(UserContext);
 	const [user, setUser] = useState({});
 	const [userCart, setUserCart] = useState([]);
 	
+	const getElemPrice = (productId)=>{
+		return products.find(p => p.id === productId).price;
+	}
+
 	const getTotalCartPrice = () => {
 		let totalPrice = 0;
-		products.forEach((p) => {
-			totalPrice += p.price * cartItems[p.id];
-		});
+		console.log(cartItems)
+		cartItems.forEach(c => {
+			totalPrice += parseInt(getElemPrice(c.productId)) * c.chosenQuantity;
+			c.chosenExtras.forEach(e => {
+				totalPrice += parseInt(e.price) * (e.isActive?1:0)
+			})
+		})
+		console.log(totalPrice)
 		return totalPrice;
 	}
 
@@ -42,16 +52,13 @@ export const ShopContextProvider = (props) => {
 		for(let i = 0; i < cart.length; i++) {
 			for(let j = 0; j < userCart.length; j++) {
 				if (cart[i].productId === userCart[j].productId) {
-					console.log('userCart IS: ', userCart[j]);
 					cart[i] = userCart[j];
 				}
 			}
 		}
-		console.log(cart);
 		return cart;
 	}
 
-	const [cartItems, setCartItems] = useState([]);
 
 	useEffect(() => {
 		getUserCart();
@@ -84,10 +91,8 @@ export const ShopContextProvider = (props) => {
 	const updateExtrasInCart = (productId) => {
 		const updatedCart = []
 		const updatedExtras = products.find(p => p.id === productId).Extras
-		console.log('cart IS: ', cartItems)
 		for (const item of cartItems) {
 			if(item.productId === productId) {
-				console.log('itemis: ', item)
 				updatedCart.push({...item, chosenExtras: updatedExtras});
 			} else {
 				updatedCart.push(item);
@@ -96,7 +101,6 @@ export const ShopContextProvider = (props) => {
 		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
 		
 		setCartItems(updatedCart)
-		console.log(cartItems)
 		setUser({...user, cart: cartItems})
 	}
 
@@ -116,7 +120,6 @@ export const ShopContextProvider = (props) => {
 	}
 	
 	const updateCartItemCount = (newQuantity, productId) => {
-		console.log(newQuantity, productId)
 		const updatedCart = UpdatedTempCart(newQuantity, productId, 'update');
 		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
 		setCartItems(updatedCart)

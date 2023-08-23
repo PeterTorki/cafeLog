@@ -6,7 +6,7 @@ import { UserContext } from './Context/UserContext'
 import styles from '../src/Style/App.module.css'
 import axios from "axios";
 import './App.css'
-import Cart from "./Components/Cart/Cart";
+import Basket from "./Components/Cart/Basket";
 import { ShopContextProvider } from "./Context/ShopContext";
 import { ProductsContext, ProductsContextProvider } from "./Context/ProductsContext";
 import { useContext } from "react";
@@ -28,7 +28,7 @@ const App = () => {
               <SideBar />
               <InitPage />
               <Menu /> 
-              {/* <Cart /> */}
+              <Basket />
               <Settings />
             </div>
           </ShopContextProvider>

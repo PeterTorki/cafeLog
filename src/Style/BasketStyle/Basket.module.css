@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -18,5 +18,5 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
-  background-color: #FFF9F5;
+  background-color: #F8F8F8;
 }/*# sourceMappingURL=Basket.module.css.map */
