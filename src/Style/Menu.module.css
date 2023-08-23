@@ -112,15 +112,20 @@
 .toCart:hover{
   cursor: pointer;
 }
-
+@media (max-width: 900px) {
+  .card {
+    margin: 10px;
+    width: 40%;
+  } 
+}
 @media (max-width: 768px) {
   .menuContainer {
     margin: 0 10px 20px 10px;
   }
 
   .card {
-    margin: 10px 0;
-    width: 60%;
+    margin: 10px;
+    width: 100%;
   }
 
   .info {

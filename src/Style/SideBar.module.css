@@ -1,6 +1,11 @@
 *{
     margin: 0;
 }
+
+.outer{
+    z-index: 100;
+    position: absolute;
+}
 .logo{
     width: 30px;
     position: absolute;

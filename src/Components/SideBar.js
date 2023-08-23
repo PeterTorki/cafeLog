@@ -15,7 +15,7 @@ import styles from '../Style/SideBar.module.css';
 const SideBar= () =>{
     const [show , setShow] = useState(true);
     return (    
-        <div>
+        <div className={styles.outer}>
             <ul className={show? styles.sidebar2 : styles.sidebar }>
                 <div className={styles.logo}>
                     <img src={logo} alt="ChillCup" className={styles.imglogo} />

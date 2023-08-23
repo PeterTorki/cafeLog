@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from '../Style/InitPage.module.css';
+import logo from './imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
 
 
 export default function InitPage() {
@@ -7,12 +8,12 @@ export default function InitPage() {
     <div className={Style.comtainer}>
       <div className={Style.content}>
         <div className={Style.text}>
-          <h1>We Offers a Good Coffe</h1>
+          <h1>Welcome to ChillCup</h1>
           <br />
-          <h3>Good Ideas Start With Brainstorming. <br /><br />Great IDeas Start With Coffe.</h3>
+          <h3>Where Every Sip and Bite Tells a Story</h3>
         </div>
         <div className={Style.imgContainer}>
-          <img src="main.png" alt="Coffe Cup" />
+          <img src={logo} alt="ChillCup" className={Style.logo} />
         </div>
       </div>
     </div>
