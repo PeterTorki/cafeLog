@@ -3,7 +3,7 @@ import { ShopContext } from '../../Context/ShopContext';
 import { ProductsContext } from '../../Context/ProductsContext'
 import ProductTempMenu from './ProductTempMenu';
 import CartItem from './CartItem'
-import CardBasket from '../Basket/CardBasket'
+import CardBasket from './CardBasket'
 const Cart = () => {
 
 	const {products} = useContext(ProductsContext);
