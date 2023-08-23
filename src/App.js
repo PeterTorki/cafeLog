@@ -10,6 +10,10 @@ import Cart from "./Components/Cart/Cart";
 import { ShopContextProvider } from "./Context/ShopContext";
 import { ProductsContext, ProductsContextProvider } from "./Context/ProductsContext";
 import { useContext } from "react";
+
+import InitPage from "./Components/InitPage";
+import Settings from "./Components/Settings";
+
 const App = () => {
 
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -20,8 +24,13 @@ const App = () => {
       loggedInUser ?
         <ProductsContextProvider>
           <ShopContextProvider>
-            <Menu />
-            <Cart />
+            <div>
+              <SideBar />
+              <InitPage />
+              <Menu /> 
+              {/* <Cart /> */}
+              <Settings />
+            </div>
           </ShopContextProvider>
         </ProductsContextProvider>
     :

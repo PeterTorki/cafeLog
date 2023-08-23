@@ -40,14 +40,17 @@ const Card = ({ product, loggedInUserId }) => {
 	return (
 		<div className={styles.card} key={product.id}>
 			<div className={styles.info}>
-				<img src={product.imgSrc} className={styles.imageItem} alt="imgProduct"/>
+				<div className={styles.top}>
+					<h3>{product.name}</h3>
+					<img src={product.imgSrc} className={styles.imageItem} alt="imgProduct"/>
+				</div>
 				<div className={styles.textInfo}>
-					<h5>{product.name}</h5>
 					<p className={styles.textP}>{product.description}</p>
-					<h5 className={styles.price}>{product.price} $</h5>
+					<center><h3 className={styles.price}>{product.price} $</h3></center>
 				</div>
 			</div>
 			<h6>Extras</h6>
+			<div className={styles.ex}>
 			{
 				product.Extras.length ?
 				<div>
@@ -62,6 +65,7 @@ const Card = ({ product, loggedInUserId }) => {
 				:
 				<h5 style={{textAlign:'center'}}>No Extras</h5>
 				}
+			</div>
 			<button className={styles.toCart} 
 			onClick={() => addToCart(product.id)}
 			>
