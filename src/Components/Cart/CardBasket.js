@@ -1,7 +1,7 @@
 import React, { useContext} from 'react';
 import axios from 'axios';
-import Style from '../Style/BasketStyle/Card.module.css';
-import { ShopContext } from '../Context/ShopContext'
+import Style from '../../Style/BasketStyle/Card.module.css'
+import { ShopContext } from '../../Context/ShopContext'
 
 export default function Card({ p }) {
 	const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
