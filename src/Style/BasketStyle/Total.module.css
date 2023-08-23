@@ -6,6 +6,8 @@
   flex-direction: column;
   margin: 20px 0 0;
   width: 100%;
+  position: absolute;
+  right: 20px;
 }
 .container .total {
   width: 100%;
@@ -55,6 +57,11 @@
   border-bottom: 1px dashed black;
 }
 
+@media (max-width: 790px) {
+  .container {
+    position: static;
+  }
+}
 @media (min-width: 790px) {
   .container {
     width: 30%;
