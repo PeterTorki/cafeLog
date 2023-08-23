@@ -136,236 +136,248 @@
       "cart": [
         {
           "productId": "prod-3JNDgM2p459U4LjdBG4c3",
-          "chosenQuantity": 5,
-          "chosenExtras": [
-            "extra-m1t7RE9O22tJVlGAII32v"
-          ],
-          "chosenSize": "L"
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "productId": "prod-1Qte7RlV-YENSvZohveTO",
-          "chosenQuantity": 5,
-          "chosenExtras": [
-            "extra-SqrCQ8oEoroORLlv21I6j"
-          ],
-          "chosenSize": "L"
+          "productId": "prod-dCMVlo5YpflAeNk4xdmbN",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "productId": "prod-rmNqtgO48iuLwtKHXVAIF",
-          "chosenQuantity": 5,
-          "chosenExtras": [
-            "extra-aN4AwwaD0e8IxtERgYYcn"
-          ],
-          "chosenSize": "L"
+          "productId": "prod-JFI_jSx4ow7liAuF1y4Vk",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-oHnDtBlmwxS8iY0zmuCcu",
-          "name": "Cookies",
-          "imgSrc": "Imgs/Products/menu/IGT1-Thick-and-Chewy-Vegan-Chocolate-Chip-Cookies-Recipe-Gluten-Free-Easy-Delicious-1.jpg",
-          "type": "Pastry",
-          "description": "A slightly crisp outer shell that holds up to some heat with an inner core that's soft and chewy",
-          "price": "25",
-          "quantity": 25,
-          "Extras": [
-            {
-              "id": "extra-4qPhy5lMufyzG53oUSfgd",
-              "name": "Chocolate ",
-              "price": "15"
-            },
-            {
-              "id": "extra-wuOzqTy281q-oGa37b0TB",
-              "name": "Caramel ",
-              "price": "20"
-            }
-          ]
+          "productId": "prod-ncmc-8zU1eXDfJG66A72c",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-jWnp1BnwFRqzxBwN0nDVD",
-          "name": "Croissant",
-          "imgSrc": "Imgs/Products/menu/French-Croissants-2363-780x1169.jpg",
-          "type": "Pastry",
-          "description": "a buttery, crescent-shaped French pastry with your favorite extras ",
-          "price": "35",
-          "quantity": 25,
-          "Extras": [
-            {
-              "id": "extra-fScWFHOwRSP7dySzxE-p0",
-              "name": "Chocolate ",
-              "price": "15 "
-            },
-            {
-              "id": "extra-OUmmgPCX4o6OAnfTHzs6G",
-              "name": "Lotas ",
-              "price": "20"
-            },
-            {
-              "id": "extra-_LWF86ALIR6IiC4ec8hcs",
-              "name": "Pistachio ",
-              "price": "25"
-            }
-          ]
+          "productId": "prod-ZRcsbkuIXzVTaWa7rQdPO",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-3NAoAgD_2WGH953wDaK7z",
-          "name": "Salted Caramel Cupcake",
-          "imgSrc": "Imgs/Products/menu/Saltedcaramelcupcake.jpeg",
-          "type": "Pastry",
-          "description": "Elevate your taste experience with our Salted Caramel Cupcake, a harmonious blend of velvety caramel and a hint of sea salt, crowned with indulgent frosting..",
-          "price": "45",
-          "quantity": "70",
-          "Extras": [
-            {
-              "id": "extra-mQ1HQY6ZneOpDST5twqa8",
-              "name": "Caramel Crunch ",
-              "price": "20",
-              "isActive": true
-            }
-          ]
+          "productId": "prod-feJ-5ydE94JLnv0S4J-tZ",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-1Qte7RlV-YENSvZohveTO",
-          "name": "Product 2",
-          "imgSrc": "Imgs/Products/menu/coffe2.jpg",
-          "type": "Dessert",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "2000",
-          "quantity": 50,
-          "Extras": [
-            {
-              "id": "extra-g2cX5m33R6kQ-Ms0vKV2J",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": false
-            },
-            {
-              "id": "extra-BpiYZrW4IimZMQY8ndXnp",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": false
-            },
-            {
-              "id": "extra-U1-T7317KOzdtaacxL6DM",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
+          "productId": "prod-XrdaNHEcM8qO2s8_w7lGb",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-1Qte7RlV-YENSvZohveTO",
-          "name": "Product 2",
-          "imgSrc": "Imgs/Products/menu/coffe2.jpg",
-          "type": "Dessert",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "2000",
-          "quantity": 50,
-          "Extras": [
-            {
-              "id": "extra-g2cX5m33R6kQ-Ms0vKV2J",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": true
-            },
-            {
-              "id": "extra-BpiYZrW4IimZMQY8ndXnp",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            },
-            {
-              "id": "extra-U1-T7317KOzdtaacxL6DM",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": true
-            }
-          ]
+          "productId": "prod-BuzC0II8yG48CzgiaUhIx",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-rmNqtgO48iuLwtKHXVAIF",
-          "name": "Product 3",
-          "imgSrc": "Imgs/Products/menu/coffe3.jpg",
-          "type": "Dessert",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, nec aliquet",
-          "price": "3000",
-          "quantity": 30,
-          "Extras": [
-            {
-              "id": "extra-m1t7RE9O22tJVlGAII32v",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": true
-            },
-            {
-              "id": "extra-PsMkTLh_ejVyVGBpAsyeH",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            },
-            {
-              "id": "extra-s-U2Z6EylAslqxyoC5ejr",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
+          "productId": "prod-b_if4sCs_mCFKh-i-zW_u",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-3JNDgM2p459U4LjdBG4c3",
-          "name": "Espresso",
-          "imgSrc": "Imgs/Products/menu/ec178d83e5f597b162cda1e60cb64194.jpg",
-          "type": "Coffee",
-          "description": "The foundation of all coffee drinks – a single shot of rich, concentrated coffee.",
-          "price": "25",
-          "quantity": 70,
-          "Extras": [
-            {
-              "id": "extra-dntLgHhXn41ZjAMZn_nyV",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": false
-            },
-            {
-              "id": "extra-99OCNfyowGQ-c11R4MUgP",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            },
-            {
-              "id": "extra-9nNXBmqYX7YhIe1XwhEOc",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
+          "productId": "prod-n1WWKIPnHO6yjfRdUBbT8",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
-          "id": "prod-3JNDgM2p459U4LjdBG4c3",
-          "name": "Espresso",
-          "imgSrc": "Imgs/Products/menu/ec178d83e5f597b162cda1e60cb64194.jpg",
-          "type": "Coffee",
-          "description": "The foundation of all coffee drinks – a single shot of rich, concentrated coffee.",
-          "price": "25",
-          "quantity": 70,
-          "Extras": [
-            {
-              "id": "extra-dntLgHhXn41ZjAMZn_nyV",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": false
-            },
-            {
-              "id": "extra-99OCNfyowGQ-c11R4MUgP",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            },
-            {
-              "id": "extra-9nNXBmqYX7YhIe1XwhEOc",
-              "name": "Vanilla",
-              "price": "300",
-              "isActive": false
-            }
-          ]
+          "productId": "prod-OmCMdU-F0HqxCpKOmRzWT",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0LloC40M4UETFFx13RZH0",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-ye95Q_ARHVZm8SnGXEthW",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-f4QrCU2__SyvoGmWtg9bh",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RteuD5ptyltqTSqmhX5gr",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-nhY-xjQPL9kytDs-hRNix",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-q9v_MA0lzujiSqiJpsbUw",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-DU4DbXohwASQvjVL6MTRp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0n53w9DxkfrsnWuz5cXEd",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RwAaMyKPB1ML-Ego37BSk",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-dVRHj4tuR7muojGknZvqp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-VHEP01KHrkeW93T_tpFwL",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Hv219wQDMyYMeiTo7_aLc",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RYPh4PFeoa71PdpP-unIs",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-HqKOYhYtjPX04yV_w6Tyg",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Keb4kjqP7rHtn-eiAQvGk",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Rzt69wEP2GzniHafp5QPq",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-iwb6FCMTXgIg41XGycUTI",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-KTpRVzO5sxWyk4y4v0Adz",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-qIexcpMMTu05eIFHMB9EC",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0u2mTmGD2Xo8dFDb5Iul1",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-oRqqGq4qAH6e2M60VtCST",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-ghjINlxNU2Rhoz4Gfu-PF",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-34gxwOk3yeLONbHUA-_3X",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-9VWvMe6qiqxp2O6QM7DDX",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-sqjny2nnF074NwQa2wgC0",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-hVM4rTgHsrTNhz9uxcxBp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-fRKGkJvmw_hdYlG1kz7Vq",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-3AFsaAmCKomi7Bwo793d2",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-6wOom8rm9ViowN95FPHDZ",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RTyRiEgLjgJ9iiSeyzgfc",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-UgNEgGiblYyqFLvm2OUtM",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-2MGwf8NN1xeyPr70vuYYr",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-3NAoAgD_2WGH953wDaK7z",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-DsYB-Km8wXpAbqcPnFXOV",
+          "chosenQuantity": 9,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Rw8uLMwpIPjhbqiL6CDZu",
+          "chosenQuantity": 1,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-jWnp1BnwFRqzxBwN0nDVD",
+          "chosenQuantity": 4,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-oHnDtBlmwxS8iY0zmuCcu",
+          "chosenQuantity": 4,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-VliMmnl04KxOY2Foc7NL7",
+          "chosenQuantity": 6,
+          "chosenExtras": []
         }
       ],
       "favorites": []

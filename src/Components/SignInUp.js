@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import axios from "axios";
-import { UserContext, userContext } from "../Context/UserContext";
+import { UserContext } from "../Context/UserContext";
 import styles from "../Style/SignInUp.module.css"
 
 const SignInUp = () => {
@@ -35,7 +35,6 @@ const SignInUp = () => {
     setUserLogIn({ ...userLogIn, [name]: value });
   };
 
-
   const SignInUp = (e) => {
     axios.post("http://localhost:3466/Users", userSignUp);
   };
@@ -54,7 +53,6 @@ const SignInUp = () => {
 
   return (
     <div className={styles.body}>
-      <h1>{loggedInUser}</h1>
       <div className={`${styles.container} ${activePanel}`}>
         <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
           <form action="" onSubmit={SignInUp}>
