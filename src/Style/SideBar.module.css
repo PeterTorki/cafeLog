@@ -1,8 +1,18 @@
 *{
     margin: 0;
 }
+.logo{
+    width: 30px;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+}
+.imglogo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+}
 .sidebar {
-    height: 100vh;
     background-color: rgba(10, 10, 10, 0.8);
     color: white;
     position: fixed;
@@ -13,6 +23,7 @@
     -ms-transition: all 1s;
     -o-transition: all 1s;
     height: 100%;
+    
 }
 .sidebar2{
     color: black;
@@ -32,6 +43,7 @@ ul{
     list-style: none;
     display: flex ;
     flex-direction: column;
+    gap: 20px;
 }
 
 li{
@@ -44,17 +56,18 @@ li{
     justify-content: flex-start;
     align-items: center;
 }
-
 li:last-child {
     margin-top: auto;
+    margin-bottom: 30px;
 }
 h2{
     font-size: 22px;
     margin: 5px 0 0 10px;
 }
-.iconS{
+.iconS .imglogo{
     height: 30px;
     width: 30px;
+    
 }
 .icon:hover {
     color: #E2BC97;

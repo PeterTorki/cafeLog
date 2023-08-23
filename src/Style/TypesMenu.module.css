@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 40px 20px 30 10px;
 }
 
 .typeBox {
@@ -30,6 +29,10 @@
 .typeBox:hover{
   background-color: rgb(234, 237, 239);
   cursor: pointer;
+}
+
+.mainMenu{
+  width: 100vw;
 }
 
 @media (max-width: 760px) {

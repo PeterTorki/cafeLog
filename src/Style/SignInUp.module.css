@@ -1,7 +1,6 @@
 .body * {
     box-sizing: border-box;
 }
-
 .body {
     font-family: 'Montserrat', sans-serif;
     background: #f6f5f7;
@@ -9,9 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    margin: -20px 0 50px;
-	margin-top: 20px;
+    height: 100vh;
 }
 
 .body h1 {
@@ -46,7 +43,7 @@
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 700px;
+    height: 80%;
     display: flex;
 }
 

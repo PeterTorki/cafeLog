@@ -8,13 +8,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   min-height: 110px;
-  margin: 20px;
+  margin: 20px 0;
 }
 .container .Cards .LeftSide {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .container .Cards .cardimg {
   display: flex;
@@ -30,42 +33,36 @@
   font-weight: bold;
 }
 .container .Cards .Counter {
-  width: -moz-fit-content;
-  width: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   font-weight: bold;
   font-size: 18px;
   width: 100px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(191, 191, 191);
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  margin: 20px 0 0;
 }
 .container .Cards .myButton {
-  color: #c8916c;
+  color: #638F8F;
   cursor: pointer;
 }
 .container .Cards .Price {
   color: green;
 }
-.container .Cards .Extras span {
+.container .Cards .chosenExtras span {
   color: red;
 }
 
-@media (max-width: 385px) {
-  .Cards {
-    flex-direction: column;
-    gap: 20px;
+@media (max-width: 790px) {
+  .container {
+    width: 100%;
   }
-}
-@media (max-width: 240px) {
-  .LeftSide {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .Cards {
+    margin: 10px;
+  }
+  .container .Cards .Counter {
+    width: 100%;
   }
 }/*# sourceMappingURL=Card.module.css.map */

@@ -83,7 +83,7 @@
       "id": "prod-XrdaNHEcM8qO2s8_w7lGb",
       "name": "Mocha",
       "imgSrc": "Imgs/Products/menu/mocha-latte-recipe.jpg",
-      "type": "Coffee",
+      "type": "Bakery",
       "description": "A delightful blend of espresso, steamed milk, and rich chocolate, crowned with whipped cream.",
       "price": "50",
       "quantity": 25,
@@ -106,13 +106,8 @@
       "quantity": 25,
       "Extras": [
         {
-          "id": "extra-XVQfB-Xfc7nAp0M2TVbbJ",
-          "name": "Double Caramel Swirl ",
-          "price": " 25"
-        },
-        {
           "id": "extra-_eSJEirLrJ-DUNEQO2NdI",
-          "name": "Salted Caramel Twist ",
+          "name": "Salted Caramel ",
           "price": " 25"
         },
         {
@@ -138,7 +133,7 @@
         },
         {
           "id": "extra-Gf6jp6GYbDyiZWR7eJuTn",
-          "name": "Whipped Cream Crown",
+          "name": "Cream Crown",
           "price": "25"
         }
       ]
@@ -147,7 +142,7 @@
       "id": "prod-n1WWKIPnHO6yjfRdUBbT8",
       "name": "Frappuccino Caramel",
       "imgSrc": "Imgs/Products/menu/frappe-drink-with-caramel-nuts-isolated-white-background-ai-generative_123827-24936.avif",
-      "type": "Coffee",
+      "type": "Drinks",
       "description": "Caramel syrup meets coffee, milk and ice for a rendezvous in the blender .",
       "price": "80",
       "quantity": 25,
@@ -168,7 +163,7 @@
       "id": "prod-OmCMdU-F0HqxCpKOmRzWT",
       "name": "Iced Coffee",
       "imgSrc": "/Imgs/Products/menu/Iced-instant-coffee-recipe-img-19-1-of-1.jpg",
-      "type": "Coffee",
+      "type": "Drinks",
       "description": "Chilled brewed coffee served over ice, customizable with cream and sweeteners.",
       "price": "40",
       "quantity": 25,
@@ -184,7 +179,7 @@
       "id": "prod-0LloC40M4UETFFx13RZH0",
       "name": "Iced Latte",
       "imgSrc": "Imgs/Products/menu/Iced-Vanilla-Latte-1.jpeg",
-      "type": "Coffee",
+      "type": "Drinks",
       "description": "Chilled espresso blended with cold milk and poured over ice.",
       "price": "40",
       "quantity": 25,
@@ -210,7 +205,7 @@
       "id": "prod-f4QrCU2__SyvoGmWtg9bh",
       "name": "Iced mocha",
       "imgSrc": "Imgs/Products/menu/homemade-iced-mocha-coffee.webp",
-      "type": "Coffee",
+      "type": "Drinks",
       "description": "Espresso, milk, and chocolate, chilled and poured over ice, topped with whipped cream.",
       "price": "65",
       "quantity": 25,
@@ -233,12 +228,12 @@
       "Extras": [
         {
           "id": "extra-zlBHyOgdn0yoqMebL2_eM",
-          "name": "Caramel Crunch Topping",
+          "name": "Caramel Crunch",
           "price": "25"
         },
         {
           "id": "extra-RY8P4WwKrk73bdmCkDxLD",
-          "name": "Salted Caramel Rim",
+          "name": "Salted Caramel",
           "price": "25"
         }
       ]
@@ -247,7 +242,7 @@
       "id": "prod-nhY-xjQPL9kytDs-hRNix",
       "name": " Classic Mojito",
       "imgSrc": "Imgs/Products/menu/download (1).jpeg",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": " Fresh lime wedges muddled with  Bacardi Rum, mint leaves, simple syrup, and a splash of soda.",
       "price": "35",
       "quantity": "80",
@@ -270,7 +265,7 @@
       "id": "prod-q9v_MA0lzujiSqiJpsbUw",
       "name": "Blue Passion",
       "imgSrc": "./Imgs/Products/menu/pngwing.com (2).png",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": "A refreshing Sprite drink, mixed with indulging Blue Curacao & Passion Fruit-flavore syrup",
       "price": "35",
       "quantity": "85",
@@ -280,7 +275,7 @@
       "id": "prod-DU4DbXohwASQvjVL6MTRp",
       "name": "Sun shine",
       "imgSrc": "Imgs/Products/menu/rayofsunshine_card.jpg",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": "refreshing blend of citrus juices, tropical fruit puree, and a hint of sweetness, capturing the vibrant essence of a sunny day in a single sip",
       "price": "35",
       "quantity": "85",
@@ -290,7 +285,7 @@
       "id": "prod-0n53w9DxkfrsnWuz5cXEd",
       "name": "Cherry cola",
       "imgSrc": "Imgs/Products/menu/Cherry-Coke-and-Rum-13-2.jpg",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": "Sip on nostalgia with our Cherry Cola, a classic fizzy delight infused with the rich sweetness of cherries for a timeless and satisfying experience.",
       "price": "35",
       "quantity": "85",
@@ -300,7 +295,7 @@
       "id": "prod-RwAaMyKPB1ML-Ego37BSk",
       "name": "Sparkling ice tea",
       "imgSrc": "Imgs/Products/menu/sparkling-chai-iced-tea-taste-167628-1.jpg",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": "our Sparkling Iced Tea fuses the timeless charm of freshly brewed tea with the effervescence of sparkling water for a crisp and delightful refreshment.",
       "price": "35",
       "quantity": "85",
@@ -310,7 +305,7 @@
       "id": "prod-dVRHj4tuR7muojGknZvqp",
       "name": "Lychee Lemonade",
       "imgSrc": "Imgs/Products/menu/Litchee-juice-lemonade-lychee-lemonade-3-of-10-scaled.webp",
-      "type": "Soft Mix",
+      "type": "Drinks",
       "description": "Indulge in the tantalizing fusion of sweet lychee and zesty lemon, perfectly blended into a refreshing and exotic Lychee Lemonade.",
       "price": "35",
       "quantity": "85",
@@ -456,7 +451,7 @@
       "id": "prod-qIexcpMMTu05eIFHMB9EC",
       "name": "Red velvet cake",
       "imgSrc": "Imgs/Products/menu/9295_red-velvet-cake_ddmfs_4x3_1129-a8ab17b825e3464a9a53ceeda54ff461.jpg",
-      "type": "Dessert",
+      "type": "Bakery",
       "description": "Very mild cocoa with a slightly tart edge.The cream cheese frosting is the most forward flavor.",
       "price": "65",
       "quantity": 30,
@@ -472,14 +467,14 @@
       "id": "prod-0u2mTmGD2Xo8dFDb5Iul1",
       "name": "Cheesecake ",
       "imgSrc": "Imgs/Products/menu/cheesecake-1-22.jpg",
-      "type": "Dessert",
+      "type": "Bakery",
       "description": "the perfect combination of sweet and rich, with a smooth texture that melts in your mouth",
       "price": "60",
       "quantity": 25,
       "Extras": [
         {
           "id": "extra-RaY7LHStRocRrZGBVKcib",
-          "name": "Chocolate shavings ",
+          "name": "Chocolate ",
           "price": "20"
         },
         {
@@ -498,7 +493,7 @@
       "id": "prod-oRqqGq4qAH6e2M60VtCST",
       "name": "Honey cake ",
       "imgSrc": "Imgs/Products/menu/Russian-Honey-Cake-Medovik-Recipe-How-To-Make-Russian-Honey-Cake-Medovik-Delicious-Russian-Honey-Cake-Medovik-27.webp",
-      "type": "Dessert",
+      "type": "Bakery",
       "description": "A spicy cake partially sweetened with honey.",
       "price": "65",
       "quantity": 25,
@@ -508,7 +503,7 @@
       "id": "prod-ghjINlxNU2Rhoz4Gfu-PF",
       "name": "Chocolate cake",
       "imgSrc": "Imgs/Products/menu/Hershey-Chocolate-Cake-8-2-500x500.jpg",
-      "type": "Dessert",
+      "type": "Bakery",
       "description": "Indulge in our rich and moist chocolate cake, a true delight for chocolate lovers",
       "price": "55",
       "quantity": 25,
@@ -619,7 +614,7 @@
         },
         {
           "id": "extra-vEtbc4j3cHYItkRvYNav1",
-          "name": "Powdered Sugar Dusting",
+          "name": "Powdered Sugar",
           "price": "10"
         }
       ]
@@ -650,12 +645,12 @@
         },
         {
           "id": "extra-ME54UdHMSoTta89TijKbV",
-          "name": "A dusting of powdered sugar",
+          "name": "powdered sugar",
           "price": "20"
         },
         {
           "id": "extra-Le3dry7Oc75qIpnIVAaQN",
-          "name": "A side of vanilla ice cream",
+          "name": "ice cream",
           "price": "25"
         }
       ]

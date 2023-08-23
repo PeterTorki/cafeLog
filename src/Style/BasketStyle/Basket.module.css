@@ -6,8 +6,9 @@
 }
 
 .outer {
-  background-color: #FFF9F5;
+  background-color: #F8F8F8;
   padding: 50px;
+  margin-left: 50px;
 }
 
 .container2 {
@@ -15,6 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   height: 100vh;
   background-color: #FFF9F5;
 }/*# sourceMappingURL=Basket.module.css.map */
