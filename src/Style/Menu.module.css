@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Poppins';
-  font-size: 1.3rem;
+  font-size: 15px;
   margin-left: 70px;
 }
 .menuContainer 
@@ -16,23 +16,28 @@
   margin: 0 30px 20px 0;
   justify-content: center;
 }
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card
 {
   margin: 10px;
   display:flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
   padding: 20px;
-  max-width: 350px; 
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px;
-  
 }
 
 .info {
-  display:flex;
   margin-top: 20px;
-  flex-direction: row;
   margin-right: 5px;
 }
 
@@ -44,13 +49,10 @@
   object-fit: fill;
   box-sizing: border-box;
   background-color: #F3F4F6;
-  max-width: 150px;
-  min-height: 150px;
-}
-
-.textInfo{
-  margin-left: 20px;
-  flex-direction:column;
+  /* max-width: 150px;
+  min-height: 150px; */
+  width: 100px;
+  height: 100px;
 }
 .textP{
   color:rgb(159, 156, 156);
@@ -64,11 +66,19 @@
  font-weight:900;
 }
 
+.ex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Extras{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .exBtn{
@@ -77,14 +87,13 @@
   opacity: rgb(255, 255, 255,0.3);
   border: none;
   color:rgb(50, 49, 49) ;
-  margin-left:10px;
-  padding: 10px 10px;
-  padding: 7px 20px;
+  padding: 10px;
 }
 .exBtn:hover
 {
   background-color: rgb(99, 143, 143);
   color: white;
+  cursor: pointer;
 }
 .exBtnSelected {
   background-color: black;
@@ -96,8 +105,12 @@
   background-color: rgb(99, 143, 143);
   border: none;
   color:white;
-  margin-top: 20px ;
+  margin-top: auto ;
+  margin-bottom: 10px;
   padding: 7px 20px;
+}
+.toCart:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -107,10 +120,11 @@
 
   .card {
     margin: 10px 0;
-    max-width: 100%;
+    width: 60%;
   }
 
   .info {
+    display: flex;
     flex-direction: column;
     margin-right: 0;
   }
@@ -120,11 +134,6 @@
     max-width:80px;
     margin-left: 0;
     margin-bottom: 10px;
-  }
-
-  .textInfo {
-    margin-left: 0;
-    max-width: 50%;
   }
 
   .toCart {

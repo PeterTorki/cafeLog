@@ -135,16 +135,52 @@
       "previousOrders": [],
       "cart": [
         {
-          "productId": "prod-f4QrCU2__SyvoGmWtg9bh",
+          "productId": "prod-3JNDgM2p459U4LjdBG4c3",
+          "chosenQuantity": 1,
+          "chosenExtras": [
+            {
+              "id": "extra-dntLgHhXn41ZjAMZn_nyV",
+              "name": "Chocolate",
+              "price": "100",
+              "isActive": true
+            },
+            {
+              "id": "extra-99OCNfyowGQ-c11R4MUgP",
+              "name": "Carmelle",
+              "price": "200",
+              "isActive": true
+            }
+          ],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-dCMVlo5YpflAeNk4xdmbN",
           "chosenQuantity": 1,
           "chosenExtras": [],
           "chosenSize": "L"
         },
         {
-          "productId": "prod-3NAoAgD_2WGH953wDaK7z",
+          "productId": "prod-JFI_jSx4ow7liAuF1y4Vk",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-ncmc-8zU1eXDfJG66A72c",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-XrdaNHEcM8qO2s8_w7lGb",
           "chosenQuantity": 1,
           "chosenExtras": [
-            "extra-mQ1HQY6ZneOpDST5twqa8"
+            {
+              "id": "extra-CWir7lHOrjQLrPCoeI3pV",
+              "name": "Vanilla",
+              "price": "20",
+              "isActive": true
+            }
           ],
           "chosenSize": "L"
         }
@@ -214,6 +250,89 @@
       "role": "",
       "previousOrders": [],
       "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-BSXtkPBSqRNJLVBy8cg1f",
+      "name": "a",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "",
+      "password": "",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [],
+      "favorites": []
+    },
+    {
+      "id": "user-ogqoQo6N8aGMkAH6NkkNu",
+      "name": "a",
+      "imgSrc": "https://lh3.google.com/u/0/d/1UYHQVGpNSk558ce-_D9D6I7Q95zF9tRa=w1920-h979-iv1",
+      "phoneNumber": "",
+      "email": "a@gmail.com",
+      "password": "1",
+      "address": "",
+      "role": "",
+      "previousOrders": [],
+      "cart": [
+        {
+          "productId": "prod-0LloC40M4UETFFx13RZH0",
+          "chosenQuantity": 1,
+          "chosenExtras": [
+            {
+              "id": "extra-p8fbFFNtSovsVIA6ueV7H",
+              "name": "Vanilla",
+              "price": " 20 ",
+              "isActive": true
+            }
+          ],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-dCMVlo5YpflAeNk4xdmbN",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-JFI_jSx4ow7liAuF1y4Vk",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-ZRcsbkuIXzVTaWa7rQdPO",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-OmCMdU-F0HqxCpKOmRzWT",
+          "chosenQuantity": 1,
+          "chosenExtras": [],
+          "chosenSize": "L"
+        },
+        {
+          "productId": "prod-nhY-xjQPL9kytDs-hRNix",
+          "chosenQuantity": 1,
+          "chosenExtras": [
+            {
+              "id": "extra-b7fyaIF3unbUP-1Z7sQUM",
+              "name": "Sprite",
+              "price": "8",
+              "isActive": true
+            },
+            {
+              "id": "extra-1sIy7OmVnRhEeFPwYhKUF",
+              "name": "mint",
+              "price": "7",
+              "isActive": true
+            }
+          ],
+          "chosenSize": "L"
+        }
+      ],
       "favorites": []
     }
   ]

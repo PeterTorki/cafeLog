@@ -53,7 +53,7 @@ const TypesMenu = ({ typeSetState }) => {
           />
           <h3 className={styles.h3type}>Drinks</h3>
         </button>
-        <button
+        <button 
           className={styles.typeBox}
           onClick={() => typeSetState("Bakery")}
         >

@@ -31,8 +31,8 @@
         margin-top: 10px;
         button{
             border-radius: 20px;
-            border: 1px solid #ff4b2b;
-            background: #ff445c;
+            border: 1px solid #638F8F;
+            background: #638F8F;
             color: #fff;
             font-size: 12px;
             font-weight: bold;
@@ -63,7 +63,7 @@
         width: 30%;
         
     }
-}
-
-@media (max-width:790px) {
+    .Amount{
+        padding: 10px;
+    }
 }
