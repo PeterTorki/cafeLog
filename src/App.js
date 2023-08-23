@@ -29,7 +29,7 @@ const App = () => {
               <InitPage />
               <Menu /> 
               <Basket />
-              <Settings />
+              {/* <Settings /> */}
             </div>
           </ShopContextProvider>
         </ProductsContextProvider>
