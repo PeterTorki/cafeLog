@@ -5,7 +5,7 @@ import logo from './imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg
 
 export default function InitPage() {
   return (
-    <div className={Style.comtainer}>
+    <div className={Style.container}>
       <div className={Style.content}>
         <div className={Style.text}>
           <h1>Welcome to ChillCup</h1>

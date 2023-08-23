@@ -1,6 +1,5 @@
-.comtainer{
+.container{
     height: 100vh;
-    background-image: url('../Components/bg.png');
     background-position: 50px center;
     background-repeat: no-repeat;
     background-size: cover;

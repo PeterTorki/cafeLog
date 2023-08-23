@@ -10,9 +10,12 @@ import Basket from "./Components/Cart/Basket";
 import { ShopContextProvider } from "./Context/ShopContext";
 import { ProductsContext, ProductsContextProvider } from "./Context/ProductsContext";
 import { useContext } from "react";
-
 import InitPage from "./Components/InitPage";
 import Settings from "./Components/Settings";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ReactDOM from 'react-dom';
+import { Switch } from "react-router";
 
 const App = () => {
 
@@ -22,21 +25,27 @@ const App = () => {
     <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
     {
       loggedInUser ?
-        <ProductsContextProvider>
-          <ShopContextProvider>
-            <div>
-              <SideBar />
-              <InitPage />
-              <Menu /> 
-              <Basket />
-              {/* <Settings /> */}
-            </div>
-          </ShopContextProvider>
-        </ProductsContextProvider>
-    :
-    <SignInUp value={{loggedInUser, setLoggedInUser}}/>
-  }
-  </UserContext.Provider>
+    <ProductsContextProvider>
+    <ShopContextProvider>
+        <BrowserRouter>
+            <SideBar />
+            <Routes>
+            <Route path="/" element={<InitPage />} />
+            <Route path="/Menu" element={<Menu />} />
+            <Route path="/Cart" element={<Basket />} />
+            <Route path="/Settings" element={<Settings />} />
+                      {/* <Settings /> */}
+          </Routes>
+
+        </BrowserRouter>
+
+        </ShopContextProvider>
+      </ProductsContextProvider>
+      : 
+      <SignInUp value={{loggedInUser, setLoggedInUser}}/>
+    }
+    </UserContext.Provider>
+
   )
 }
 
