@@ -5,6 +5,8 @@ import SideBar from "./Components/SideBar";
 import { UserContext } from './Context/UserContext'
 import Basket from "./Components/Basket";
 import InitPage from "./Components/InitPage";
+import Settings from "./Components/Settings";
+
 
 import styles from '../src/Style/App.module.css'
 import './App.css'
@@ -23,6 +25,7 @@ const App = () => {
             <InitPage />
             <Menu /> 
             <Basket  value={{loggedInUser, setLoggedInUser}}/>
+            <Settings />
           </div>
           :
           <SignInUp value={{loggedInUser, setLoggedInUser}}/>
