@@ -55,8 +55,8 @@ export const ShopContextProvider = (props) => {
 
 	useEffect(() => {
 		getUserCart();
-	}, [loggedInUser, products]);
-	
+	}, [loggedInUser]);
+
 	useEffect(() => {
 		setCartItems(getDefaultCart());
 	}, [products]);
