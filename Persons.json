@@ -136,53 +136,248 @@
       "cart": [
         {
           "productId": "prod-3JNDgM2p459U4LjdBG4c3",
-          "chosenQuantity": 1,
-          "chosenExtras": [
-            {
-              "id": "extra-dntLgHhXn41ZjAMZn_nyV",
-              "name": "Chocolate",
-              "price": "100",
-              "isActive": true
-            },
-            {
-              "id": "extra-99OCNfyowGQ-c11R4MUgP",
-              "name": "Carmelle",
-              "price": "200",
-              "isActive": true
-            }
-          ],
-          "chosenSize": "L"
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
           "productId": "prod-dCMVlo5YpflAeNk4xdmbN",
-          "chosenQuantity": 1,
-          "chosenExtras": [],
-          "chosenSize": "L"
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
           "productId": "prod-JFI_jSx4ow7liAuF1y4Vk",
-          "chosenQuantity": 1,
-          "chosenExtras": [],
-          "chosenSize": "L"
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
           "productId": "prod-ncmc-8zU1eXDfJG66A72c",
-          "chosenQuantity": 1,
-          "chosenExtras": [],
-          "chosenSize": "L"
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-ZRcsbkuIXzVTaWa7rQdPO",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-feJ-5ydE94JLnv0S4J-tZ",
+          "chosenQuantity": 0,
+          "chosenExtras": []
         },
         {
           "productId": "prod-XrdaNHEcM8qO2s8_w7lGb",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-BuzC0II8yG48CzgiaUhIx",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-b_if4sCs_mCFKh-i-zW_u",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-n1WWKIPnHO6yjfRdUBbT8",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-OmCMdU-F0HqxCpKOmRzWT",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0LloC40M4UETFFx13RZH0",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-ye95Q_ARHVZm8SnGXEthW",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-f4QrCU2__SyvoGmWtg9bh",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RteuD5ptyltqTSqmhX5gr",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-nhY-xjQPL9kytDs-hRNix",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-q9v_MA0lzujiSqiJpsbUw",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-DU4DbXohwASQvjVL6MTRp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0n53w9DxkfrsnWuz5cXEd",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RwAaMyKPB1ML-Ego37BSk",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-dVRHj4tuR7muojGknZvqp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-VHEP01KHrkeW93T_tpFwL",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Hv219wQDMyYMeiTo7_aLc",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RYPh4PFeoa71PdpP-unIs",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-HqKOYhYtjPX04yV_w6Tyg",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Keb4kjqP7rHtn-eiAQvGk",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Rzt69wEP2GzniHafp5QPq",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-iwb6FCMTXgIg41XGycUTI",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-KTpRVzO5sxWyk4y4v0Adz",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-qIexcpMMTu05eIFHMB9EC",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-0u2mTmGD2Xo8dFDb5Iul1",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-oRqqGq4qAH6e2M60VtCST",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-ghjINlxNU2Rhoz4Gfu-PF",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-34gxwOk3yeLONbHUA-_3X",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-9VWvMe6qiqxp2O6QM7DDX",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-sqjny2nnF074NwQa2wgC0",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-hVM4rTgHsrTNhz9uxcxBp",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-fRKGkJvmw_hdYlG1kz7Vq",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-3AFsaAmCKomi7Bwo793d2",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-6wOom8rm9ViowN95FPHDZ",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-RTyRiEgLjgJ9iiSeyzgfc",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-UgNEgGiblYyqFLvm2OUtM",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-2MGwf8NN1xeyPr70vuYYr",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-3NAoAgD_2WGH953wDaK7z",
+          "chosenQuantity": 0,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-DsYB-Km8wXpAbqcPnFXOV",
+          "chosenQuantity": 9,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-Rw8uLMwpIPjhbqiL6CDZu",
           "chosenQuantity": 1,
-          "chosenExtras": [
-            {
-              "id": "extra-CWir7lHOrjQLrPCoeI3pV",
-              "name": "Vanilla",
-              "price": "20",
-              "isActive": true
-            }
-          ],
-          "chosenSize": "L"
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-jWnp1BnwFRqzxBwN0nDVD",
+          "chosenQuantity": 4,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-oHnDtBlmwxS8iY0zmuCcu",
+          "chosenQuantity": 4,
+          "chosenExtras": []
+        },
+        {
+          "productId": "prod-VliMmnl04KxOY2Foc7NL7",
+          "chosenQuantity": 6,
+          "chosenExtras": []
         }
       ],
       "favorites": []

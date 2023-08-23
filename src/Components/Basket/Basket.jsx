@@ -1,12 +1,11 @@
 import React, {useEffect, useState, useCallback} from 'react'
 import axios from "axios";
-import Style from "../Style/BasketStyle/Basket.module.css"
-import ReactLoading from 'react-loading';
+import Style from "../../Style/BasketStyle/Basket.module.css"
 
 import CardBasket from "./CardBasket";
 import { useContext } from 'react';
 import Total from "./Total";
-import { UserContext } from '../Context/UserContext';
+import { UserContext } from '../../Context/UserContext';
 export default function Basket() {
 
   const [products, setProducts] = useState([]);
@@ -28,7 +27,7 @@ export default function Basket() {
 	}, [cart])
 
   const getProducts = () => {
-    console.log('HI')
+    
     axios.get('http://localhost:3477/Products').then((response) => {
       setProductsApi(response.data);
     })
@@ -39,7 +38,6 @@ export default function Basket() {
   }, [productsApi]);
 
   const getProductsInCart = () => {
-    
     let temp = [];
     for(let i = 0; i < productsApi.length; i++){
       for(let j = 0; j < cart.length; j++){
@@ -68,9 +66,10 @@ export default function Basket() {
               <Total products={products}/>
             </div>
           :
-          <div>
-          <ReactLoading type='spin' color='#E8BA25' height={'100%'} width={'100%'} />
-            <h1>Loading...</h1>
+          <div className={Style.container2}>
+            <img src="empty.svg" alt="empty basket"/>
+            <h3>Hey, your basket is empty!</h3>
+            <p>Go on, stock up and order your faves.</p>
           </div>
         }
     </div>

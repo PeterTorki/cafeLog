@@ -4,23 +4,15 @@ import TypesMenu from "./TypesMenu";
 import ReactLoading from 'react-loading';
 import { UserContext } from "../Context/UserContext";
 import Card from "./Card";
-import Header from "../Header";
+import Header from "./Header";
 import styles from "../Style/Menu.module.css";
+import { ProductsContext } from "../Context/ProductsContext";
 const Menu = () => {
-	const [products, setProducts] = useState([]);
+
   const [currType, setCurrType] = useState("All Menu");
   const loggedInUserId = useContext(UserContext).loggedInUser;
   
-  const getProducts = useCallback(() => {
-		axios.get('http://localhost:3477/Products').then((response) => {
-      setProducts(response.data);
-    })
-	}, [products])
-
-
-	useEffect(() => {
-		getProducts();
-	}, []);
+  const {products, setProducts} = useContext(ProductsContext);
 
 
   const handleCurrTypeState = (type) => {

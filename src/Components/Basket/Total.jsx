@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useCallback} from 'react'
-import Style from "../Style/BasketStyle/Total.module.css";
+import Style from "../../Style/BasketStyle/Total.module.css";
 
 export default function Total(props) {
   let products=props.products;
