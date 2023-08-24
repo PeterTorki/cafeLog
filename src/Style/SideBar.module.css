@@ -17,19 +17,7 @@
     height: 150px;
     margin-bottom: 200px;
 }
-.sidebar {
-    background-color: rgba(10, 10, 10, 0.8);
-    color: white;
-    position: fixed;
-    transition: all 1s;
-    padding: 20px ;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    height: 100%;
-    
-}
+
 .sidebar2{
     color: black;
     height: 100%;
@@ -37,19 +25,16 @@
     position:fixed;
     transition: all 1s;
     padding: 20px;
-}
-
-.main{
-    text-align: start;
-    margin :0px ;
-}
-
-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     display: flex ;
     flex-direction: column;
     gap: 20px;
 }
+
 
 li{
     margin-top: 16px;

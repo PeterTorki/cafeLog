@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 0;
     background-color: #F8F8F8;
 }
 *:focus{

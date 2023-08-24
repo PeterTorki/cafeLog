@@ -12,15 +12,15 @@ import { ProductsContext, ProductsContextProvider } from "./Context/ProductsCont
 import { useContext } from "react";
 import InitPage from "./Components/InitPage";
 import Settings from "./Components/Settings";
-
+import Favorites from "./Components/Favorites";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ReactDOM from 'react-dom';
-import { Switch } from "react-router";
+import ContactUs from "./Components/ContactUs";
+import AboutUs from "./Components/AboutUs";
 
 const App = () => {
 
   const [loggedInUser, setLoggedInUser] = useState(null);
-  
+
   return (
     <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
     {
@@ -29,13 +29,17 @@ const App = () => {
     <ShopContextProvider>
         <BrowserRouter>
             <SideBar />
+      <div style={{marginLeft: '75px'}}>
             <Routes>
             <Route path="/" element={<InitPage />} />
             <Route path="/Menu" element={<Menu />} />
             <Route path="/Cart" element={<Basket />} />
+            <Route path="/Favorites" element={<Favorites />} />
             <Route path="/Settings" element={<Settings />} />
-                      {/* <Settings /> */}
+            <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
           </Routes>
+    </div>
 
         </BrowserRouter>
 

@@ -15,8 +15,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    color: #638F8F;
-    margin-left: 100px;
+    color: #541A8B;
 
 }
 
@@ -52,9 +51,7 @@
 }
 
 @media (max-width:600px) {
-    .content{
-        margin-left: 50px;
-    }
+
     .text h1{
         font-size: 40px;
     }

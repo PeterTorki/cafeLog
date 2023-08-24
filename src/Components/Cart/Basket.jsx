@@ -11,7 +11,7 @@ export default function Basket() {
 
   const {products} = useContext(ProductsContext);
 	
-	const { cartItems, getTotalCartPrice } = useContext(ShopContext);
+	const { cartItems } = useContext(ShopContext);
 
 	const cartToView = []
 	for(let i = 0; i < cartItems.length; i++) {
@@ -32,7 +32,6 @@ export default function Basket() {
 		}
 	}
 
-  const totalPrice = getTotalCartPrice();
   return (
     <div className={Style.outer}>
         {

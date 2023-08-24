@@ -7,7 +7,6 @@
   align-items: center;
   font-family: 'Poppins';
   font-size: 15px;
-  margin-left: 70px;
 }
 .menuContainer 
 {
@@ -45,7 +44,6 @@
   border-radius: 10px;
   height: 120px;
   padding: 5px 1px;
-  margin-left: 10px;
   object-fit: fill;
   box-sizing: border-box;
   background-color: #F3F4F6;
@@ -137,7 +135,6 @@
   .imageItem {
     height: auto;
     max-width:80px;
-    margin-left: 0;
     margin-bottom: 10px;
   }
 
