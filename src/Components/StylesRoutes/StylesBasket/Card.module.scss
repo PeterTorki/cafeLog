@@ -1,4 +1,4 @@
-.container{
+.container , .container2{
     min-width: 55%;
     .Cards{
         background-color: white;
@@ -30,7 +30,7 @@
             gap: 20px;
             font-weight: bold;
         }
-        .Counter{
+        .Counter,.Counter2{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,6 +41,10 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgb(191, 191, 191);
             margin: 20px 0 0;
+        }
+        .Counter2{
+            width: 50px;
+            justify-content: center;
         }
         .myButton{
             color: #638F8F;
@@ -53,6 +57,10 @@
             color: red;
         }
     }
+}
+
+.container2{
+    width: 100%;
 }
 @media (max-width:790px) {
     .container{

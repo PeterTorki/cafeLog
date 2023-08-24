@@ -1,41 +1,39 @@
-.container {
+.container, .container2 {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
   right: 20px;
-  z-index: 1;
-
 }
-.container .total {
+.container .total, .container2 .total {
   width: 100%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgb(191, 191, 191);
   padding: 20px;
-  
 }
-.container .items, .container .Amount {
+.container .items, .container .Amount, .container2 .items, .container2 .Amount {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: 10px 0;
 }
-.container .items p, .container .Amount p {
+.container .items p, .container .Amount p, .container2 .items p, .container2 .Amount p {
   font-size: 18px;
   font-weight: bold;
 }
-.container .items p:nth-child(2), .container .Amount p:nth-child(2) {
+.container .items p:nth-child(2), .container .Amount p:nth-child(2), .container2 .items p:nth-child(2), .container2 .Amount p:nth-child(2) {
   color: green;
 }
-.container .checkout {
+.container .checkout, .container2 .checkout {
   margin-top: 10px;
 }
-.container .checkout button {
+.container .checkout button, .container2 .checkout button {
   border-radius: 20px;
   border: 1px solid #638F8F;
   background: #638F8F;
@@ -48,15 +46,19 @@
   transition: transform 80ms ease-in;
   margin-top: 10px;
 }
-.container .checkout button:active {
+.container .checkout button:active, .container2 .checkout button:active {
   transform: scale(0.95);
 }
-.container .checkout button:focus {
+.container .checkout button:focus, .container2 .checkout button:focus {
   outline: none;
 }
-.container .Elements {
+.container .Elements, .container2 .Elements {
   padding: 20px;
   border-bottom: 1px dashed black;
+}
+
+.container2 {
+  position: static;
 }
 
 @media (max-width: 790px) {

@@ -9,7 +9,7 @@ export default function Card({ p }) {
     const productCart = cartItems.find(c => c.productId === p.id).chosenExtras.filter(e => e.isActive)
 
     return (
-        <div className={Style.container}>
+        <div className={Style.container2}>
           <div key={p.id} className={Style.Cards}>
             <div className={Style.LeftSide}>
               <div className={Style.cardimg}>
@@ -29,7 +29,7 @@ export default function Card({ p }) {
                 <div className={Style.Price}>EGP {p.price}</div>
               </div>
             </div>
-            <div className={Style.Counter}>
+            <div className={Style.Counter2}>
             {p.chosenQuantity}
             </div>
           </div>

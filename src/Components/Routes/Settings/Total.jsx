@@ -23,7 +23,7 @@ export default function Total({ cartItems }) {
   let productsOfCart = cartItems;
   let res = 0;
   return (
-    <div className={Style.container}>
+    <div className={Style.container2}>
         <div className={Style.total}>
           <h2>Basket Summary</h2>
           <div className={Style.Elements}>

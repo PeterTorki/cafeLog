@@ -8,6 +8,11 @@
   gap: 20px;
   padding: 10px 5px;
 }
+
+.typesDiv button{
+  outline: none;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
