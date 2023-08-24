@@ -5,13 +5,14 @@ import Style from '../../StylesRoutes/StylesBasket/Basket.module.css'
 import CardBasket from "./CardBasket";
 import { useContext } from 'react';
 import Total from "./Total";
+import Payout from './Payout';
 
 export default function Basket() {
 
   const {products} = useContext(ProductsContext);
 	
 	const { cartItems } = useContext(ShopContext);
-
+  console.log('cart items in basket: ', cartItems);
 	const cartToView = []
 	for(let i = 0; i < cartItems.length; i++) {
 		if(cartItems[i].chosenQuantity > 0) {
@@ -31,23 +32,35 @@ export default function Basket() {
 		}
 	}
 
+  const payToggler = () => {
+    setTogglePayment(!togglePayment);
+  }
+
+  const [togglePayment, setTogglePayment] = useState(true);
   return (
-    <div className={Style.outer}>
-        {
-          cartItems.some(c => c.chosenQuantity > 0)?
-          <div className={Style.container}>
-              {
-                cartToView
-              }
-              <Total/>
-          </div>
-          :
-          <div className={Style.container2}> 
-              <img src="empty.svg" alt="empty Basket" />
-              <h3>Hey, your basket is empty!</h3>
-              <p>Go on, stock up and order your faves.</p>
-          </div>
-        }
+    <div>
+      {
+        togglePayment?  
+        <div className={Style.outer}>
+          {
+            cartItems.length !== 0 && cartItems.some(c => c.chosenQuantity > 0)?
+            <div className={Style.container}>
+                {
+                  cartToView
+                }
+                <Total payToggler={payToggler}/>
+            </div>
+            :
+            <div className={Style.container2}> 
+                <img src="empty.svg" alt="empty Basket" />
+                <h3>Hey, your basket is empty!</h3>
+                <p>Go on, stock up and order your faves.</p>
+            </div>
+          }
+        </div>
+        :
+        <Payout setTogglePayment={setTogglePayment}/>
+      }
     </div>
   )
 }

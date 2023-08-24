@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  
 }
 
 .outer {
   background-color: #F8F8F8;
-  padding: 50px;
+  padding: 0 20px;
 }
 
 .container2 {

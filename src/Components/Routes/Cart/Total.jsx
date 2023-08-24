@@ -3,7 +3,7 @@ import Style from '../../StylesRoutes/StylesBasket/Total.module.css'
 import { ShopContext } from '../../../Context/ShopContext';
 import { useContext } from 'react';
 
-export default function Total() {
+export default function Total({ payToggler }) {
 
   const { cartItems, getTotalCartPrice } = useContext(ShopContext);
 
@@ -45,7 +45,7 @@ export default function Total() {
           </div>
         </div>
         <div className={Style.checkout}>
-          <button>Checkout</button>
+          <button onClick={() => payToggler()}>Checkout</button>
         </div>
     </div>
   )

@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
   width: 100%;
   position: fixed;
   right: 20px;
   z-index: 1;
+
 }
 .container .total {
   width: 100%;

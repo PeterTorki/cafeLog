@@ -17,7 +17,7 @@ export default function Card({ p }) {
                     </div>
                     <div className={Style.Content}>
                         <div className={Style.Name}>{p.name}</div>
-                        <div className={Style.Extras}>
+                        {/* <div className={Style.Extras}>
                             Extra :
                             {
                                 productCart.map((i) => {
@@ -26,7 +26,7 @@ export default function Card({ p }) {
                                     )
                                 })
                             }
-                        </div>
+                        </div> */}
                         <div className={Style.Price}>EGP {p.price}</div>
                     </div>
                 </div>

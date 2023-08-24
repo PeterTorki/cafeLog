@@ -12,7 +12,7 @@ const Card = ({ product, loggedInUserId }) => {
 
     console.log(productId, ExtraId);
 
-    let currentProduct = products.find(p => p.id === productId);
+    let currentProduct = {...products.find(p => p.id === productId)};
 
     const currentExtras = currentProduct.Extras.map(e => {
       if (e.id === ExtraId) {
@@ -47,7 +47,7 @@ const Card = ({ product, loggedInUserId }) => {
 					<center><h3 className={styles.price}>{product.price} $</h3></center>
 				</div>
 			</div>
-			<h6>Extras</h6>
+			{/* <h6>Extras</h6>
 			<div className={styles.ex}>
 			{
 				product.Extras.length ?
@@ -63,7 +63,7 @@ const Card = ({ product, loggedInUserId }) => {
 				:
 				<h5 style={{textAlign:'center'}}>No Extras</h5>
 				}
-			</div>
+			</div> */}
 			<button className={styles.toCart} 
 			onClick={() => addToCart(product.id)}
 			>
