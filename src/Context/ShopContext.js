@@ -4,6 +4,7 @@ import { UserContext } from './UserContext'
 import { ProductsContext } from './ProductsContext'
 
 import axios from "axios";
+import { nanoid } from "nanoid";
 export const ShopContext = createContext(null);
 
 export const ShopContextProvider = (props) => {
@@ -18,7 +19,7 @@ export const ShopContextProvider = (props) => {
 	const getElemPrice = (productId)=>{
 		return products.find(p => p.id === productId).price;
 	}
-	
+
 	const getTotalCartPrice = () => {
 		let totalPrice = 0;
 		cartItems.forEach(c => {
@@ -108,11 +109,7 @@ export const ShopContextProvider = (props) => {
 	}
 
 	const addToCart = (productId) => {
-		if(cartItems.length === 0) {
-			const cart = getDefaultCart();
-			setCartItems(cart);
-		};
-
+		
 		const updatedCart = UpdatedTempCart(1, productId);
 		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
 		setCartItems(updatedCart);
@@ -134,17 +131,19 @@ export const ShopContextProvider = (props) => {
 	}
 
 	const deleteCart = () => {
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: []});
+		const previousOrder = [...user.previousOrders, {orderId: `ord-${nanoid()}`, orderDate: new Date().toISOString().slice(0, 10), orderPrice: getTotalCartPrice(), orderProducts: cartItems}];
+		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: [], previousOrders: previousOrder});
 		const cart = [...cartItems]
 		// make every chosenQuantuty 0
 		for(let i = 0; i < cart.length; i++) {
 			cart[i].chosenQuantity = 0;
 		}
 		setCartItems(cart)
-		setUser({...user, cart: cart})
+		setUser({...user, cart: cart, previousOrders: previousOrder})
 	}
 
 	const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartPrice, updateExtrasInCart, deleteCart, user };
 
 	return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
 }
+

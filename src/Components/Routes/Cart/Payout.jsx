@@ -14,7 +14,6 @@ export default function Payout({ setTogglePayment }) {
   const { deleteCart, user } = useContext(ShopContext);
 
   const checkout = () => {
-
     deleteCart();
   }
 
