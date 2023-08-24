@@ -107,7 +107,7 @@ export default function Settings() {
       if (activeDataIndex === i) {
         return (
           <div key={nanoid()} className={Style.dateContent}>
-            <Basket cartItems={products[i]}/>
+            <Basket className={Style.basket} cartItems={products[i]}/>
           </div>
         );
       }
@@ -450,6 +450,7 @@ export default function Settings() {
     <div className={Style.outer}>
       <div className={Style.content}>
         <div className={Style.leftSide}>
+          <div>
           <button
             className={
               activeContentIndex === 0 ? Style.active : Style.notActive
@@ -489,6 +490,7 @@ export default function Settings() {
               ></FontAwesomeIcon>
             </center>
           </button>
+          </div>
         </div>
         <div className={Style.rightSide}>
           {activeContentIndex === 0 ? AccountChanges() : null}

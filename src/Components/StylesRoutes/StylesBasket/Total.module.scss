@@ -1,4 +1,4 @@
-.container{
+.container,.container2{
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -57,13 +57,16 @@
         padding: 20px;
         border-bottom: 1px dashed black;
     }
-    
+}
+.container2{
+    position: static;
 }
 @media (max-width:790px) {
     .container{
         position: static;
     }
 }
+
 @media (min-width:790px) {
     .container{
         width: 30%;

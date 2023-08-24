@@ -26,6 +26,10 @@ export default function Payout({ setTogglePayment }) {
                 CheckOut
             </h1>
           </div>
+            <form action="" onSubmit={() => {
+                  setTogglePayment(true);
+                  checkout();
+                }}>
           <div className={Style.secondary}>
             <div className={Style.left}>
                 <h1>
@@ -36,17 +40,17 @@ export default function Payout({ setTogglePayment }) {
                 <div className={Style.row}>
                   <div className={Style.col}>
                       <label htmlFor="">First Name</label>
-                      <input type="text" name="" id=""/>
+                      <input type="text" name="" id="" required />
                   </div>
                   <div className={Style.col}>
                       <label htmlFor="">Last Name</label>
-                      <input type="text" name="" id="" />
+                      <input type="text" name="" id=""  required />
                   </div>
                 </div>
                 <label htmlFor="">Email</label>
-                <input type="email" name="" id="" />
+                <input type="email" name="" id=""  required />
                 <label htmlFor="">Password</label>
-                <input type="password" name="" id="" />
+                <input type="password" name="" id=""  required />
                 <h1>      
                   Payment Method
                 </h1>
@@ -77,25 +81,23 @@ export default function Payout({ setTogglePayment }) {
                 <hr />
                 <br />
                 <label htmlFor="">Name on card</label>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id=""  required />
                 <label htmlFor="">Card number</label>
-                <input type="password" />
+                <input type="password"  required />
                 <div className={Style.row}>
                   <div className={Style.col}>
                       <label htmlFor="">Valid through(MM/YY)</label>
-                      <input type="month" name="" id="" />
+                      <input type="month" name="" id=""  required />
                   </div>
                   <div className={Style.col}>
                       <label htmlFor="">CVV (3 Digits)</label>
-                      <input type="password" name="" id="" />
+                      <input type="password" name="" id=""  required />
                   </div>
                 </div>
-                <button onClick={() => {
-                  setTogglePayment(true);
-                  checkout();
-                }}>CHECKOUT</button>
+                <button type='submit'>CHECKOUT</button>
             </div>
           </div>
+            </form>
       </div>
     </div>
   )
