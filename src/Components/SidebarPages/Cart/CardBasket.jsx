@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import Style from "../../Style/BasketStyle/Card.module.css";
-import { ShopContext } from '../../Context/ShopContext'
+import Style from '../../StylesSidebar/StylesBasket/Card.module.css'
+import { ShopContext } from '../../../Context/ShopContext'
 
 export default function Card({ p }) {
 

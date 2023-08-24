@@ -1,10 +1,8 @@
 import React from 'react'
-import styles from "../Style/Menu.module.css";
-import { UserContext } from '../Context/UserContext';
-import axios from 'axios';
+import styles from '../../StylesSidebar/StylesMenu/Menu.module.css'
 import { useContext } from 'react';
-import { ShopContext } from '../Context/ShopContext';
-import { ProductsContext } from '../Context/ProductsContext';
+import { ShopContext } from '../../../Context/ShopContext';
+import { ProductsContext } from '../../../Context/ProductsContext';
 
 const Card = ({ product, loggedInUserId }) => {
 	const { products, updateProducts} = useContext(ProductsContext);

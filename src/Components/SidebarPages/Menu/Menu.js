@@ -1,13 +1,12 @@
-import React, { useEffect, useState, useCallback, useContext } from "react";
-import axios from "axios";
-import TypesMenu from "./TypesMenu";
+import React, { useState, useContext } from "react";
 import ReactLoading from 'react-loading';
-import { UserContext } from "../Context/UserContext";
 import Card from "./Card";
-import Header from "./Header";
-import styles from "../Style/Menu.module.css";
-import { ProductsContext } from "../Context/ProductsContext";
-import { ShopContext } from "../Context/ShopContext";
+import Header from './Header'
+import TypesMenu from "./TypesMenu";
+import styles from '../../StylesSidebar/StylesMenu/Menu.module.css'
+import { UserContext } from "../../../Context/UserContext";
+import { ProductsContext } from "../../../Context/ProductsContext";
+
 const Menu = () => {
 
   const [currType, setCurrType] = useState("All Menu");

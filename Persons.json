@@ -427,12 +427,13 @@
         },
         {
           "productId": "prod-KTpRVzO5sxWyk4y4v0Adz",
-          "chosenQuantity": 0,
+          "chosenQuantity": 1,
           "chosenExtras": [
             {
               "id": "extra-8EYGauhtTy69dGgfOfL-l",
               "name": "Chocolate",
-              "price": "20"
+              "price": "20",
+              "isActive": false
             }
           ]
         },
@@ -496,54 +497,60 @@
         },
         {
           "productId": "prod-34gxwOk3yeLONbHUA-_3X",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": [
             {
               "id": "extra-EWbLU9jdJYN3qjK1v-jKi",
               "name": "Caramel Swirl ",
-              "price": " 25"
+              "price": " 25",
+              "isActive": false
             },
             {
               "id": "extra-Fs9sbtG3t01foVqvL1Gnn",
               "name": "Crushed Nuts",
-              "price": "20"
+              "price": "20",
+              "isActive": false
             },
             {
               "id": "extra-TN3qvjgfBynmiQNI3NCPL",
               "name": "Berry Compote ",
-              "price": " 30"
+              "price": " 30",
+              "isActive": false
             }
           ]
         },
         {
           "productId": "prod-9VWvMe6qiqxp2O6QM7DDX",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": []
         },
         {
           "productId": "prod-sqjny2nnF074NwQa2wgC0",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": [
             {
               "id": "extra-fPityhulp7r6G5g0W7BM5",
               "name": "Ice cream",
-              "price": "20"
+              "price": "20",
+              "isActive": false
             },
             {
               "id": "extra-whkoGNEPLmk6dvcPIT7Cx",
               "name": "Berry Compote ",
-              "price": " 30"
+              "price": " 30",
+              "isActive": false
             }
           ]
         },
         {
           "productId": "prod-hVM4rTgHsrTNhz9uxcxBp",
-          "chosenQuantity": 0,
+          "chosenQuantity": 4,
           "chosenExtras": [
             {
               "id": "extra-mTvhNJJ_q3LExKhYlGZF-",
               "name": "Berry Compote ",
-              "price": " 30 "
+              "price": " 30 ",
+              "isActive": false
             }
           ]
         },
@@ -570,7 +577,7 @@
         },
         {
           "productId": "prod-6wOom8rm9ViowN95FPHDZ",
-          "chosenQuantity": 1,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-CpA3mZlVrtf6J78L3Hx5W",
@@ -594,7 +601,7 @@
         },
         {
           "productId": "prod-RTyRiEgLjgJ9iiSeyzgfc",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-x3zdPccGFq-Jy9vPq5ArZ",
@@ -617,7 +624,7 @@
         },
         {
           "productId": "prod-2MGwf8NN1xeyPr70vuYYr",
-          "chosenQuantity": 1,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-LPUGfV9bfjSj1PRjKnFjI",
@@ -629,7 +636,7 @@
         },
         {
           "productId": "prod-3NAoAgD_2WGH953wDaK7z",
-          "chosenQuantity": 1,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-mQ1HQY6ZneOpDST5twqa8",
@@ -652,7 +659,7 @@
         },
         {
           "productId": "prod-Rw8uLMwpIPjhbqiL6CDZu",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-OeC7c3526HNg2pIbSV3UI",
@@ -670,7 +677,7 @@
         },
         {
           "productId": "prod-jWnp1BnwFRqzxBwN0nDVD",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-fScWFHOwRSP7dySzxE-p0",
@@ -694,7 +701,7 @@
         },
         {
           "productId": "prod-oHnDtBlmwxS8iY0zmuCcu",
-          "chosenQuantity": 1,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-4qPhy5lMufyzG53oUSfgd",
@@ -712,7 +719,7 @@
         },
         {
           "productId": "prod-VliMmnl04KxOY2Foc7NL7",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": []
         }
       ],

@@ -1,6 +1,6 @@
 import React from 'react'
-import Style from '../Style/InitPage.module.css';
-import logo from './imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
+import Style from '../StylesSidebar/InitPage.module.css';
+import logo from '../imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
 
 
 export default function InitPage() {

@@ -1,6 +1,6 @@
-import React, {useEffect, useState, useCallback} from 'react'
-import Style from "../../Style/BasketStyle/Total.module.css";
-import { ShopContext } from '../../Context/ShopContext';
+import React from 'react'
+import Style from '../../StylesSidebar/StylesBasket/Total.module.css'
+import { ShopContext } from '../../../Context/ShopContext';
 import { useContext } from 'react';
 
 export default function Total() {
@@ -8,7 +8,7 @@ export default function Total() {
   const { cartItems, getTotalCartPrice } = useContext(ShopContext);
 
   let products = cartItems;
-  let res = 0;
+
   return (
     <div className={Style.container}>
         <div className={Style.total}>

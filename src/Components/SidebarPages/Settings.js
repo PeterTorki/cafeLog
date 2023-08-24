@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../Style/Settings.module.css';
+import Style from '../StylesSidebar/Settings.module.css'
 export default function Settings() {
   return (
     <div className={Style.container}>
