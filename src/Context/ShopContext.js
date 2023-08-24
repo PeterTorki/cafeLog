@@ -160,6 +160,7 @@ export const ShopContextProvider = (props) => {
 		for(let i = 0; i < cart.length; i++) {
 			cart[i].chosenQuantity = 0;
 		}
+		setCartItems(cart)
 		// make all extras of products inactive using setProducts
 		const updatedProducts = [...products];
 		for(let i = 0; i < updatedProducts.length; i++) {
@@ -171,7 +172,7 @@ export const ShopContextProvider = (props) => {
 		updateProducts(updatedProducts);
 
 		setUser({...userGet, cart: cart, previousOrders: previousOrders})
-		setCartItems(cart)
+		
 	}
 
 	const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartPrice, updateExtrasInCart, deleteCart, user };

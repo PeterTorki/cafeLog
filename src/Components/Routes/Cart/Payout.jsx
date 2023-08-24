@@ -17,7 +17,6 @@ export default function Payout({ setTogglePayment }) {
     deleteCart();
   }
 
-
   return (
     <div className={Style.main}>
       <div className={Style.main2}>
@@ -27,8 +26,8 @@ export default function Payout({ setTogglePayment }) {
             </h1>
           </div>
             <form action="" onSubmit={() => {
-                  setTogglePayment(true);
                   checkout();
+                  setTogglePayment(true);
                 }}>
           <div className={Style.secondary}>
             <div className={Style.left}>
