@@ -8,7 +8,7 @@ import { UserContext } from "../../../Context/UserContext";
 import { ProductsContext } from "../../../Context/ProductsContext";
 
 const Menu = () => {
-
+  
   const [currType, setCurrType] = useState("All Menu");
   const loggedInUserId = useContext(UserContext).loggedInUser;
   

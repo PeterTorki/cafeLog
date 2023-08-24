@@ -148,19 +148,19 @@
               "id": "extra-99OCNfyowGQ-c11R4MUgP",
               "name": "Carmelle",
               "price": "200",
-              "isActive": true
+              "isActive": false
             },
             {
               "id": "extra-9nNXBmqYX7YhIe1XwhEOc",
               "name": "Vanilla",
               "price": "300",
-              "isActive": true
+              "isActive": false
             }
           ]
         },
         {
           "productId": "prod-dCMVlo5YpflAeNk4xdmbN",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": []
         },
         {
@@ -170,17 +170,17 @@
         },
         {
           "productId": "prod-ncmc-8zU1eXDfJG66A72c",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": []
         },
         {
           "productId": "prod-ZRcsbkuIXzVTaWa7rQdPO",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": []
         },
         {
           "productId": "prod-feJ-5ydE94JLnv0S4J-tZ",
-          "chosenQuantity": 0,
+          "chosenQuantity": 2,
           "chosenExtras": []
         },
         {
@@ -432,8 +432,7 @@
             {
               "id": "extra-8EYGauhtTy69dGgfOfL-l",
               "name": "Chocolate",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             }
           ]
         },
@@ -502,20 +501,17 @@
             {
               "id": "extra-EWbLU9jdJYN3qjK1v-jKi",
               "name": "Caramel Swirl ",
-              "price": " 25",
-              "isActive": false
+              "price": " 25"
             },
             {
               "id": "extra-Fs9sbtG3t01foVqvL1Gnn",
               "name": "Crushed Nuts",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             },
             {
               "id": "extra-TN3qvjgfBynmiQNI3NCPL",
               "name": "Berry Compote ",
-              "price": " 30",
-              "isActive": false
+              "price": " 30"
             }
           ]
         },
@@ -531,26 +527,23 @@
             {
               "id": "extra-fPityhulp7r6G5g0W7BM5",
               "name": "Ice cream",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             },
             {
               "id": "extra-whkoGNEPLmk6dvcPIT7Cx",
               "name": "Berry Compote ",
-              "price": " 30",
-              "isActive": false
+              "price": " 30"
             }
           ]
         },
         {
           "productId": "prod-hVM4rTgHsrTNhz9uxcxBp",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-mTvhNJJ_q3LExKhYlGZF-",
               "name": "Berry Compote ",
-              "price": " 30 ",
-              "isActive": false
+              "price": " 30 "
             }
           ]
         },
@@ -582,20 +575,17 @@
             {
               "id": "extra-CpA3mZlVrtf6J78L3Hx5W",
               "name": " toasted pecans",
-              "price": "15",
-              "isActive": false
+              "price": "15"
             },
             {
               "id": "extra-ME54UdHMSoTta89TijKbV",
               "name": "powdered sugar",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             },
             {
               "id": "extra-Le3dry7Oc75qIpnIVAaQN",
               "name": "ice cream",
-              "price": "25",
-              "isActive": false
+              "price": "25"
             }
           ]
         },
@@ -606,8 +596,7 @@
             {
               "id": "extra-x3zdPccGFq-Jy9vPq5ArZ",
               "name": "Chocolate",
-              "price": "15",
-              "isActive": false
+              "price": "15"
             }
           ]
         },
@@ -629,8 +618,7 @@
             {
               "id": "extra-LPUGfV9bfjSj1PRjKnFjI",
               "name": "Nutella",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             }
           ]
         },
@@ -641,8 +629,7 @@
             {
               "id": "extra-mQ1HQY6ZneOpDST5twqa8",
               "name": "Caramel Crunch ",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             }
           ]
         },
@@ -706,14 +693,12 @@
             {
               "id": "extra-4qPhy5lMufyzG53oUSfgd",
               "name": "Chocolate ",
-              "price": "15",
-              "isActive": false
+              "price": "15"
             },
             {
               "id": "extra-wuOzqTy281q-oGa37b0TB",
               "name": "Caramel ",
-              "price": "20",
-              "isActive": false
+              "price": "20"
             }
           ]
         },
