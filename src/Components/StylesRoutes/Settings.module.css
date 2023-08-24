@@ -1,62 +1,156 @@
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
+.outer{
+    gap: 20px;
+    min-height: 100vh;
     background-color: #F8F8F8;
 }
-*:focus{
-    outline: none;
+.leftSide,.Accountcontainer{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(191, 191, 191);
 }
-*{
-    box-sizing: border-box;
+.leftSide{
+    text-align: center;
+    display: flex;
 }
-.profile{
-    width: 500px;
-    height: 600px;
-    border: 2px solid #3498db;
-    box-shadow:-3px -3px 7px #ffffff73 , 3px 3px 5px rbga(94,104,121,0.288);
-    border-radius: 5px;
-    background-color: black;
-    overflow: hidden;
+.rightSide{
+    margin: 0 50px;
+    margin-top: 50px;
+}
+.myicons{
+    text-align: center;
+}
+.leftSide button{
+    display: block;
+    width: 100%;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 32px;
+    border: none;
+    background-color: transparent;
+}
+.leftSide button:hover{
+    background-color: rgb(99, 143, 143);   
+    cursor: pointer;
+    
 }
 
-.profile{
+@media (max-width:990px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:505px) {
+    .leftSide{
+        flex-direction: column;
+    }
+}
+
+
+.Accountcontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+}
+.Accountcontainer h1{
+    color: rgb(1, 208, 1);
+}
+.inputStyle div label {
+    font-size: 24px;
+}
+.inputStyle div input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+.inputStyle div {
+    width: calc(50% - 10px);
+}
+.inputStyle{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.profile img{
-    width: 149px;
-    height: 149px;
-    border-radius: 50%;
-    margin: 0;
-    padding: 3px;
-    background-color: white;
+.Accountcontainer button {
+    border-radius: 20px;
+    border: 1px solid #638F8F;
+    background: #638F8F;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: fit-content;
+  }
+  .Accountcontainer button:active {
+    transform: scale(0.95);
+  }
+  .Accountcontainer button:focus {
+    outline: none;
+  }
+
+
+  .Prev{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .dateDiv{
+    width: 20%;
+    min-height: 60vh;
+  }
+  .contentPerDate{
+    width: calc(70%);
+    min-height: 60vh;
+  }
+
+  .dateDiv , .contentPerDate{
+    max-height: 500px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(191, 191, 191);
+  }
+
+  .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+
+  }
+
+  .leftSide  .active , .dateDiv .active{
+    background-color: rgb(99, 143, 143);
+    
+}
+.leftSide  .notActive , .dateDiv .notActive{
+    background-color: transparent;
+    
 }
 
-input{
-    display: block;
-    background: none;
-    color: green;
-    margin-bottom: 30px;
-    padding: 4px;
-    width: 220px;
-    height: 32px;
-    border: none;
-    border-bottom: 1px #0082e6;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0;
-}
-
-input:focus{
-    border-bottom: 2px solid #638F8F;
-    background: none;
-    border-bottom-right-radius: 20px;
-    color: #638F8F;
-    transition: 0.2 ease;
-}
+  .date:hover{
+    background-color: rgb(99, 143, 143);    
+  }
+  .NotesOuter{
+    display: flex;
+    justify-content: center;    
+  }
+  .Notes{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(191, 191, 191);
+  }

@@ -11,7 +11,7 @@ import axios from 'axios';
 
 export default function Payout({ setTogglePayment }) {
   const loggedInUserId = useContext(UserContext).loggedInUser;
-  const { deleteCart, user } = useContext(ShopContext);
+  const { deleteCart } = useContext(ShopContext);
 
   const checkout = () => {
     deleteCart();
@@ -22,10 +22,9 @@ export default function Payout({ setTogglePayment }) {
     <div className={Style.main}>
       <div className={Style.main2}>
           <div className={Style.first}>
-            <img src={logo} alt="ChillCup" className={Style.logo}/>
-            <h2 className={Style.heading}>
+            <h1 className={Style.heading}>
                 CheckOut
-            </h2>
+            </h1>
           </div>
           <div className={Style.secondary}>
             <div className={Style.left}>

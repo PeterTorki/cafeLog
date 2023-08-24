@@ -3,7 +3,9 @@ import { nanoid } from "nanoid";
 import axios from "axios";
 import { UserContext } from "../Context/UserContext";
 import styles from "../Style/SignInUp.module.css"
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+  
 const SignInUp = () => {
   const [userSignUp, setUserSignUp] = useState({
     id: `user-${nanoid()}`,
@@ -24,6 +26,7 @@ const SignInUp = () => {
   
   const [userLogIn, setUserLogIn] = useState({});
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
   
   const handleSignUpChange = (e) => {
     const { name, value } = e.target;
@@ -35,9 +38,13 @@ const SignInUp = () => {
     setUserLogIn({ ...userLogIn, [name]: value });
   };
 
-  const SignInUp = (e) => {
-    axios.post("http://localhost:3466/Users", userSignUp);
-  };
+  
+
+  const showToastMessage = () => {
+    toast.success('Success Notification !', {
+        position: toast.POSITION.TOP_RIGHT
+    });
+};
 
   const SignIn = async(e) => {
     e.preventDefault();
@@ -49,13 +56,30 @@ const SignInUp = () => {
     else  setLoggedInUser(foundUser[0].id);
   }
 
-  const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
+  const checkUserUnique = async(e) => {
+    e.preventDefault();
+    const users = await axios.get("http://localhost:3466/Users")
+                        .then((res) => res.data);
+    const foundUser = users.filter((user) => user.email === userSignUp?.email);
+
+    if(foundUser.length) {
+      showToastMessage();
+      alert("User already exists")
+    }
+
+    else {
+      axios.post("http://localhost:3466/Users", userSignUp);
+      setActivePanel('')
+    }
+
+  }
 
   return (
     <div className={styles.body}>
       <div className={`${styles.container} ${activePanel}`}>
         <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
-          <form action="" onSubmit={SignInUp}>
+
+          <form action="" onSubmit={checkUserUnique}>
             <h2>Create your account</h2>
             <div>
               <label htmlFor="user-name">User Name</label>
@@ -66,6 +90,7 @@ const SignInUp = () => {
                 value={userSignUp.name}
                 placeholder="Peter Joseph"
                 onChange={handleSignUpChange}
+                required
               />
             </div>
 
@@ -78,6 +103,7 @@ const SignInUp = () => {
                 value={userSignUp.email}
                 placeholder="peter.j.torki@gmail.com"
                 onChange={handleSignUpChange}
+                required
               />
             </div>
 
@@ -90,6 +116,7 @@ const SignInUp = () => {
                 value={userSignUp.password}
                 placeholder="Password"
                 onChange={handleSignUpChange}
+                required
               />
             </div>
 
@@ -102,6 +129,7 @@ const SignInUp = () => {
                 value={userSignUp.phoneNumber}
                 placeholder="01211036617"
                 onChange={handleSignUpChange}
+                required
               />
             </div>
 
@@ -114,12 +142,11 @@ const SignInUp = () => {
                 value={userSignUp.address}
                 placeholder="Cairo, Egypt"
                 onChange={handleSignUpChange}
+                required
               />
             </div>
 
-            <button type="submit" className={`${styles.signBtn} ${styles.signIn}`}>
-              Sign Up
-            </button>
+            <button type="submit" className={`${styles.signBtn} ${styles.signIn}`}> Sign Up</button>
           </form>   
         </div>
         <div className={`${styles.formContainer} ${styles.signInContainer}`}>

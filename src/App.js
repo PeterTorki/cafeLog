@@ -9,7 +9,7 @@ import Basket from "./Components/Routes/Cart/Basket";
 import { ShopContextProvider } from "./Context/ShopContext";
 import { ProductsContextProvider } from "./Context/ProductsContext";
 import InitPage from "./Components/Routes/InitPage";
-import Settings from "./Components/Routes/Settings";
+import Settings from "./Components/Routes/Settings/Settings";
 import Favorites from "./Components/Routes/Favorites";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactUs from "./Components/Routes/ContactUs/ContactUs";

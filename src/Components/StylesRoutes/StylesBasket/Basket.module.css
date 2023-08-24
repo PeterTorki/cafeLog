@@ -8,6 +8,7 @@
 .outer {
   background-color: #F8F8F8;
   padding: 0 20px;
+  min-height: 100vh;
 }
 
 .container2 {

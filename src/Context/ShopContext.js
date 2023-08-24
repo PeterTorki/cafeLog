@@ -68,12 +68,6 @@ export const ShopContextProvider = (props) => {
 	}, [products]);
 
 
-	useEffect(() => {
-		console.log('Update From Extras', cartItems);
-		console.log('Update From Products', products);
-
-	}, [cartItems, products])
-	
 	const UpdatedTempCart = (newQuantity, productId, type = '') => {
 		const updatedCart = []
 		const chosenExtras = {...products.find(p => p.id === productId)}
@@ -92,7 +86,7 @@ export const ShopContextProvider = (props) => {
 		return updatedCart;
 	}
 
-	const updateExtrasInCart = (productId) => {
+	const updateExtrasInCart = async(productId) => {
 		const updatedCart = []
 		const updatedExtras = [...products.find(p => p.id === productId).Extras]
 		for (const item of cartItems) {
@@ -102,44 +96,72 @@ export const ShopContextProvider = (props) => {
 				updatedCart.push(item);
 			}
 		}
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
+
+		let userGet = {};
+		await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+			userGet = response.data;
+		})
+		await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
+		setCartItems(updatedCart);
+		setUser({...userGet, cart: cartItems})
 		
-		setCartItems(updatedCart)
-		setUser({...user, cart: cartItems})
 	}
 
-	const addToCart = (productId) => {
+	const addToCart = async (productId) => {
 		
 		const updatedCart = UpdatedTempCart(1, productId);
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
+		
+		let userGet = {};
+		await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+			userGet = response.data;
+		})
+		await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
 		setCartItems(updatedCart);
-		setUser({...user, cart: cartItems})
-	}
-
-	const removeFromCart = (productId) => {
-		const updatedCart = UpdatedTempCart(-1, productId);
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
-		setCartItems(updatedCart)
-		setUser({...user, cart: cartItems})
+		setUser({...userGet, cart: cartItems})
 	}
 	
-	const updateCartItemCount = (newQuantity, productId) => {
+	const removeFromCart = async(productId) => {
+		const updatedCart = UpdatedTempCart(-1, productId);
+		
+		let userGet = {};
+		await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+			userGet = response.data;
+		})
+		await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
+		setCartItems(updatedCart);
+		setUser({...userGet, cart: cartItems})
+	}
+	
+	const updateCartItemCount = async(newQuantity, productId) => {
 		const updatedCart = UpdatedTempCart(newQuantity, productId, 'update');
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: updatedCart});
-		setCartItems(updatedCart)
-		setUser({...user, cart: cartItems})
+
+		let userGet = {};
+		await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+			userGet = response.data;
+		})
+		await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
+		setCartItems(updatedCart);
+		setUser({...userGet, cart: cartItems})
 	}
 
-	const deleteCart = () => {
-		const previousOrder = [...user.previousOrders, {orderId: `ord-${nanoid()}`, orderDate: new Date().toISOString().slice(0, 10), orderPrice: getTotalCartPrice(), orderProducts: cartItems}];
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: [], previousOrders: previousOrder});
+	const deleteCart = async() => {
+		const cartItemsCopy = [...cartItems];
+
+		let userGet = {};
+		await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+			userGet = response.data;
+		})
+		
+		const userPreviousOrders = [...userGet.previousOrders];
+		const previousOrders = [...userPreviousOrders, {orderId: `ord-${nanoid()}`, orderDate: new Date().toISOString().slice(0, 10), orderPrice: getTotalCartPrice(), orderProducts: cartItemsCopy}];
+		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: [], previousOrders: previousOrders});
 		const cart = [...cartItems]
-		// make every chosenQuantuty 0
+
 		for(let i = 0; i < cart.length; i++) {
 			cart[i].chosenQuantity = 0;
 		}
+		setUser({...userGet, cart: cart, previousOrders: previousOrders})
 		setCartItems(cart)
-		setUser({...user, cart: cart, previousOrders: previousOrder})
 	}
 
 	const contextValue = { cartItems, addToCart, removeFromCart, updateCartItemCount, getTotalCartPrice, updateExtrasInCart, deleteCart, user };

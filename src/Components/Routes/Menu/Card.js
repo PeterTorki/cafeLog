@@ -35,6 +35,7 @@ const Card = ({ product, loggedInUserId }) => {
   }
 
 	const ItemChosenQuantity = cartItems.find(c => c.productId === product.id)?.chosenQuantity || 0;
+	
 	return (
 		<div className={styles.card} key={product.id}>
 			<div className={styles.info}>
