@@ -427,7 +427,7 @@
         },
         {
           "productId": "prod-KTpRVzO5sxWyk4y4v0Adz",
-          "chosenQuantity": 1,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-8EYGauhtTy69dGgfOfL-l",
@@ -497,7 +497,7 @@
         },
         {
           "productId": "prod-34gxwOk3yeLONbHUA-_3X",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-EWbLU9jdJYN3qjK1v-jKi",
@@ -521,12 +521,12 @@
         },
         {
           "productId": "prod-9VWvMe6qiqxp2O6QM7DDX",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": []
         },
         {
           "productId": "prod-sqjny2nnF074NwQa2wgC0",
-          "chosenQuantity": 2,
+          "chosenQuantity": 0,
           "chosenExtras": [
             {
               "id": "extra-fPityhulp7r6G5g0W7BM5",
@@ -544,7 +544,7 @@
         },
         {
           "productId": "prod-hVM4rTgHsrTNhz9uxcxBp",
-          "chosenQuantity": 4,
+          "chosenQuantity": 2,
           "chosenExtras": [
             {
               "id": "extra-mTvhNJJ_q3LExKhYlGZF-",

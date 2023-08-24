@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Style from '../../StylesSidebar/StylesBasket/Card.module.css'
+import Style from '../../StylesRoutes/StylesBasket/Card.module.css'
 import { ShopContext } from '../../../Context/ShopContext'
 
 export default function Card({ p }) {

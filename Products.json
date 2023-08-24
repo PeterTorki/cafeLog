@@ -19,13 +19,13 @@
           "id": "extra-99OCNfyowGQ-c11R4MUgP",
           "name": "Carmelle",
           "price": "200",
-          "isActive": true
+          "isActive": false
         },
         {
           "id": "extra-9nNXBmqYX7YhIe1XwhEOc",
           "name": "Vanilla",
           "price": "300",
-          "isActive": true
+          "isActive": false
         }
       ]
     },

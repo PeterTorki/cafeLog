@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../../StylesSidebar/StylesBasket/Total.module.css'
+import Style from '../../StylesRoutes/StylesBasket/Total.module.css'
 import { ShopContext } from '../../../Context/ShopContext';
 import { useContext } from 'react';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../StylesSidebar/StylesMenu/TypesMenu.module.css"
+import styles from "../../StylesRoutes/StylesMenu/TypesMenu.module.css"
 import menu from "../../imgsComponent/clinking-beer-mugs_1f37b.png"
 import coffe from "../../imgsComponent/hot-beverage_2615.png"
 import booba from "../../imgsComponent/bubble-tea_1f9cb.png"

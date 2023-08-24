@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../StylesSidebar/InitPage.module.css';
+import Style from '../StylesRoutes/InitPage.module.css';
 import logo from '../imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png';
 
 

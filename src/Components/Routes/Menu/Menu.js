@@ -3,7 +3,7 @@ import ReactLoading from 'react-loading';
 import Card from "./Card";
 import Header from './Header'
 import TypesMenu from "./TypesMenu";
-import styles from '../../StylesSidebar/StylesMenu/Menu.module.css'
+import styles from '../../StylesRoutes/StylesMenu/Menu.module.css'
 import { UserContext } from "../../../Context/UserContext";
 import { ProductsContext } from "../../../Context/ProductsContext";
 

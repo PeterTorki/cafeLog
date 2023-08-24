@@ -1,21 +1,19 @@
 import { useState, useCallback, useEffect } from "react";
-import Menu from "./Components/SidebarPages/Menu/Menu";
+import Menu from "./Components/Routes/Menu/Menu";
 import SignInUp from "./Components/SignInUp";
 import SideBar from "./Components/SideBar";
 import { UserContext } from './Context/UserContext'
-import styles from '../src/Style/App.module.css'
-import axios from "axios";
+
 import './App.css'
-import Basket from "./Components/SidebarPages/Cart/Basket";
+import Basket from "./Components/Routes/Cart/Basket";
 import { ShopContextProvider } from "./Context/ShopContext";
-import { ProductsContext, ProductsContextProvider } from "./Context/ProductsContext";
-import { useContext } from "react";
-import InitPage from "./Components/SidebarPages/InitPage";
-import Settings from "./Components/SidebarPages/Settings";
-import Favorites from "./Components/SidebarPages/Favorites";
+import { ProductsContextProvider } from "./Context/ProductsContext";
+import InitPage from "./Components/Routes/InitPage";
+import Settings from "./Components/Routes/Settings";
+import Favorites from "./Components/Routes/Favorites";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ContactUs from "./Components/SidebarPages/ContactUs";
-import AboutUs from "./Components/SidebarPages/AboutUs";
+import ContactUs from "./Components/Routes/ContactUs/ContactUs";
+import AboutUs from "./Components/Routes/AboutUs";
 
 const App = () => {
 

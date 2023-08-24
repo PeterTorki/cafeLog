@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useCallback} from 'react'
 import { ShopContext } from '../../../Context/ShopContext';
 import { ProductsContext } from '../../../Context/ProductsContext'
-import Style from '../../StylesSidebar/StylesBasket/Basket.module.css'
+import Style from '../../StylesRoutes/StylesBasket/Basket.module.css'
 import CardBasket from "./CardBasket";
 import { useContext } from 'react';
 import Total from "./Total";
