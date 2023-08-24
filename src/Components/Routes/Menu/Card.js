@@ -48,11 +48,11 @@ const Card = ({ product, loggedInUserId }) => {
 					<center><h3 className={styles.price}>{product.price} $</h3></center>
 				</div>
 			</div>
-			{/* <h6>Extras</h6>
 			<div className={styles.ex}>
 			{
 				product.Extras.length ?
 				<div>
+					<h6>Extras</h6>
 					<div className={styles.Extras}>
 					{
 						product.Extras.map((e) => {
@@ -63,8 +63,8 @@ const Card = ({ product, loggedInUserId }) => {
 				</div>
 				:
 				<h5 style={{textAlign:'center'}}>No Extras</h5>
-				}
-			</div> */}
+			}
+			</div>
 			<button className={styles.toCart} 
 			onClick={() => addToCart(product.id)}
 			>

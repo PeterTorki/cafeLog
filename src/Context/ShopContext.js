@@ -11,7 +11,7 @@ export const ShopContextProvider = (props) => {
 
 	const [cartItems, setCartItems] = useState([]);
 
-	const {products} = useContext(ProductsContext);
+	const {products, updateProducts} = useContext(ProductsContext);
 	const { loggedInUser } = useContext(UserContext);
 	const [user, setUser] = useState({});
 	const [userCart, setUserCart] = useState([]);
@@ -160,6 +160,16 @@ export const ShopContextProvider = (props) => {
 		for(let i = 0; i < cart.length; i++) {
 			cart[i].chosenQuantity = 0;
 		}
+		// make all extras of products inactive using setProducts
+		const updatedProducts = [...products];
+		for(let i = 0; i < updatedProducts.length; i++) {
+			updatedProducts[i].Extras.map(e => {
+				e.isActive = false;
+				return e;
+			})
+		}
+		updateProducts(updatedProducts);
+
 		setUser({...userGet, cart: cart, previousOrders: previousOrders})
 		setCartItems(cart)
 	}
