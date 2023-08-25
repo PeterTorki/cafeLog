@@ -1,16 +1,12 @@
 import React from 'react'
 import Style from '../../StylesRoutes/StylesBasket/Payout.module.css'
-import logo from '../../imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png'
 import {BsPaypal} from 'react-icons/bs';
 import {BsGooglePlay} from 'react-icons/bs';
 import {BsApple} from 'react-icons/bs';
 import { useContext } from 'react';
-import { UserContext } from '../../../Context/UserContext';
 import { ShopContext } from '../../../Context/ShopContext';
-import axios from 'axios';
 
 export default function Payout({ setTogglePayment }) {
-  const loggedInUserId = useContext(UserContext).loggedInUser;
   const { deleteCart } = useContext(ShopContext);
 
   const checkout = () => {
