@@ -6,16 +6,20 @@ import { GoHome, GoHomeFill } from "react-icons/go";
 import { HiShoppingCart, HiOutlineShoppingCart } from "react-icons/hi";
 import { AiOutlineInfoCircle, AiFillInfoCircle } from "react-icons/ai";
 import { IoSettingsOutline, IoSettingsSharp } from "react-icons/io5";
+import { BiLogOut } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import logo from "../Components/imgsComponent/Brown_Illustrasi_Coffee_Cafe_Logo__1_-removebg-preview.png";
+import { useContext } from "react";
+import { UserContext } from "../Context/UserContext";
 
 import styles from "../Style/SideBar.module.css";
 import { nanoid } from "nanoid";
 
 const SideBar = () => {
   const location = useLocation();
-  console.log(location.pathname);
+  const { setLoggedInUser } = useContext(UserContext);
+
   return (
     <div className={styles.outer}>
       <ul className={styles.sidebar2}>
@@ -88,6 +92,9 @@ const SideBar = () => {
               <IoSettingsOutline size={30} color={"#638F8F"} />
             )}
           </NavLink>
+        </li>
+        <li>
+          <BiLogOut size={30} color={"#638F8F"} onClick={() => setLoggedInUser('')}/>
         </li>
       </ul>
     </div>

@@ -23,7 +23,7 @@ const SignInUp = () => {
   });
 
   const [userLogIn, setUserLogIn] = useState({});
-  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const { setLoggedInUser } = useContext(UserContext);
   const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
   
   const handleSignUpChange = (e) => {
