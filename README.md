@@ -35,11 +35,7 @@ npm i
 Running:
 
 ```
-npm run jsonserver1
-```
-
-```
-npm run jsonserver2
+npm run jsonserver
 ```
 
 ```
