@@ -63,7 +63,7 @@ const AddProduct = () => {
 	])
 	
 	const AddProduct = (e) => {
-		axios.post("http://localhost:3477/Products", product)
+		axios.post("http://localhost:3466/Products", product)
 		.then(res => console.log(res.data));
 	}
 	
