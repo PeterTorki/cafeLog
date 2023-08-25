@@ -39,11 +39,11 @@ export default function Payout({ setTogglePayment }) {
                 <div className={Style.row}>
                   <div className={Style.col}>
                       <label htmlFor="">First Name</label>
-                      <input type="text" name="" id="" required />
+                      <input type="text" title="email" pattern="[a-z A-Z]*" required/>
                   </div>
                   <div className={Style.col}>
                       <label htmlFor="">Last Name</label>
-                      <input type="text" name="" id=""  required />
+                      <input type="text" name="" id="" pattern="[a-z A-Z]*" required />
                   </div>
                 </div>
                 <label htmlFor="">Email</label>
@@ -80,9 +80,11 @@ export default function Payout({ setTogglePayment }) {
                 <hr />
                 <br />
                 <label htmlFor="">Name on card</label>
-                <input type="text" name="" id=""  required />
+                <input type="text" name="" id="" pattern="[a-z A-Z]*"  required />
+
                 <label htmlFor="">Card number</label>
-                <input type="password"  required />
+                <input type="number"  required />
+                
                 <div className={Style.row}>
                   <div className={Style.col}>
                       <label htmlFor="">Valid through(MM/YY)</label>
@@ -90,7 +92,7 @@ export default function Payout({ setTogglePayment }) {
                   </div>
                   <div className={Style.col}>
                       <label htmlFor="">CVV (3 Digits)</label>
-                      <input type="password" name="" id=""  required />
+                      <input type="password" name="" id="" maxlength="3" required />
                   </div>
                 </div>
                 <button type='submit'>CHECKOUT</button>

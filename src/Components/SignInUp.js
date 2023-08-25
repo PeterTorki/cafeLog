@@ -4,7 +4,7 @@ import axios from "axios";
 import { UserContext } from "../Context/UserContext";
 import styles from "../Style/SignInUp.module.css"
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
   
 const SignInUp = () => {
   const [userSignUp, setUserSignUp] = useState({
@@ -22,37 +22,57 @@ const SignInUp = () => {
     favorites: [],
   });
 
-  
-  
   const [userLogIn, setUserLogIn] = useState({});
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
   const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
   
   const handleSignUpChange = (e) => {
-    const { name, value } = e.target;
+    let { name, value } = e.target;
+    // make email lowercase
+    if (name === "email") value = value.toLowerCase();
+    console.log(name, value);
     setUserSignUp({ ...userSignUp, [name]: value });
   };
 
   const handleSignInChange = (e) => {
-    const { name, value } = e.target;
+    let { name, value } = e.target;
+    if (name === "email") value = value.toLowerCase();
     setUserLogIn({ ...userLogIn, [name]: value });
   };
 
-  
 
-  const showToastMessage = () => {
-    toast.success('Success Notification !', {
-        position: toast.POSITION.TOP_RIGHT
-    });
-};
 
   const SignIn = async(e) => {
     e.preventDefault();
     const users = await axios.get("http://localhost:3466/Users")
                         .then((res) => res.data);
-    const foundUser = users.filter((user) => user.email === userLogIn?.inEmail && user.password === userLogIn?.inPassword);
+    const foundUser = users.filter((user) => user.email === userLogIn?.inEmail);
 
-    if(!foundUser.length) alert("User not found");
+    if(!foundUser.length) {
+      toast.error('User Not Found !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+    }
+    else if(foundUser[0].password !== userLogIn?.inPassword) {
+      toast.error('Check Password Again !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+    }
+
     else  setLoggedInUser(foundUser[0].id);
   }
 
@@ -63,8 +83,16 @@ const SignInUp = () => {
     const foundUser = users.filter((user) => user.email === userSignUp?.email);
 
     if(foundUser.length) {
-      showToastMessage();
-      alert("User already exists")
+      toast.error('User Already Exists !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
     }
 
     else {
@@ -76,6 +104,7 @@ const SignInUp = () => {
 
   return (
     <div className={styles.body}>
+      <ToastContainer />
       <div className={`${styles.container} ${activePanel}`}>
         <div className={`${styles.formContainer} ${styles.signUpContainer}`}>
 
@@ -91,13 +120,14 @@ const SignInUp = () => {
                 placeholder="Peter Joseph"
                 onChange={handleSignUpChange}
                 required
+                pattern="[a-z A-Z]*"
               />
             </div>
 
             <div>
               <label htmlFor="user-email">User Email</label>
               <input
-                type="text"
+                type="email"
                 id="user-email"
                 name="email"
                 value={userSignUp.email}
