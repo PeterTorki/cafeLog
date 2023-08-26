@@ -79,6 +79,16 @@ const SignInUp = () => {
         });
     }
     else {
+      toast.success('User Logged In Successfully !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
       setLoggedInUser(foundUser[0].id);
     }
 
@@ -103,6 +113,17 @@ const SignInUp = () => {
 
     else {
       axios.post("https://chillcupjson.onrender.com/Users", userSignUp);
+      toast.success('User Created Successfully !', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+
       setUsers([...users, userSignUp]);
       setActivePanel('')
     }
