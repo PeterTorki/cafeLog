@@ -45,7 +45,7 @@ const SignInUp = () => {
 
   const SignIn = async(e) => {
     e.preventDefault();
-    const users = await axios.get("http://localhost:3466/Users")
+    const users = await axios.get("https://chillcupjson.onrender.com/Users")
                         .then((res) => res.data);
     const foundUser = users.filter((user) => user.email === userLogIn?.inEmail);
 
@@ -81,7 +81,7 @@ const SignInUp = () => {
 
   const checkUserUnique = async(e) => {
     e.preventDefault();
-    const users = await axios.get("http://localhost:3466/Users")
+    const users = await axios.get("https://chillcupjson.onrender.com/Users")
                         .then((res) => res.data);
     const foundUser = users.filter((user) => user.email === userSignUp?.email);
 
@@ -99,7 +99,7 @@ const SignInUp = () => {
     }
 
     else {
-      axios.post("http://localhost:3466/Users", userSignUp);
+      axios.post("https://chillcupjson.onrender.com/Users", userSignUp);
       setActivePanel('')
     }
 

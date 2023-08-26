@@ -9,7 +9,7 @@ export const ProductsContextProvider = (props) => {
 	const [products, setProducts] = useState([]);
 	
 	const getProducts = async() => {
-		const response = axios.get('http://localhost:3466/Products');
+		const response = axios.get('https://chillcupjson.onrender.com/Products');
 		const data = (await response).data;
 		setProducts(data);
 	}

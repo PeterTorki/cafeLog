@@ -34,12 +34,12 @@ export const ShopContextProvider = (props) => {
 
 	const updateUserCart = async() => {
 		console.log(user)
-		axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...user, cart: cartItems});
+		axios.put(`https://chillcupjson.onrender.com/Users/${loggedInUser}`, {...user, cart: cartItems});
 	}
 	
 	// create use effect to get the user cart from the server using async await
 	const getUserCart = async() => {
-		const response = await axios.get(`http://localhost:3466/Users/${loggedInUser}`);
+		const response = await axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`);
 		const user = response.data;
 		console.log(user)
 		setUser(user);
@@ -125,7 +125,7 @@ export const ShopContextProvider = (props) => {
 	// }
 
 	// const getUserCart = () => {
-	// 	axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+	// 	axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`).then((response) => {
 	// 		setUser(response.data);
 	// 		updateUserCart(response.data.cart);
 	// 	})
@@ -191,10 +191,10 @@ export const ShopContextProvider = (props) => {
 	// 	}
 
 	// 	let userGet = {};
-	// 	await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+	// 	await axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`).then((response) => {
 	// 		userGet = response.data;
 	// 	})
-	// 	await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
+	// 	await axios.put(`https://chillcupjson.onrender.com/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
 	// 	setCartItems(updatedCart);
 	// 	setUser({...userGet, cart: cartItems})
 		
@@ -208,10 +208,10 @@ export const ShopContextProvider = (props) => {
 	// 	const updatedCart = UpdatedTempCart(newQuantity, productId, 'update');
 
 	// 	let userGet = {};
-	// 	await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+	// 	await axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`).then((response) => {
 	// 		userGet = response.data;
 	// 	})
-	// 	await axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
+	// 	await axios.put(`https://chillcupjson.onrender.com/Users/${loggedInUser}`, {...userGet, cart: updatedCart});
 	// 	setCartItems(updatedCart);
 	// 	setUser({...userGet, cart: cartItems})
 	// }
@@ -220,13 +220,13 @@ export const ShopContextProvider = (props) => {
 	// 	const cartItemsCopy = [...cartItems];
 
 	// 	let userGet = {};
-	// 	await axios.get(`http://localhost:3466/Users/${loggedInUser}`).then((response) => {
+	// 	await axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`).then((response) => {
 	// 		userGet = response.data;
 	// 	})
 		
 	// 	const userPreviousOrders = [...userGet.previousOrders];
 	// 	const previousOrders = [...userPreviousOrders, {orderId: `ord-${nanoid()}`, orderDate: new Date().toISOString().slice(0, 10), orderPrice: getTotalCartPrice(), orderProducts: cartItemsCopy}];
-	// 	axios.put(`http://localhost:3466/Users/${loggedInUser}`, {...userGet, cart: [], previousOrders: previousOrders});
+	// 	axios.put(`https://chillcupjson.onrender.com/Users/${loggedInUser}`, {...userGet, cart: [], previousOrders: previousOrders});
 	// 	const cart = [...cartItems]
 
 	// 	for(let i = 0; i < cart.length; i++) {
@@ -251,4 +251,3 @@ export const ShopContextProvider = (props) => {
 
 	return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
 }
-

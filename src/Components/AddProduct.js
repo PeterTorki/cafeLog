@@ -63,7 +63,7 @@ const AddProduct = () => {
 	])
 	
 	const AddProduct = (e) => {
-		axios.post("http://localhost:3466/Products", product)
+		axios.post("https://chillcupjson.onrender.com/Products", product)
 		.then(res => console.log(res.data));
 	}
 	
