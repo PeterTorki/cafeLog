@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import axios from "axios";
 import { UserContext } from "../Context/UserContext";
@@ -23,6 +23,7 @@ const SignInUp = () => {
     favorites: [],
   });
 
+  const [users, setUsers] = useState([]);
   const [userLogIn, setUserLogIn] = useState({});
   const { setLoggedInUser } = useContext(UserContext);
   const [activePanel, setActivePanel] = useState(styles.rightPanelActive);
@@ -41,12 +42,16 @@ const SignInUp = () => {
     setUserLogIn({ ...userLogIn, [name]: value });
   };
 
+  useEffect(() => {
+    axios.get("https://chillcupjson.onrender.com/Users").then((res) => {
+      setUsers(res.data);
+    });
+  }, []);
 
 
-  const SignIn = async(e) => {
+
+  const SignIn = (e) => {
     e.preventDefault();
-    const users = await axios.get("https://chillcupjson.onrender.com/Users")
-                        .then((res) => res.data);
     const foundUser = users.filter((user) => user.email === userLogIn?.inEmail);
 
     if(!foundUser.length) {
@@ -79,10 +84,8 @@ const SignInUp = () => {
 
   }
 
-  const checkUserUnique = async(e) => {
+  const checkUserUnique = (e) => {
     e.preventDefault();
-    const users = await axios.get("https://chillcupjson.onrender.com/Users")
-                        .then((res) => res.data);
     const foundUser = users.filter((user) => user.email === userSignUp?.email);
 
     if(foundUser.length) {
@@ -100,6 +103,7 @@ const SignInUp = () => {
 
     else {
       axios.post("https://chillcupjson.onrender.com/Users", userSignUp);
+      setUsers([...users, userSignUp]);
       setActivePanel('')
     }
 
