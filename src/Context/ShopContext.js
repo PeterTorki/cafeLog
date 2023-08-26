@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createContext, useEffect, useCallback, useContext } from "react";
+import { createContext, useEffect, useContext } from "react";
 import { UserContext } from './UserContext'
 import { ProductsContext } from './ProductsContext'
 
