@@ -24,7 +24,7 @@ export default function Settings() {
   const { loggedInUser } = useContext(UserContext);
 
   const getPreviousOrders = async () => {
-    const response = await axios.get(`http://localhost:3466/Users/${loggedInUser}`);
+    const response = await axios.get(`https://chillcupjson.onrender.com/Users/${loggedInUser}`);
     const prev = await response.data.previousOrders;
     setPrevOrders(prev);
   }
