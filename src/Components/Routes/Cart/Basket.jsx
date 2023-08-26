@@ -12,25 +12,27 @@ export default function Basket() {
   const {products} = useContext(ProductsContext);
 	
 	const { cartItems } = useContext(ShopContext);
-  console.log('cart items in basket: ', cartItems);
+  
 	const cartToView = []
-	for(let i = 0; i < cartItems.length; i++) {
-		if(cartItems[i].chosenQuantity > 0) {
-			for(let j = 0; j < products.length; j++) {
-				if(cartItems[i].productId === products[j].id) {
-					const customizedProduct = {
-						id: products[j].id,
-						name: products[j].name,
-						price: products[j].price,
-						chosenQuantity: cartItems[i].chosenQuantity,
-						chosenExtras: cartItems[i].chosenExtras,
-						imgSrc: products[j].imgSrc,
-					};
-					cartToView.push(<CardBasket p={customizedProduct} key={customizedProduct.id}/>);
-				}
-			}
-		}
+  if (cartItems.length) {
+    for(let i = 0; i < cartItems.length; i++) {
+      if(cartItems[i].chosenQuantity > 0) {
+        for(let j = 0; j < products.length; j++) {
+          if(cartItems[i].productId === products[j].id) {
+            const customizedProduct = {
+              id: products[j].id,
+              name: products[j].name,
+              price: products[j].price,
+              chosenQuantity: cartItems[i].chosenQuantity,
+              chosenExtras: cartItems[i].chosenExtras,
+              imgSrc: products[j].imgSrc,
+            };
+            cartToView.push(<CardBasket p={customizedProduct} key={customizedProduct.id}/>);
+          }
+        }
+      }
 	}
+  }
 
   const payToggler = () => {
     setTogglePayment(!togglePayment);

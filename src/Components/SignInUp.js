@@ -5,6 +5,7 @@ import { UserContext } from "../Context/UserContext";
 import styles from "../Style/SignInUp.module.css"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Navigate } from "react-router-dom";
   
 const SignInUp = () => {
   const [userSignUp, setUserSignUp] = useState({
@@ -72,8 +73,10 @@ const SignInUp = () => {
         theme: "colored",
         });
     }
+    else {
+      setLoggedInUser(foundUser[0].id);
+    }
 
-    else  setLoggedInUser(foundUser[0].id);
   }
 
   const checkUserUnique = async(e) => {

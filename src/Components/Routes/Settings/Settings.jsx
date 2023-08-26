@@ -26,9 +26,17 @@ export default function Settings() {
   const getPreviousOrders = async () => {
     const response = await axios.get(`http://localhost:3466/Users/${loggedInUser}`);
     const prev = await response.data.previousOrders;
-    console.log(prev);
     setPrevOrders(prev);
   }
+
+  useEffect(() => {
+    getPreviousOrders();
+    setActiveDataIndex(prevOrders.length - 1);
+  }, []);
+
+  useEffect(() => {
+    console.log(prevOrders);
+  }, [prevOrders]);
 
   const AccountChanges = () => {
     return (
@@ -68,21 +76,12 @@ export default function Settings() {
     );
   };
 
-  useEffect(() => {
-    getPreviousOrders();
-    setActiveDataIndex(prevOrders.length - 1);
-  }, []);
-  
-  useEffect(() => {
-    console.log(prevOrders);
-  }, [prevOrders]);
-
   const times = [...prevOrders.map(e => e.orderDate)];
   const products = [...prevOrders.map(e => e.orderProducts)];
+  console.log(products);
   const printDate = () => {
     let arr = [];
     
-    // times.map(e => <div key={nanoid()} className={Style.dateConent}>{e}</div>)Style.date
     for (let i = times.length - 1; i >= 0; i--) {
       arr.push(
         <div
@@ -105,6 +104,7 @@ export default function Settings() {
   const printDateData = () => {
     for (let i = 0; i < times.length; i++) {
       if (activeDataIndex === i) {
+        console.log("inloop ", products[i]);
         return (
           <div key={nanoid()} className={Style.dateContent}>
             <Basket className={Style.basket} cartItems={products[i]}/>
@@ -116,10 +116,12 @@ export default function Settings() {
 
   const PrevOrders = () => {
     return (
-      <div className={Style.Prev}>
-        <div className={Style.dateDiv}>{printDate()}</div>
-        <div className={Style.contentPerDate}>{printDateData()}</div>
-      </div>
+        prevOrders.length > 0 &&
+        <div className={Style.Prev}>
+          <div className={Style.dateDiv}>{printDate()}</div>
+          <div className={Style.contentPerDate}>{printDateData()}</div>
+        </div>
+      
     );
   };
 

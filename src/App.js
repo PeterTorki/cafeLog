@@ -23,26 +23,26 @@ const App = () => {
     <UserContext.Provider value={{ loggedInUser, setLoggedInUser }}>
     {
       loggedInUser ?
-    <ProductsContextProvider>
-    <ShopContextProvider>
-        <BrowserRouter>
-            <SideBar />
-      <div style={{marginLeft: '75px'}}>
-            <Routes>
-            <Route path="/" element={<InitPage />} />
-            <Route path="/Menu" element={<Menu />} />
-            <Route path="/Cart" element={<Basket />} />
-            <Route path="/Favorites" element={<Favorites />} />
-            <Route path="/Settings" element={<Settings />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
-          </Routes>
-    </div>
+        <ProductsContextProvider>
+          <ShopContextProvider>
+              <BrowserRouter>
+                <SideBar />
+                <div style={{marginLeft: '75px'}}>
+                  <Routes>
+                    <Route path="/" element={<InitPage />} />
+                    <Route path="/Menu" element={<Menu />} />
+                    <Route path="/Cart" element={<Basket />} />
+                    <Route path="/Favorites" element={<Favorites />} />
+                    <Route path="/Settings" element={<Settings />} />
+                    <Route path="/ContactUs" element={<ContactUs />} />
+                    <Route path="/AboutUs" element={<AboutUs />} />
+                  </Routes>
+                </div>
 
-        </BrowserRouter>
+            </BrowserRouter>
 
-        </ShopContextProvider>
-      </ProductsContextProvider>
+          </ShopContextProvider>
+        </ProductsContextProvider>
       : 
       <SignInUp value={{loggedInUser, setLoggedInUser}}/>
     }

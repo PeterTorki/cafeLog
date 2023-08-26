@@ -4,9 +4,7 @@ import { ShopContext } from '../../../Context/ShopContext'
 
 export default function Card({ p }) {
 
-    const { cartItems, addToCart, removeFromCart } = useContext(ShopContext)
-
-    const productCart = cartItems.find(c => c.productId === p.id).chosenExtras.filter(e => e.isActive)
+  const productExtras = p.chosenExtras.filter((i) => i.isActive === true);
 
     return (
         <div className={Style.container2}>
@@ -18,11 +16,11 @@ export default function Card({ p }) {
               <div className={Style.Content}>
                 <div className={Style.Name}>{p.name}</div>
                 {
-                    productCart.length > 0 && 
+                    productExtras.length > 0 && 
                     <div className={Style.Extras}>
                         Extra :
-                        {productCart.map((i) => {
-                        return <span key={i.id}> {i.name} ,</span>;
+                        {productExtras.map((i) => {
+                          return <span key={i.id}> {i.name} ,</span>;
                         })}
                     </div>
                 }
