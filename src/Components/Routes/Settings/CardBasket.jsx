@@ -8,7 +8,7 @@ export default function Card({ p }) {
 
     return (
         <div className={Style.container2}>
-          <div key={p.id} className={Style.Cards}>
+          <div key={p.id} className={[Style.Cards,Style.Cards2].join(" ")}>
             <div className={Style.LeftSide}>
               <div className={Style.cardimg}>
                 <img src={p.imgSrc} alt={p.name} width="80" height="80" />

@@ -42,16 +42,29 @@
     
 }
 @media (max-width:990px) {
-    .content{
-        display: flex;
-        flex-direction: column;
-    }
+  .content{
+      display: flex;
+      flex-direction: column;
+  }
 }
 
-@media (max-width:505px) {
-    .leftSide{
-        flex-direction: column;
-    }
+@media (max-width:909px) {
+  .Prev{
+    flex-direction: column;
+  }
+  .dateDiv{
+    width: 100%;
+  }
+}
+
+@media (max-width:550px) {
+  .leftSide div{
+      flex-direction: column;
+  }
+  .inputStyle{
+    flex-direction: column;
+  }
+  
 }
 
 
@@ -116,11 +129,12 @@
   }
 
   .dateDiv{
-    width: 20%;
+    width: 200px;
     min-height: 60vh;
   }
   .contentPerDate{
     width: calc(70%);
+    min-width: 200px;
     min-height: 60vh;
   }
 

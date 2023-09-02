@@ -63,6 +63,16 @@
   width: 100%;
 }
 
+.container2 .Cards2{
+  flex-wrap: wrap;
+}
+
+@media (max-width: 908px) {
+  .container2 .Cards2{
+    justify-content: center;
+  }
+}
+
 @media (max-width: 790px) {
   .container {
     width: 100%;
