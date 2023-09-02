@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import about from "../imgsComponent/about.png"
+import aboutImg from '../imgsComponent/about.png' 
 
 export default function AboutUs() {
   return (
@@ -7,7 +7,7 @@ export default function AboutUs() {
       <div class="container">
         <div class="row  align-content-center p-5">
           <div class="col-lg-5 col-12 p-2">
-            <img class="img-fluid"  src={about}  alt="..." />
+            <img class="img-fluid"  src={aboutImg}  alt="..." />
           </div>
           <div className="col-lg-2 col-1">
 
